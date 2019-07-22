@@ -1,8 +1,7 @@
 ---
+layout: vshome
 title: Visual Studio
-subtitle: En introduktion till utvecklingsmiljön
-layout: vsHome
-icon: fa-book
+icon: fa-home
 order: 2
 ---
 # Introduktion till utvecklingsmiljön Visual Studio #
