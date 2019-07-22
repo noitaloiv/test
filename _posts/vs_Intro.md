@@ -1,7 +1,9 @@
 ---
 title: Introduktion
+author: Chris
 layout: post
 ---
+
 # Introduktion till utvecklingsmiljön Visual Studio #
 ### <a name="content"></a>Innehållsförteckning ###
 
