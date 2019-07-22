@@ -1,3 +1,12 @@
+---
+title: Intro
+cover-photo: assets/images/banner.jpg
+cover-photo-alt: example cover photo
+auto-header: none
+icon: fa-comment
+order: 1
+---
+
 # Kurser och övrig information - Institutionen för informatik och media #
 Detta är en interaktiv sida som kan nyttjas som ett verktyg för att lära sig programmering genom att öva på uppgifter. Från denna sida hittar du länkar till de kurser som det i nuläget finns relevant stödmaterial till.
 
