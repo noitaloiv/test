@@ -3,7 +3,7 @@ title: Visual Studio
 subtitle: En introduktion till utvecklingsmiljön
 layout: blog
 icon: fa-book
-order: 1
+order: 2
 ---
 
 # Introduktion till utvecklingsmiljön Visual Studio #
