@@ -4,6 +4,7 @@ auto-header: none
 icon: fa-comment
 order: 1
 ---
+
 ### <a name="content"></a>Innehållsförteckning ###
 
 På denna sida så finner du information om hur man sätter igång med Visual Studio, information om VS-projekt och överlag matnyttig kunskap för miljön.
