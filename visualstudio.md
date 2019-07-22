@@ -5,7 +5,6 @@ layout: vsHome
 icon: fa-book
 order: 2
 ---
-
 # Introduktion till utvecklingsmiljön Visual Studio #
 ### <a name="content"></a>Innehållsförteckning ###
 
