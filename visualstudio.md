@@ -1,5 +1,5 @@
 ---
-layout: vshome
+layout: home
 title: Visual Studio
 icon: fa-home
 order: 2
