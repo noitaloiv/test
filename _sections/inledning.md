@@ -4,7 +4,6 @@ icon: fa-th
 order: 2
 ---
 
-### Inledning ###
 För att lösa uppgifterna som du ser på denna sida så behöver du först skapa en konsol-applikation i Visual Studio för språket C#. Var uppmärksam när du skapar detta projekt så att du väljer **C#** och inte **Visual Basic** (som är ett annat programmeringsspåk). När du gör detta så kommer du att bemötas av koden som du ser nedan:
 ```cs
 using System;
