@@ -1,6 +1,6 @@
 ---
 title: Problemlösning
-icon: fa-th
+icon: fa-lightbulb
 order: 7
 ---
 
