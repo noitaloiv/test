@@ -6,7 +6,7 @@ order: 1
 
 Det första steget blir ju såklart att starta en instans av programmet. Förutsatt att du sitter i en utav laborationssalarna så uppnås detta enklast genom att klicka på Windows-tangenten (till höger om vänster CTRL-tangent) och därefter söka efter Visual Studio genom att börja skriva "v-i-s-u…" osv. Visual Studio 20XX kommer då att dyka upp i högerkolumnen och du behöver då enbart klicka på ikonen för att skapa en instans av programmet. Det kommer mao. efterlikna Figur 1.
 
-![Visual Studio i laborationssal](/Images/image11.png)
+![Visual Studio i laborationssal](/test/Images/image11.png)
 
 *OBS!* Det är Visual Studio du vill öppna (_Visual Studio 2017_ i ovan bild), inte någon utav de
 andra applikationerna. Notera att vi numera har Visual Studio 2013 installerat i
