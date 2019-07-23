@@ -1,7 +1,7 @@
 ---
 title: Datatyper
 icon: fa-th
-order: 2
+order: 3
 ---
 
 # <a name="variabler">Datatyper, konvertering, variabler och tilldelning</a> #
