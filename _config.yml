@@ -45,4 +45,8 @@ url: "https://noitaloiv.github.io/" # the base hostname & protocol for your site
 
 # The following settings are NECESSARY for the Prologue theme to run:
 remote_theme: chrisbobbe/jekyll-theme-prologue
-collections: [sections]
+collections:
+  sections:
+    output: true
+  sectionsvs:
+    output: true
