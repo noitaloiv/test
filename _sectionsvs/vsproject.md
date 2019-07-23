@@ -1,4 +1,8 @@
-# <a name="projectfolder"></a>Projektmappen och relevanta filer #
+---
+title: Projektmappen och relevanta filer
+icon: fa-th
+order: 2
+---
 Under denna sektion hittar du information om exempelvis hur du kan navigera till projektmappen, vad du bör tänka på
 när du sparar dina filer och hur man "packar ihop" ett projekt på rätt sätt inför inlämningar.
 
