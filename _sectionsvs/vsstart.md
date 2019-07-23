@@ -34,7 +34,7 @@ markerad så gäller det även att vara noggrann med att korrekt programmeringss
 I nedan bild ser du i vänsterspalten att "Visual C#" är markerat. Dvs. att det bör mer eller mindre
 se likadant ut för dig när du skapar ett eget projekt.
 
-![En C# konsolapplikation.](/Images/image13.png)
+![En C# konsolapplikation.](/../Images/image13.png)
 
 Notera att du, om du arbetar i laborationsmiljön, först och främst behöver ändra på "Location". "Location" representerar 
 den mapp där du kommer att spara ditt projekt.
