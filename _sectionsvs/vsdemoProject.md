@@ -1,6 +1,6 @@
 ---
 title: Demoprojekt
-icon: fa-th
+icon: fa-lightbulb
 order: 4
 ---
 [Demoprojekt](/test/_sectionsvs/DemoProjekt.zip)
