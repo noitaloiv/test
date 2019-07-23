@@ -3,7 +3,7 @@ title: Demoprojekt
 icon: fa-th
 order: 4
 ---
-[Demoprojekt](DemoProjekt.zip)
+[Demoprojekt](/test/_sectionsvs/DemoProjekt.zip)
 Om du känner för att testa på utvecklingsmiljön så hittar du här ett lite mindre demoprojekt som du kan nyttja för att
 bli familjär med Visual Studio-miljön och testa på några utav uppgifterna som du hittar på webbplats.
 
