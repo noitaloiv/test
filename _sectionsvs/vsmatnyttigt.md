@@ -18,7 +18,7 @@ I Solution Explorer kan du bl.a. lägga till en ny fil, t.ex. en ny klassfil, te
 gör detta genom att högerklicka på ditt projekt -> Navigera till Add -> Därefter till "New
 Item". Bilden nedan visar hur du navigerar dit.
 
-!["Add item" genom "Solution Explorer".](/Images/image6.png)
+!["Add item" genom "Solution Explorer".](/test/Images/image6.png)
 
 Alternativt så kan du välja "Existing Item". Detta är relevant om du t.ex. vill lägga till en redan existerande fil, 
 t.ex. en klass från ett annat projekt.
@@ -29,7 +29,7 @@ Detta uppnås genom att t.ex. högerklicka på filen och välja "Exclude From Pr
 bort filen. "Include" är motsatsen till "Exclude" och "Delete" innebär, som namnet antyder, att du tar bort filen
 permanent.
 
-!["Exclude From Project" och "Delete".](/Images/image9.png)
+!["Exclude From Project" och "Delete".](/test/Images/image9.png)
 
 Som du även ser i bilden ovan så har du möjligheten att ändra namn på filer här. Fördelen med att
 ändra namnet i denna meny är att du samtidigt erbjuds möjligheten att ändra referenserna i projektet för denna fil till det nya namnet. 
@@ -50,7 +50,7 @@ om vad som har gått fel.
 
 För att "följa med" i koden så uppnår man detta genom att placera en s.k. "breakpoint" i vänsterspalten (den röda pricken i nedan bild).
 
-![En "Breakpoint" i Visual Studio.](/Images/image12.png)
+![En "Breakpoint" i Visual Studio.](/test/Images/image12.png)
 
 Notera att en breakpoint enbart kan placeras på samma rad där det förekommer kod. För att ta bort en
 breakpoint så räcker det med att du klickar på den igen. För att ta bort alla breakpoints i hela
@@ -64,7 +64,7 @@ F11. Under tiden som du "stegar igenom" din kod så kan du även exempelvis kont
 innehållet i en variabel genom att placera muspekaren över variabeln (se nedan bild). Detta är
 särskilt givande när du arbetar med iteration/loopar och vill se vad som händer varje iteration (varje cykel).
 
-![Kontrollera variabler under run-time.](/Images/image3.png)
+![Kontrollera variabler under run-time.](/test/Images/image3.png)
 
 ## "Error List" ##
 I Visual Studio har du ytterligare ett fönster, placerat på botten av VS. I detta fönster hittar du
@@ -74,7 +74,7 @@ tillåter. I din "Error List" får du då information om vart felet är, vad det
 felet förekommer (se nedan bild). Du kan även dubbelklicka på dessa felmeddelanden för att
 direkt nå platsen där felet förekommer, du behöver mao. inte leta igenom din kod.
 
-!["Error List" i Visual Studio.](/Images/image10.png)
+!["Error List" i Visual Studio.](/test/Images/image10.png)
 
 ## <a name="vsWindows"></a>Fönster i Visual Studio och radnumrering ##
 Skulle du av en händelse oavsiktligt stänga ned antingen "Solution Explorer", "Error List" eller
