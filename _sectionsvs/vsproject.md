@@ -14,7 +14,7 @@ Windows eller genom Visual Studio (om du har projektet öppet där).
 För att navigera via "File Explorer" så öppnar du File Explorer (WIN + E alt. mapp-ikonen i navigationsbaren). 
 Du möts då av "Den här datorn" ("This PC") och där hittar du direkt hårddisk K, U och X under "Network locations" (se nedan bild).
 
-![Hårddisk U: i laborationsmiljön.](/Images/image2.png)
+![Hårddisk U: i laborationsmiljön.](/test/Images/image2.png)
 
 Därefter dubbelklickar du på ikonen och hittar där mappen "Visual Studio" . Den
 mappen innehåller i sin tur mappen "Projects" och det är i denna du hittar samtliga av dina
@@ -24,12 +24,12 @@ Det andra alternativet, att navigera hit via Visual Studio (om ett projekt är �
 högerklicka på din "Solution"-fil i Solution Explorer (som du ser i högerspalten när du
 arbetar i VS). Nedan bild visar hur detta ser ut.
 
-!["Open Folder in File Explorer" i VS.](/Images/image8.png)
+!["Open Folder in File Explorer" i VS.](/test/Images/image8.png)
 
 Oavsett tillvägagångssätt bemöts du då utav din projektmapp som ser ut något i stil med
 nedan.
 
-![Projektmappen för ett VS-projekt.](/Images/image1.png)
+![Projektmappen för ett VS-projekt.](/test/Images/image1.png)
 
 Notera två saker i ovan bild:
 - Mappen "Library" är den mapp som innehåller samtliga klass-filer såsom den tidigare
@@ -51,12 +51,12 @@ tidigare avsnitt så beskrevs det hur man navigerar till ett projekt, antingen v
 Dock så placeras vi i detta fall _inuti_ själva projektmappen, där vi ser två mappar och en solution-fil (.sln). 
 Vi behöver därför "backa tillbaka" ett steg för att peka på den mapp som omsluter precis alla filer och mappar (se nedan bild).
 
-![Huvudmappen som innehåller hela projektet.](/Images/image4.png)
+![Huvudmappen som innehåller hela projektet.](/test/Images/image4.png)
 
 För att sedan faktiskt paketera (komprimera) mappen så högerklickar man på mappen, väljer "IZArc" och klickar sedan på "Add to _MappensNamn_.zip".
 Det är sedan denna (.zip-filen) fil som du lämnar in inför rättning.
 
-![IZArc för att komprimera mappar.](/Images/image7.png)
+![IZArc för att komprimera mappar.](/test/Images/image7.png)
 
 Om du inte arbetar via universitetets datorer så har du nödvändigtvis inte just IZArc
 installerat och detta är helt okej, huvudsaken är att du nyttjar något program som kan
