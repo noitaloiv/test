@@ -133,7 +133,7 @@ void NestedPrint(){
 
 Uppgift 4 | Strukturerad utskrift III
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp;&nbsp;&nbsp; <code>***</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp;&nbsp; <code>****</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp; <code>*****</code>
+Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br style="display:block; content:""; margin-top:-18px;">&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br style="display:block; content:""; margin-top:-18px;">&nbsp;&nbsp;&nbsp; <code>***</code> <br style="display:block;content:"";margin-top:-18px;">&nbsp;&nbsp; <code>****</code> <br style="display:block;content:"";margin-top:-18px;">&nbsp; <code>*****</code>
 
 {::options parse_block_html="true" /}
 
