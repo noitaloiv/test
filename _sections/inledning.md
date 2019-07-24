@@ -28,7 +28,7 @@ Det är inom *metoden* <code>Main</code> som du kommer att skriva din kod, till 
 
 För nästan varje uppgift på denna sida så förväntas det att du nyttjar dessa verktyg för att lösa uppgiften så lägg dem på minnet!
 
-### Metoder ###
+### Metod/funktion ###
 Då det snabbt kan bli jobbigt att skapa en ny konsolapplikation för varje uppgift så rekommenderar vi till en början att ni arbetar enbart i <code>Main</code>-metoden och att ni separerar varje uppgift mha. kommentarer. Dvs. exempelvis enligt nedan:
 ```cs
 public static void Main(string[] args)
