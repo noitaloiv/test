@@ -106,7 +106,7 @@ void PrintNumbers(){
 
 Uppgift 3 | Strukturerad utskrift II
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster:<br><br> * <br> ** <br> *** <br> **** <br> ***** <br><br> **TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
+Beskrivning | Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster:<br><br> <code>*</code> <br> <code>**</code> <br> <code>***</code> <br> <code>****</code> <br> <code>*****</code> <br><br> **TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
 
 {::options parse_block_html="true" /}
 
@@ -133,7 +133,7 @@ void NestedPrint(){
 
 Uppgift 4 | Strukturerad utskrift III
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <br>&nbsp;&nbsp;&nbsp;&nbsp; ** <br>&nbsp;&nbsp;&nbsp; *** <br>&nbsp;&nbsp; **** <br>&nbsp; *****
+Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br>&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br>&nbsp;&nbsp;&nbsp; <code>***</code> <br>&nbsp;&nbsp; <code>****</code> <br>&nbsp; <code>*****</code>
 
 {::options parse_block_html="true" /}
 
@@ -186,7 +186,7 @@ void NestedPrintThree(int iterations){
 
 Uppgift 6 | Strukturerad utskrift V
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintFour</code>, som tar emot ett heltal som användaren anger och skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <br>&nbsp;&nbsp;&nbsp;&nbsp; *** <br>&nbsp;&nbsp;&nbsp; ***** <br>&nbsp;&nbsp; ******* <br>&nbsp; ********* <br><br>**Notera** att enbart udda antal <code>*</code> skrivs ut per rad. Antalet rader som skrivs ut bestäms av det heltal som tas emot som argument.
+Beskrivning | Skriv en metod, <code>NestedPrintFour</code>, som tar emot ett heltal som användaren anger och skriver ut följande mönster:<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br> &nbsp;&nbsp;&nbsp;&nbsp; <code>***</code> <br> &nbsp;&nbsp;&nbsp; <code>*****</code> <br>&nbsp;&nbsp; <code>*******</code> <br>&nbsp; <code>*********</code> <br><br> **Notera** att enbart udda antal <code>*</code> skrivs ut per rad. Antalet rader som skrivs ut bestäms av det heltal som tas emot som argument.
 
 {::options parse_block_html="true" /}
 
@@ -311,7 +311,7 @@ void CalculateFactorial(int input){
 
 Uppgift 10 | Rekursiv metod (Fakultet II)
 ----------|-------------------------------
-Beskrivning | En rekursiv metod är en metod som anropar sig själv tills dess att ett s.k. "basfall" uppnås. Denna typ av metod är mer vanligt förekommande i funktionella språk, men det är fullt möjligt att nyttja dem även i <code>C#</code>. Fördelarna med denna typ av metoder är att de resulterar i mindre kod och oftast är mer resurseffektiva (dvs. snabbare). Nackdelarna är det kan vara svårt att förstå sig på processen samt att det är betydligt svårare att felsöka dem i jämförelse med vanlig iteration.<br><br>Ett exempel på rekursion skulle vara följande:<br> <code>string Rec(int n) {<br>// Kontrollera att heltalet är ett positivt tal.<br>&nbsp; if (n <= 0)<br>&nbsp;&nbsp; return n + " must be higher than -1";<br>&nbsp; else if (n > 9){<br>&nbsp;&nbsp; Console.Write(n);<br>&nbsp;&nbsp; return "Completed"; // När vi har nått 10 så vill vi avsluta<br>&nbsp; }<br>&nbsp; else<br>&nbsp;{<br>&nbsp;&nbsp; Console.Write(n + ", ");<br>&nbsp;&nbsp; return Rec(n + 1); // Rekursivt anrop. 1 + 1 -> 2 + 1 osv.<br>&nbsp; }<br>}</code><br><br> Där metoden <code>Rec</code> räknar från det heltal som skrivs in till och med 10 och skriver ut följden i konsolen.<br><br> Uppgiften är att försöka lösa Uppgift 9 (Fakultet) på nytt fast genom att nyttja rekursion istället.<br><br>**OBS** att denna uppgift är svår och egentligen faller utanför kursens ramar (dvs. att innehållet är överkurs). Tanken med uppgiften är att introducera begreppet rekursion samt tillhandahålla möjligheten att testa på det.
+Beskrivning | En rekursiv metod är en metod som anropar sig själv tills dess att ett s.k. "basfall" uppnås. Denna typ av metod är mer vanligt förekommande i funktionella språk, men det är fullt möjligt att nyttja dem även i <code>C#</code>. Fördelarna med denna typ av metoder är att de resulterar i mindre kod och oftast är mer resurseffektiva (dvs. snabbare). Nackdelarna är det kan vara svårt att förstå sig på processen samt att det är betydligt svårare att felsöka dem i jämförelse med vanlig iteration.<br><br>Ett exempel på rekursion skulle vara följande:<br> <code>string Rec(int n) {<br>// Kontrollera att heltalet är ett positivt tal.<br>&nbsp; if (n <= 0)<br>&nbsp;&nbsp; return n + " must be higher than -1";<br>&nbsp; else if (n > 9){<br>&nbsp;&nbsp; Console.Write(n);<br>&nbsp;&nbsp; return "Completed"; // När vi har nått 10 så vill vi avsluta<br>&nbsp; }<br>&nbsp; else<br>&nbsp;{<br>&nbsp;&nbsp; Console.Write(n + ", ");<br>&nbsp;&nbsp; return Rec(n + 1); // Rekursivt anrop. 1 + 1 -> 2 + 1 osv.<br>&nbsp; }<br>}</code> <br><br> Där metoden <code>Rec</code> räknar från det heltal som skrivs in till och med 10 och skriver ut följden i konsolen.<br><br> Uppgiften är att försöka lösa Uppgift 9 (Fakultet) på nytt fast genom att nyttja rekursion istället.<br><br>**OBS** att denna uppgift är svår och egentligen faller utanför kursens ramar (dvs. att innehållet är överkurs). Tanken med uppgiften är att introducera begreppet rekursion samt tillhandahålla möjligheten att testa på det.
 
 {::options parse_block_html="true" /}
 
