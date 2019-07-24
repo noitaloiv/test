@@ -309,7 +309,49 @@ void CalculateFactorial(int input){
 
 ---
 
-Uppgift 10 | Primtal?
+Uppgift 10 | Rekursiv metod (Fakultet II)
+----------|-------------------------------
+Beskrivning | En rekursiv metod är en metod som anropar sig själv tills dess att ett s.k. "basfall" uppnås. Denna typ av metod är mer vanligt förekommande i funktionella språk, men det är fullt möjligt att nyttja dem även i <code>C#</code>. Fördelarna med denna typ av metoder är att de resulterar i mindre kod och oftast är mer resurseffektiva (dvs. snabbare). Nackdelarna är det kan vara svårt att förstå sig på processen samt att det är betydligt svårare att felsöka dem i jämförelse med vanlig iteration.<br><br>Ett exempel på rekursion skulle vara följande:<br>
+```cs
+string Rec(int n)
+{
+    // Kontrollera att heltalet är ett positivt tal.
+    if (n <= 0) 
+        return n + " must be higher than -1";
+    else if (n > 9)
+    {
+        Console.Write(n);
+        return "Completed"; // När vi har nått 10 så vill vi avsluta
+    }
+    else
+    {
+        Console.Write(n + ", ");
+        return Rec(n + 1); // Rekursivt anrop. 1 + 1 -> 2 + 1 osv.
+    }              
+}
+```
+
+Där metoden <code>Rec</code> räknar från det heltal som skrivs in till och med 10 och skriver ut följden i konsolen.<br><br>
+Uppgiften är att försöka lösa Uppgift 9 (Fakultet) på nytt fast genom att nyttja rekursion istället.<br><br>**OBS** att denna uppgift är svår och egentligen faller utanför kursens ramar (dvs. att innehållet är överkurs). Tanken med uppgiften är att introducera begreppet rekursion samt tillhandahålla möjligheten att testa på det.
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+void CalculateFactorial(int input){
+  if(input == 0)
+    return 1;
+  else
+    return input * CalculateFactorial(input - 1);
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+---
+
+Uppgift 11 | Primtal?
 ----------|----------
 Beskrivning | Skriv en metod, <code>IsPrime</code>, som tar emot ett heltal och avgör om heltalet är ett primtal eller ej. <br><br> Ett primtal är ett heltal som är större än 1 och som enbart är jämnt delbart med 1 eller sig självt. <br><br> Exempelvis så är 2, 3 och 5 primtal medan 4 och 6 inte är det då de även är jämnt delbara med 2. <br><br> **TIPS!** Nyttja modulus och iteration för att kontrollera om det finns fler än två (<code>1 resp. talet självt</code>) faktorer. Tänk på att jämna tal, utöver <code>2</code>, inte kan vara primtal.
 
@@ -338,7 +380,7 @@ bool IsPrime(int input){
 
 ---
 
-Uppgift 11 | Alla primtal upp till...
+Uppgift 12 | Alla primtal upp till...
 ----------|----------
 Beskrivning | Skriv en metod, <code>PrimeNumbers</code>, som tar emot ett heltal och skriver ut samtliga primtal från 1 upp till och med det heltalet. <br><br> **TIPS!** Nyttja din implementation från Uppgift 10 för att lösa uppgiften.
 
@@ -366,7 +408,7 @@ void PrimeNumbers(int input){
 
 ---
 
-Uppgift 11 | Fibonacci
+Uppgift 13 | Fibonacci
 ----------|----------
 Beskrivning | Skriv en metod, <code>Fibonacci</code>, som tar emot ett heltal och skriver ut tal i Fibonnaci-sekvensen. Antalet tal som skrivs ut avgörs av det angivna heltalet. <br><br> Ett Fibonnaci-tal är summan av de två föregående talen i en sekvens av heltal. Exempelvis är de första 5 Fibonnaci-talen: 0 1 1 2 3. Vi kan i denna talföljd identifiera det tidigare nämnda mönstret givet <code>0+1 = 1</code>, <code>1+1 = 2</code>, <code>1+2 = 3</code> osv.
 
@@ -408,7 +450,7 @@ void Fibb(int input)
 
 ---
 
-Uppgift 12 | Multiplikationstabellen för X
+Uppgift 14 | Multiplikationstabellen för X
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>CalculateMultTable</code>, som tar emot ett heltal som argument och returnerar en array av heltal. Metoden ska beräkna multiplikationstabellen (från 1 till och med 10) för heltalet och bygga upp en array innehållandes denna multiplikationstabell. <br><br>Givet exempelvis heltalet 3 så ska en array returneras som innehåller följande värden:<br>[3, 6, 9, 12, 15, 18, 21, 24, 27, 30].
 
@@ -433,7 +475,7 @@ int[] CalculateMultTable(int input){
 
 ---
 
-Uppgift 13 | Utskrift av arrayer
+Uppgift 15 | Utskrift av arrayer
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>PrettyPrint</code>, som tar emot en array av heltal som argument och inte returnerar någonting. Problemet med Uppgift 1 är att vi inte kan skriva ut innehållet i den array som skickas tillbaka i nuläget. Om vi exempelvis nyttjar <code>Console.WriteLine(CalculateMultTable(3));</code> så kommer vi enbart att skriva ut dess datatyp snarare än innehållet i arrayen. För att skriva ut innehållet så behöver man istället peka på vilket element man specifikt vill skriva ut och det är detta <code>PrettyPrint</code> är ämnad att utföra. <br><br>Metoden ska skriva ut en array enligt följande format: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50<br><br>**NOTERA** att det alltså inte ska förekomma ett kommatecken efter det sista värdet. Metoden ska även kunna skriva ut innehållet i en array av heltal oavsett dess storlek.
 
@@ -457,7 +499,7 @@ void PrettyPrint(int[] input){
 
 ---
 
-Uppgift 14 | Största värdet i en array
+Uppgift 16 | Största värdet i en array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>HighestNumber</code>, som tar emot en array av heltal som argument och returnerar det största värdet i arrayen.
 
@@ -481,7 +523,7 @@ int HighestNumber(int[] input){
 
 ---
 
-Uppgift 15 | Medelvärdet i en array
+Uppgift 17 | Medelvärdet i en array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>AverageNumber</code>, som tar emot en array av heltal som argument och returnerar medelvärdet av alla värden i arrayen.
 
@@ -504,7 +546,7 @@ int AverageNumber(int[] input){
 
 ---
 
-Uppgift 16 | Summering av arrayer
+Uppgift 18 | Summering av arrayer
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>SumArrays</code>, som tar emot två arrayer av heltal som argument (<code>arrayA och arrayB</code>) och returnerar en array - <code>arrayC</code> - som innehåller summan av talen på resp. position. Dvs. att om värdet på position 0 i <code>arrayA</code> är 5 och värdet på position 0 i <code>arrayB</code> är 13 så ska position 0 i <code>arrayC</code> innehålla värdet 18 osv.<br><br> **OBS!** Metoden kan utgå från att arrayerna alltid är av samma längd.
 
