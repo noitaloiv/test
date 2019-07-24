@@ -157,10 +157,18 @@
 		border-top: solid 1px #41484c;
 	}
 
-	code br {
+	code > br {
 		display: block; /* makes it have a width */
 		content: ""; /* clears default height */
 		margin-top: -18px; /* change this to whatever height you want it */
+		}
+
+	pre {
+		> br {
+		display: block; /* makes it have a width */
+		content: ""; /* clears default height */
+		margin-top: -18px; /* change this to whatever height you want it */
+		}
 	}
 
   	code {
