@@ -133,7 +133,7 @@ void NestedPrint(){
 
 Uppgift 4 | Strukturerad utskrift III
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br>&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br>&nbsp;&nbsp;&nbsp; <code>***</code> <br>&nbsp;&nbsp; <code>****</code> <br>&nbsp; <code>*****</code>
+Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp;&nbsp;&nbsp; <code>***</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp;&nbsp; <code>****</code> <br style="display: block; content: ""; margin-top: -18px;">&nbsp; <code>*****</code>
 
 {::options parse_block_html="true" /}
 
@@ -160,7 +160,7 @@ void NestedPrintTwo(){
 
 Uppgift 5 | Strukturerad utskrift IV
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br><br>Givet heltalet 7 som input:<br> 1 <br> 22 <br> 333 <br> 4444 <br> 55555 <br> 666666 <br> 7777777
+Beskrivning | Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br><br>Givet heltalet 7 som input:<br> 1 <br style="display: block; content: ""; margin-top: -18px;"> 22 <br style="display: block; content: ""; margin-top: -18px;"> 333 <br style="display: block; content: ""; margin-top: -18px;"> 4444 <br style="display: block; content: ""; margin-top: -18px;"> 55555 <br style="display: block; content: ""; margin-top: -18px;"> 666666 <br style="display: block; content: ""; margin-top: -18px;"> 7777777
 
 {::options parse_block_html="true" /}
 
