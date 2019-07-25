@@ -133,7 +133,7 @@ void NestedPrint(){
 
 Uppgift 4 | Strukturerad utskrift III
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br style="display:block; content:""; margin-top:-18px;">&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br style="display:block; content:""; margin-top:-18px;">&nbsp;&nbsp;&nbsp; <code>***</code> <br style="display:block;content:"";margin-top:-18px;">&nbsp;&nbsp; <code>****</code> <br style="display:block;content:"";margin-top:-18px;">&nbsp; <code>*****</code>
+Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br>&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br>&nbsp;&nbsp;&nbsp; <code>***</code> <br>&nbsp;&nbsp; <code>****</code> <br>&nbsp; <code>*****</code>
 
 {::options parse_block_html="true" /}
 
@@ -160,7 +160,7 @@ void NestedPrintTwo(){
 
 Uppgift 5 | Strukturerad utskrift IV
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br><br>Givet heltalet 7 som input:<br> 1 <br style="display: block; content: ""; margin-top: -18px;"> 22 <br style="display: block; content: ""; margin-top: -18px;"> 333 <br style="display: block; content: ""; margin-top: -18px;"> 4444 <br style="display: block; content: ""; margin-top: -18px;"> 55555 <br style="display: block; content: ""; margin-top: -18px;"> 666666 <br style="display: block; content: ""; margin-top: -18px;"> 7777777
+Beskrivning | Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br><br>Givet heltalet 7 som input:<br> 1 <br> 22 <br> 333 <br> 4444 <br> 55555 <br style="display: block; content: " "; margin-top: -18px;"> 666666 <br style="display: block; content: " "; margin-top: -18px;"> 7777777
 
 {::options parse_block_html="true" /}
 
@@ -479,7 +479,31 @@ void PrettyPrint(int[] input){
 
 ---
 
-Uppgift 16 | Största värdet i en array
+Uppgift 16 | Utskrift av arrayer (baklänges)
+----------|-------------------------------
+Beskrivning | Skriv en metod, <code>PrettyPrintReversed</code>, som tar emot en array av heltal som argument och skriver ut innehållet i arrayen baklänges. <br><br>Baklänges innefattar att om arrayen innehåller värdena [1, 3, 9] så ska utskriften vara [9, 3, 1]. <br> Metoden ska skriva ut en array enligt följande format: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50<br><br>**NOTERA** att det alltså inte ska förekomma ett kommatecken efter det sista värdet. Metoden ska även kunna skriva ut innehållet i en array av heltal oavsett dess storlek.
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+void PrettyPrintReversed(int[] input){  
+  for(int i = input.Legnth-1; i >= 0; i--){
+    if(i == 0)
+      Console.Write(input[i]);
+    else
+      Console.Write(input[i] + ", ");
+  }
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+---
+
+Uppgift 17 | Största värdet i en array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>HighestNumber</code>, som tar emot en array av heltal som argument och returnerar det största värdet i arrayen.
 
@@ -503,7 +527,34 @@ int HighestNumber(int[] input){
 
 ---
 
-Uppgift 17 | Medelvärdet i en array
+Uppgift 18 | Näst största värdet i en array
+----------|-------------------------------
+Beskrivning | Skriv en metod, <code>SecondHighestNumber</code>, som tar emot en array av heltal som argument och returnerar det näst största värdet i arrayen. <br><br> **TIPS!** Reflektera kring hur implementationen i Uppgift 17 kan anpassas för att hämta det näst största värdet istället för det största.
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+int SecondHighestNumber(int[] input){
+  int max = 0, nMax = 0;
+  for(int i = 0; i < input.Length; i++){
+    if(input[i] < max)
+    {
+        nMax = max;
+        max = input[i];
+    }  
+  }
+  return nMax;
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+---
+
+Uppgift 19 | Medelvärdet i en array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>AverageNumber</code>, som tar emot en array av heltal som argument och returnerar medelvärdet av alla värden i arrayen.
 
@@ -526,7 +577,7 @@ int AverageNumber(int[] input){
 
 ---
 
-Uppgift 18 | Summering av arrayer
+Uppgift 20 | Summering av arrayer
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>SumArrays</code>, som tar emot två arrayer av heltal som argument (<code>arrayA och arrayB</code>) och returnerar en array - <code>arrayC</code> - som innehåller summan av talen på resp. position. Dvs. att om värdet på position 0 i <code>arrayA</code> är 5 och värdet på position 0 i <code>arrayB</code> är 13 så ska position 0 i <code>arrayC</code> innehålla värdet 18 osv.<br><br> **OBS!** Metoden kan utgå från att arrayerna alltid är av samma längd.
 
@@ -542,6 +593,128 @@ int[] SumArrays(int[] arrayA, int[] arrayB){
     arrayC[i] = arrayA[i] + arrayB[i];
   }
   return arrayC;
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+---
+
+Uppgift 21 | Count
+----------|-------------------------------
+Beskrivning | Skriv en metod, <code>Count</code>, som tar emot en array av heltal och ett heltal som argument och returnerar antalet gånger det heltalet förekommer i arrayen. <br><br> Dvs. att om arrayen innehåller elementen [6, 3, 3] och vi söker efter 3 så ska 2 returneras, om arrayen innehåller [6, 4, 1] så ska 0 returneras osv.
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+int Count(int[] arr, int n){
+  int count = 0;
+  for(int i = 0; i < arr.Length; i++){
+    if(arr[i] == n)
+      count++;
+  }
+  return count;
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+---
+
+Uppgift 22 | PrintUniques
+----------|-------------------------------
+Beskrivning | Skriv en metod, <code>PrintUniques</code>, som tar emot en array av heltal som argument och skriver ut alla unika värden i arrayen. <br><br> Dvs. att om arrayen innehåller elementen [6, 3, 3] så ska 6 skrivas ut, om arrayen innehåller [6, 4, 1] så ska 6, 4 och 1 skrivas ut. Om arrayen __inte__ innehåller några unika värden så ska <code>"There are no unique values in the array."</code> skrivas ut. <br><br> **TIPS!** Nyttja din implementation av metoden <code>Count</code> från Uppgift 20.
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+void PrintUniques(int[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (Count(arr, arr[i]) < 2)
+        {
+            Console.WriteLine(arr[i] + " is a unique value.");
+            count++;
+        }                   
+    }
+
+    if (count == 0)
+        Console.WriteLine("There are no unique values in the array.");
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+---
+
+Uppgift 23 | Sort array
+----------|-------------------------------
+Beskrivning | Skriv en metod, <code>SimpleSort</code>, som tar emot en array av heltal som argument och sorterar dem enligt storleksordning. <br><br> Om arrayen exempelvis innehåller elementen [6, 3, 1, 8, 4, 3] så ska metoden returnera en array som innehåller [1, 3, 3, 4, 6, 8].<br><br> **TIPS!** Nyttja nästlade loopar för att lösa uppgiften.
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+void SimpleSort(int[] arr)
+{
+    int temp = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        for(int j = i; j < arr.Length; j++)
+        {
+            if(arr[i] > arr[j])
+            {
+              temp = arr[j];
+              arr[j] = arr[i];
+              arr[i] = temp;
+            }
+        }
+    }
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+---
+
+Uppgift 24 | Remove duplicates
+----------|-------------------------------
+Beskrivning | Skriv en metod, <code>RemoveDuplicates</code>, som tar emot en array av heltal som argument och tar bort alla dubbletter i arrayen. Metoden ska slutligen sortera värdena i storleksordning. Metoden ska nyttja en stödmetod, <code>IsDuplicate</code> som tar emot ett heltal och en array av heltal. <code>IsDuplicate</code> avgör sedan om heltalet i fråga förekommer flera gånger i arrayen.<br><br> Om arrayen exempelvis innehåller elementen [6, 3, 1, 8, 4, 3] så ska metoden returnera en array som innehåller [1, 3, 4, 6, 8].<br><br> **TIPS!** Börja med att implementera metoden <code>IsDuplicate</code>. Denna implementation kommer att påminnna om implementationen av <code>Count</code> (Uppgift 21). <br> För att skriva <code>RemoveDuplicates</code> så rekommenderas det att du nyttjar nästlade loopar och implementationen i Uppgift 23 för att lösa uppgiften. Tänk även på att arrayer är statiska vilket innefattar att du __måste__ skapa en ny array med korrekt antal indexpositioner efter borttagandet.
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+int[] RemoveDuplicates(int[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if(!IsDuplicate(arr, arr[i]))
+        {
+            count++;
+        for(int j = i; j < arr.Length; j++)
+        {
+            if(arr[i] > arr[j])
+            {
+              temp = arr[j];
+              arr[j] = arr[i];
+              arr[i] = temp;
+            }
+        }
+    }
 }
 ```
 </details>
