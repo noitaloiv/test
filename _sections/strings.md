@@ -4,7 +4,6 @@ icon: fa-th
 order: 6
 ---
 
-# <a name="strings"></a>Strängmanipulering #
 En sträng är egentligen en array utav tecken (<code>char</code>). Detta innebär att vi kan behandla en sträng likt hur vi behandlar en array. Föreställ dig exempelvis att vi har en sträng i stil med: 
 ```cs
 string hello = "Hello World!";
