@@ -113,7 +113,7 @@ int SumOddNumbers(int x, int y){
 
 Uppgift 4 | Metoder med samma namn
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>PrintUserInfo</code>, som tar emot två strängar. Metoden ska sedan skriva ut informationen enligt följande format: <br><br> Hello, <Name>!<br> Your number is: <Number> <br><br> Där "<Name>" är det ena argumentet och "<Number>" är det andra argumentet. <br><br> Skriv därefter ytterligare en metod med samma namn men som tar emot två strängar och ett heltal där heltalet representerar ett årtal. Denna metod ska skriva ut enligt samma format som den första metoden men även beräkna och skriva ut användarens ålder (dvs. antal år snarare än årtal). <br><br> ***OBS!*** Metoderna har samma namn men inte samma metodsignatur (två argument gentemot tre). Vi kommer att behandla detta koncept (method overloading) ytterligare i senare kurser, men i nuläget så är det tillräckligt att veta om att det existerar. 
+Beskrivning | Skriv en metod, <code>PrintUserInfo</code>, som tar emot två strängar. Metoden ska sedan skriva ut informationen enligt följande format: <br><br> <code>Hello, Name!></code><br> <code>Your number is: Number</code> <br><br> Där <code>"Name"</code> är det ena argumentet och <code>"Number"</code> är det andra argumentet. <br><br> Skriv därefter ytterligare en metod med samma namn men som tar emot två strängar och ett heltal där heltalet representerar ett årtal. Denna metod ska skriva ut enligt samma format som den första metoden men även beräkna och skriva ut användarens ålder (dvs. antal år snarare än årtal).<br><br> ***OBS!*** Metoderna har samma namn men inte samma metodsignatur (två argument gentemot tre). Vi kommer att behandla detta koncept (method overloading) ytterligare i senare kurser, men i nuläget så är det tillräckligt att veta om att det existerar. 
 
 {::options parse_block_html="true" /}
 
@@ -172,10 +172,7 @@ double DivideOddAndEvenNumbers(double x){
 
 Uppgift 6 | En enkel meny II
 ----------|-------------------------------
-Beskrivning | Skriv en metod som presenterar användaren till en enklare meny med 3 alternativ. Dessa alternativ ska vara:<br><br>
-- Summera 3 heltal.<br>
-- Avgör om ett heltal är positivt eller negativt.<br>
-- Avgör först om 3 heltal är positiva eller negativa och sedan summera dem. Notera att enbart positiva heltal ska summeras med varandra och vice versa för negativa heltal.<br><br> Funktionaliteten ska placeras i lämpliga metoder. Med lämpligt så avses exempelvis att en metod inte bör utföra funktionaliteten för både det första och det andra menyalternativet. **OBS!** Ingen kod ska dupliceras, dvs. förekomma mer än en gång.
+Beskrivning | Skriv en metod som presenterar användaren till en enklare meny med 3 alternativ. Dessa alternativ ska vara:<br><br> - Summera 3 heltal.<br> - Avgör om ett heltal är positivt eller negativt.<br> - Avgör först om 3 heltal är positiva eller negativa och sedan summera dem. Notera att enbart positiva heltal ska summeras med varandra och vice versa för negativa heltal.<br><br> Funktionaliteten ska placeras i lämpliga metoder. Med lämpligt så avses exempelvis att en metod inte bör utföra funktionaliteten för både det första och det andra menyalternativet. **OBS!** Ingen kod ska dupliceras, dvs. förekomma mer än en gång.
 
 {::options parse_block_html="true" /}
 
