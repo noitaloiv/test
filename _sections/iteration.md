@@ -32,7 +32,8 @@ for(int i = 0; i < arr.Length; i++){
   + Därefter så exekveras koden i loopen så att vi under den första iterationen får <code>arr[0] == search</code>. Då detta inte stämmer så hoppar vi upp till <code>i++</code> som kommer att öka värdet på <code>i</code> så att vi under nästa iteration istället får <code>arr[1] == search</code> osv.
 + Egenskapen <code>Length</code> hos arrayer som tillåter oss att hämta längden hos en array. I ovan fall så skulle vi därför få 10.
 
-## Uppgiftsförteckning ## <br>
+## Uppgiftsförteckning ## 
+<br>
 
 Uppgift 1 | De första 100 positiva heltalen
 ----------|-------------------------------
