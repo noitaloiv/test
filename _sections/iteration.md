@@ -4,7 +4,6 @@ icon: fa-th
 order: 5
 ---
 
-# <a name="iteration"></a>Iteration och arrayer #
 Datatypen array är oftast något svår att förstå sig på inledningsvis. Exempelvis så kan man inte manipulera storleken (t.ex. lägga till en plats eller ta bort en plats i listan) på en array då dessa är statiska. Vi måste dessutom alltid ha i åtanke att, åtminstone för C#, indexpositionerna i en array alltid startar från position 0. Dvs. att när vi då exempelvis itererar över en array så måste man <br>1) börja på 0 (om vi inte vill hoppa över det första elementet) och <br>2) vara försiktig så att vi inte pekar på en indexposition som inte finns. <br>Se nedan exempel:
 ```cs
 int[] arr = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
@@ -33,7 +32,7 @@ for(int i = 0; i < arr.Length; i++){
   + Därefter så exekveras koden i loopen så att vi under den första iterationen får <code>arr[0] == search</code>. Då detta inte stämmer så hoppar vi upp till <code>i++</code> som kommer att öka värdet på <code>i</code> så att vi under nästa iteration istället får <code>arr[1] == search</code> osv.
 + Egenskapen <code>Length</code> hos arrayer som tillåter oss att hämta längden hos en array. I ovan fall så skulle vi därför få 10.
 
-## Uppgiftsförteckning ##
+## Uppgiftsförteckning ## <br>
 
 Uppgift 1 | De första 100 positiva heltalen
 ----------|-------------------------------
