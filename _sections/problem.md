@@ -4,7 +4,6 @@ icon: fa-lightbulb
 order: 7
 ---
 
-# <a name="problem"></a>Problemlösning och övningsuppgifter #
 I denna sektion så hittar du övningsuppgifter utan några lösningsförslag. Tanken med dessa uppgifter är att du ska kombinera de koncept som har behandlats i tidigare sektioner för att lösa problem på egen hand. Om du kör fast så kan du i första hand återgå till relevanta tidigare sektioner, se över kursmaterialet eller Googla efter tillvägagångssätt på egen hand.
 
 ## Uppgiftsförteckning ##
