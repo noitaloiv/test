@@ -4,10 +4,9 @@ icon: fa-th
 order: 3
 ---
 
-# <a name="variabler">Datatyper, konvertering, variabler och tilldelning</a> #
 Gällande variabler så behöver vi först och främst förstå att det finns olika typer av data. Vi har exempelvis <code>int</code> för numeriska värden och <code>string</code> för text.
 
-## Uppgiftsförteckning ##
+## Uppgiftsförteckning ## <br>
 
 Uppgift 1 | Datatyper
 ----------|-------------------------------
