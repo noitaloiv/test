@@ -6,7 +6,8 @@ order: 3
 
 Gällande variabler så behöver vi först och främst förstå att det finns olika typer av data. Vi har exempelvis <code>int</code> för numeriska värden och <code>string</code> för text.
 
-## Uppgiftsförteckning ## <br>
+## Uppgiftsförteckning ##
+<br>
 
 Uppgift 1 | Datatyper
 ----------|-------------------------------
