@@ -34,7 +34,7 @@ Beskrivning | Skriv en metod, <code>DecToBin</code>, som översätter ett heltal
 
 Uppgift 5 | Beräkning av heltal
 ----------|----------
-Beskrivning | Skriv en metod som läser in ett godtyckligt antal positiva eller negativa tal från användaren. Metoden ska sedan räkna ut antalet positiva resp. negativa tal. För att avsluta inmatningen så ska användaren ange "e". Metoden ska då avslutningsvis skriva ut antalet positiva och negativa tal. Exempel på interaktion med metoden:<br><br><code>1</code><br><code>-4</code><code>-1</code><code>0</code><br><code>6</code><br><code>12</code><br><code>e</code><br><code>Antal positiva tal: 3</code><br><code>Antal negativa tal: -2</code><br><br>***NOTERA*** att "0" inte ska tillgodoräknas som ett positivt eller negativt tal. **TIPS!** Nyttja en while-loop för att läsa in heltal från användaren.
+Beskrivning | Skriv en metod som läser in ett godtyckligt antal positiva eller negativa tal från användaren. Metoden ska sedan räkna ut antalet positiva resp. negativa tal. För att avsluta inmatningen så ska användaren ange "e". Metoden ska då avslutningsvis skriva ut antalet positiva och negativa tal. Exempel på interaktion med metoden:<br><br><code>1</code><br><code>-4</code><br><code>-1</code><br><code>0</code><br><code>6</code><br><code>12</code><br><code>e</code><br><code>Antal positiva tal: 3</code><br><code>Antal negativa tal: -2</code><br><br>***NOTERA*** att "0" inte ska tillgodoräknas som ett positivt eller negativt tal. **TIPS!** Nyttja en while-loop för att läsa in heltal från användaren.
 
 ---
 
@@ -52,6 +52,6 @@ Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka ru
 
 Uppgift 8 | Textmarkering
 ----------|----------
-Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br><code>Svenska äpplen och fem året runt-äpplen</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code><br><br>b. Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
+Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>Svenska äpplen och fem året runt-äpplen<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code><br><br>b. Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
 
 ---
