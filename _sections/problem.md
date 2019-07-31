@@ -16,6 +16,42 @@ Beskrivning | Skriv en metod, <code>SumArrays</code>, som tar emot två arrayer 
 
 Uppgift 2 | Prisberäkning för inträde
 ----------|----------
-Beskrivning | Skriv en metod, <code>AdmissionPrice</code>, som beräknar priset för inträde till ett nöjesfält baserat på gästernas ålder. Antalet gäster som tillhör gruppen bestäms utav användaren som skriver in <code>N</code> efter att samtliga gäster och deras resp. ålder har angivits. <br><br> Pristabellen som gäller är:<br><br> - Barn (3-12): 50 kr. <br> - Pensionär (65+): 75 kr. <br><br> Samtliga resterande åldersgrupper betalar alltid 110 kr. A particular zoo determines the price of admission based on the age of the guest. <br><br> Om gruppen består utav fler än 4 gäster så ges en rabatt på 20% på totalpriset. Metoden ska efter beräkning skriva ut antalet gäster i gruppen och den totala summan.
+Beskrivning | Skriv en metod, <code>AdmissionPrice</code>, som beräknar priset för inträde till ett nöjesfält baserat på gästernas ålder. Antalet gäster som tillhör gruppen bestäms utav användaren som skriver in <code>N</code> efter att samtliga gäster och deras resp. ålder har angivits. <br><br> Pristabellen som gäller är:<br><br> - Barn (3-12): 50 kr. <br> - Pensionär (65+): 75 kr. <br> Samtliga resterande åldersgrupper betalar alltid 110 kr. <br><br> Om gruppen består utav fler än 4 gäster så ges en rabatt på 20% på totalpriset. Metoden ska efter beräkning skriva ut antalet gäster i gruppen och den totala summan.
+
+---
+
+Uppgift 3 | Palindrom
+----------|----------
+Beskrivning | Skriv en metod, <code>IsPalindrome</code>, som avgör om en sträng är ett palindrom eller ej. Ett palindrom är ett ord eller en mening som är exakt likadan skrivet baklänges, t.ex. "Sirap i paris". Metoden __ska__ ta mellanslag, specialtecken och versaler/gemener i beaktelse när den avgör om strängen är ett palindrom eller ej.
+
+---
+
+Uppgift 4 | Decimal to binary
+----------|----------
+Beskrivning | Skriv en metod, <code>DecToBin</code>, som översätter ett heltal enligt det decimala talsystemet till det binära talsystemet. Det decimala talsystemet är det som vi nyttjar till vardags med basen 10 (0-9). Det binära talsystemet nyttjar istället basen 2 där något antingen är av eller på (0 eller 1). Således får vi exempelvis <code>1010</code> om vi översätter <code>10</code>, <code>1100100</code> om vi översätter <code>100</code> osv. ***NOTERA*** att ju längre något är till vänster i ett binärt tal, desto större är det. I <code>1010</code> så har vi 8, 4, 2, 1 där 1:orna indikerar de värden som ska tillgodoräknas (i detta fall 8:an och 2:an för 10).<br><br> Om du vill läsa mer om hur man konverterar från det decimala talsystemet till det binära så kan du nyttja följande länk: [Dec to binary](https://www.wikihow.com/Convert-from-Decimal-to-Binary). Om du vill nyttja en redan existerande konverterare så kan du kika på följande länk: [Dec/Bin Converter](https://www.rapidtables.com/convert/number/decimal-to-binary.html).<br><br> **TIPS!** Nyttja iteration och modulus. Uppgiften __skall__ lösas utan den inbyggda metoden <code>Convert.ToString</code>.
+
+---
+
+Uppgift 5 | Beräkning av heltal
+----------|----------
+Beskrivning | Skriv en metod som läser in ett godtyckligt antal positiva eller negativa tal från användaren. Metoden ska sedan räkna ut antalet positiva resp. negativa tal. För att avsluta inmatningen så ska användaren ange "e". Metoden ska då avslutningsvis skriva ut antalet positiva och negativa tal. Exempel på interaktion med metoden:<br><br><code>1</code><br><code>-4</code><code>-1</code><code>0</code><br><code>6</code><br><code>12</code><br><code>e</code><br><code>Antal positiva tal: 3</code><br><code>Antal negativa tal: -2</code><br><br>***NOTERA*** att "0" inte ska tillgodoräknas som ett positivt eller negativt tal. **TIPS!** Nyttja en while-loop för att läsa in heltal från användaren.
+
+---
+
+Uppgift 6 | Tidsberäkning av tågresor
+----------|----------
+Beskrivning | Ett persontågsföretag vill ha ett program (en metod i detta fall) för att underlätta tidsberäkningen av tågresor med syftet att upprätta en tidtabell. Metoden ska läsa in avgångsort, avstånd mellan avgångsorten och destinationen samt datum och klockslag för avgång. Därefter ska metoden räkna ut vilket datum och vilken tid tåget kommer till destinationen. Tågets genomsnittliga hastighet är 130 km/h. <br><br>***TIPS!*** Nyttja SVT-triangeln för att beräkna tiden (givet hastigheten och avståndet). Datatypen <code>DateTime</code> kan nyttjas för att enklare behandla datum och klockslag, men det krävs då att man utforskar lite vad datatypen har att erbjuda på egen hand. Det är dock fullt möjligt att nyttja strängar istället. Följande länk kan nyttjas för att få en inblick i <code>DateTime</code>: [DateTime](https://www.dotnetperls.com/datetime)
+
+---
+
+Uppgift 7 | Hotellbokning
+----------|----------
+Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka rum som är bokade samt vilka som är lediga. Skriv först ett program (eller en metod) som läser in "bokat" kontra "ledigt" i en array som består utav 15 platser. Varje plats i arrayen motsvarar ett rum på hotellet.<br><br>b. Utöka sedan programmet genom att lägga till möjligheten att genomföra bokningar. Vid en bokning så ska det första lediga rummet i rumslistan (arrayen) identifieras och sedan ändra värde till "bokat".<br><br>c. Utöka sedan programmet ytterligare genom att låta användaren ange om ett rum önskas bokas eller avbokas. Om rummet ska bokas kan implementationen i b) nyttjas,  om en avbokning ska ske så behöver vi dock kunna hantera detta. Vid en avbokning så ska rumsnummer anges och efter avbokning så ska värdet i arrayen ändras till "ledigt".
+
+---
+
+Uppgift 8 | Textmarkering
+----------|----------
+Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br><code>Svenska äpplen och fem året runt-äpplen</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code><br><br>b. Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
 
 ---
