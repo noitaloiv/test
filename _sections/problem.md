@@ -52,7 +52,7 @@ Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka ru
 
 Uppgift 8 | Textmarkering
 ----------|----------
-Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>$$\begin{document} \fbox{ \parbox{ \textwidth}{Svenska äpplen och fem året runt-äpplen\\ \vspace*{6mm}* }} \end{document}$$<br><br>Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
+Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>$$\begin{document}\fbox{\parbox{\textwidth}{Svenska äpplen och fem året runt-äpplen\\ \vspace*{6mm}* }}\end{document}$$<br><br>Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
 
 ---
 
@@ -101,6 +101,24 @@ Beskrivning | Skriv en metod som kan läsa in flera textrader från användaren 
 Uppgift 16 | Begynnelsebokstäver
 ----------|----------
 Beskrivning | Skriv en metod som skriver ut alla begynnelsebokstäver i en mening. Med begynnelsebokstäver så avses det första bokstaven i resp. ord i en mening. Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br><br>Datorerna Synes Vänliga och Programmen Slutar Vårdslöst.<br>Output: D S V o P S V
+
+---
+
+Uppgift 17 | Ordbyte
+----------|----------
+Beskrivning | Skriv en metod, <code>ReplaceWord</code>, som byter alla förekomster av ett utvalt ord mot ett annat. Metoden ska ta emot en mening som argument och därefter fråga användaren vilket ord som ska bytas ut samt vad det ska bytas ut mot. Om ordet som ska bytas ut inte förekommer i meningen så ska användaren meddelas om detta och ges möjligheten att ange ett annat ord.
+
+---
+
+Uppgift 18 | Tillägg till array
+----------|----------
+Beskrivning | Skriv en metod, <code>AddInOrder</code>, som tar emot en array av heltal samt ett heltal, lägger till heltalet i arrayen och sedan returnerar arrayen. Heltalet ska placeras i korrekt ordning i arrayen. Om heltalet redan förekommer i arrayen så ska tillägget inte ske. ***OBS!*** Metoden kan föreutsätta att arrayen redan är placerad i storleksordning, men du får självfallet nyttja en sorteringsalgoritm om du vill utöka metoden själv.
+
+---
+
+Uppgift 19 | En bättre sökalgoritm
+----------|----------
+Beskrivning | I introduktionen till sektionen "Iteration/Arrayer" så beskrivs en enkel sökalgoritm för att identifiera ett heltal i en array av heltal. Denna typ av sökalgoritm är dock väldigt ineffektiv då vi ev. måste iterera igenom hela arrayen innan vi kan fastställa om heltalet förekommer eller ej. Denna uppgift går således ut på att skriva en mer effektiv sökalgoritm. Processen för denna sökalgoritm kan beskrivas enligt nedan:<br><br>1. Kontrollera om elementet förekommer i mitten av arrayen.<br>2. Om det inte förekommer i mitten, är heltalet vi söker efter större än eller mindre än heltalet i mitten?<br>Om det är mindre -> Upprepa sökningen, fast denna gång enbart från det första elementet till och med elementet till vänster om mittenvärdet. <br>Om det är större -> Upprepa sökningen, fast denna gång enbart från det elementet till höger om mittenvärdet till och med det sista elementet i arrayen.<br>3. Upprepa processen tills vi har identifierat heltalet eller tills dess att vi kan fastställa att det inte förekommer i arrayen. ***OBS!*** Metoden förutsätter att arrayen redan är placerad i storleksordning.<br><br>Skriv en metod, <code>AvSearch</code>, som tar emot en array av heltal samt ett heltal. Metoden ska därefter identifiera om heltalet förekommer i arrayen eller ej. ***TIPS!*** För att fastställa att talet inte förekommer i arrayen så är det fördelaktigt att ständigt uppdatera ramen som vi vill undersöka. Om vi t.ex. i första iterationen ser att talet tillhör den vänstra delen av arrayen så kan vi ändra vårt "max-värde" (inledningsvis det sista elementet i arrayen) till mittenvärdet -1. Därefter så fortsätter vi att iterera tills dess att vårt "min-värde" (inledningsvis det första elementet i arrayen) är större än eller lika med vårt "max-värde". , men du får självfallet nyttja en sorteringsalgoritm om du vill utöka metoden själv.
 
 ---
 
