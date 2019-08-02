@@ -60,21 +60,30 @@ Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka ru
   <tbody>
     <tr>
       <td>Beskrivning</td>
-      <td>Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet “å” genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet (“å”). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>
-        
-        ```csharp
+      <td>
+        Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet “å” genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet (“å”). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>
+        <table>
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp">
         Svenska äpplen och fem året runt-äpplen
                                * 
-        ```        
-<br><br>Utöka programmet så att det även markerar “ä”. Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för “å” och “ä” skriver tecknet <code>*</code> för “å” och tecknet <code>%</code> för “ä”.</td>
+        </pre>
+          </td>
+    </tr>
+          </tbody>
+        </table>
+<br><br>b. Utöka programmet så att det även markerar “ä”. Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för “å” och “ä” skriver tecknet <code>*</code> för “å” och tecknet <code>%</code> för “ä”.
+  </td>
     </tr>
   </tbody>
 </table>
----
-
-Uppgift 8 | Textmarkering
-----------|----------
-Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>$$\begin{document}\fbox{\parbox{\textwidth}{Svenska äpplen och fem året runt-äpplen\\ \vspace*{6mm}* }}\end{document}$$<br><br>Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
 
 ---
 
@@ -113,6 +122,44 @@ Uppgift 14 | StringFormat
 Beskrivning | Skriv en metod, <code>StringFormat</code> som tar emot en array av strängar och skriver ut samtliga strängar i arrayen enligt nedan format: <br><br>Om arrayen innehåller <code>[apples, oranges]</code> så får vi: <code>apples and oranges</code><br> Om arrayen istället innehåller flera strängar t.ex. <code>[apples, oranges, bananas]</code> så får vi istället: <code>apples, oranges and bananas</code><br><br>***TIPS!*** Nyttja metoden <code>string.Split</code>.
 
 ---
+
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 15</th>
+      <th>Teckenbyte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod som kan läsa in flera textrader från användaren och byta ut varje förekomst av tecknet "O" till tecknet "Ö" resp. "o" till "ö". Metoden ska läsa in en rad i taget varvid metoden sedan ska presentera raden med de teckenbyten som har skett för att sedan läsa in nästa rad. Denna process ska upprepas tills dess att användaren anger "EXIT". Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br><br>
+        <table>
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp">
+Input: Mors lilla Olle i skogen gick.
+Output: Mörs lilla Ölle i skögen gick.
+Input: Om vädret är fint så kommer Ofelia på festen.
+Output: Öm vädret är fint så kömmer Öfelia på festen.
+Input: EXIT
+        </pre>
+          </td>
+    </tr>
+          </tbody>
+        </table>
+  </td>
+    </tr>
+  </tbody>
+</table>
+
 
 Uppgift 15 | Teckenbyte
 ----------|----------
