@@ -55,3 +55,9 @@ Uppgift 8 | Textmarkering
 Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>Svenska äpplen och fem året runt-äpplen<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code><br><br>b. Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
 
 ---
+
+Uppgift 9 | BMI kalkylator
+----------|----------
+Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>$$BMI = weight \div height \times height \times 703$$ <br>och den imperiska formeln är: <br><br>$$BMI = weight \div height \times height$$
+
+---
