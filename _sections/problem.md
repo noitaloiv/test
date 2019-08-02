@@ -52,7 +52,7 @@ Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka ru
 
 Uppgift 8 | Textmarkering
 ----------|----------
-Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>$$\begin{textblock*}{\textwidth}(0cm,0cm)Svenska äpplen och fem året runt-äpplen\\                        * \end{textblock*}$$<br><br>Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
+Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>$$\begin{equation}\parbox{15em}{Svenska äpplen och fem året runt-äpplen\\               *e }\end{equation}$$<br><br>Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
 
 ---
 
@@ -104,4 +104,4 @@ Beskrivning | Skriv en metod som skriver ut alla begynnelsebokstäver i en menin
 
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?..."></script>
