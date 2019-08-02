@@ -58,7 +58,7 @@ Beskrivning | Skriv ett program som läser in en sträng med valfri text. Progra
 
 Uppgift 9 | BMI kalkylator
 ----------|----------
-Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). $$e=mc^2$$ Den metriska formeln är:<br><br>$$BMI = weight \div height \times height \times 703$$ <br>och den imperiska formeln är: <br><br>$$BMI = weight \div height \times height$$
+Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}<br>och den imperiska formeln är: <br><br>\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}
 
 ---
 
@@ -77,5 +77,17 @@ Beskrivning | Den största gemensamma delaren (SGD) för ett antal heltal är de
 Uppgift 12 | Hitta medianen
 ----------|----------
 Beskrivning | Medianen är det tal som representerar mitten i en talföljd. Om vi exempelvis har heltalen 10, 63 och 15 så agerar 15 medianvärdet. Om vi istället har heltalen 10, 63, 15 och 25 så blir medianen istället 20 (15 + 20 / 2). Skriv en metod som tar emot en array av heltal som en parameter och returnerar medianen. <br><br>***TIPS!*** Tänk på att arrayen först och främst __bör__ sorteras i storleksordning. Uppgift 23 under sektionen "Iteration/arrayer" kan nyttjas för detta syfte. Efter detta så kan vi antingen enkelt plocka ut värdet i mitten (om arrayen består utav ett udda antal element) eller så behöver vi identifiera de två mittenvärden som finns i arrayen och utföra beräkningen enligt ovan exempel.
+
+---
+
+Uppgift 13 | IsInteger
+----------|----------
+Beskrivning | Skriv en metod, <code>IsInteger</code> som tar emot en sträng och avgör om strängen representerar ett riktigt heltal. Metoden ska ignorera mellanslag men behöver kunna hantera <code>+</code>-tecken och <code>-</code>-tecken. <br><br>***TIPS!*** Metoden <code>char.IsDigit</code> kan nyttjas för att avgöra om ett tecken representerar en siffra eller ej.
+
+---
+
+Uppgift 14 | IsInteger
+----------|----------
+Beskrivning | Skriv en metod, <code>IsInteger</code> som tar emot en sträng och avgör om strängen representerar ett riktigt heltal. Metoden ska ignorera mellanslag men behöver kunna hantera <code>+</code>-tecken och <code>-</code>-tecken. <br><br>***TIPS!*** Metoden <code>char.IsDigit</code> kan nyttjas för att avgöra om ett tecken representerar en siffra eller ej.
 
 ---
