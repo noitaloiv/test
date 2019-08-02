@@ -58,7 +58,7 @@ Beskrivning | Skriv ett program som läser in en sträng med valfri text. Progra
 
 Uppgift 9 | BMI kalkylator
 ----------|----------
-Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>$\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}$<br>och den imperiska formeln är: <br><br>$\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}$
+Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}$$<br>och den imperiska formeln är: <br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}$$
 
 ---
 
@@ -88,5 +88,14 @@ Beskrivning | Skriv en metod, <code>IsInteger</code> som tar emot en sträng och
 
 Uppgift 14 | StringFormat
 ----------|----------
-Beskrivning | Skriv en metod, <code>StringFormat</code> som tar emot en array av strängar och skriver ut samtliga strängar i arrayen enligt nedan format: <br><br>Om arrayen innehåller [apples, oranges] så får vi: <code>apples and oranges</code><br> Om arrayen istället innehåller flera strängar t.ex. [apples, oranges, bananas] så får vi istället: <code>apples, oranges and bananas</code><br><br>***TIPS!*** Nyttja metoden <code>string.Split</code>.
+Beskrivning | Skriv en metod, <code>StringFormat</code> som tar emot en array av strängar och skriver ut samtliga strängar i arrayen enligt nedan format: <br><br>Om arrayen innehåller <code>[apples, oranges]</code> så får vi: <code>apples and oranges</code><br> Om arrayen istället innehåller flera strängar t.ex. <code>[apples, oranges, bananas]</code> så får vi istället: <code>apples, oranges and bananas</code><br><br>***TIPS!*** Nyttja metoden <code>string.Split</code>.
+
 ---
+
+Uppgift 15 | Teckenbyte
+----------|----------
+Beskrivning | Skriv en metod som kan läsa in flera textrader från användaren och byta ut varje förekomst av tecknet "O" till tecknet "Ö" resp. "o" till "ö". Metoden ska läsa in en rad i taget varvid metoden sedan ska presentera raden med de teckenbyten som har skett för att sedan läsa in nästa rad. Denna process ska upprepas tills dess att användaren anger "EXIT". Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br><br>Input: 	Mors lilla Olle i skogen gick.<br>Output: 	Mörs lilla Ölle i skögen gick.<br>Input: 	Om vädret är fint så kommer Ofelia på festen.<br>Output:   Öm vädret är fint så kömmer Öfelia på festen.<br>Input: EXIT
+
+---
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
