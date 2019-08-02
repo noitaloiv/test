@@ -52,13 +52,13 @@ Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka ru
 
 Uppgift 8 | Textmarkering
 ----------|----------
-Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>Svenska äpplen och fem året runt-äpplen<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>*</code><br><br>b. Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
+Beskrivning | Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet "å" genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet ("å"). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>$$\begin{textblock*}{\textwidth}(0cm,0cm)Svenska äpplen och fem året runt-äpplen\\                        * \end{textblock*}$$<br><br>Utöka programmet så att det även markerar "ä". Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för "å" och "ä" skriver tecknet <code>*</code> för "å" och tecknet <code>%</code> för "ä". 
 
 ---
 
 Uppgift 9 | BMI kalkylator
 ----------|----------
-Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}$$<br>och den imperiska formeln är: <br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}$$
+Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}$$<br><br>och den imperiska formeln är: <br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}$$
 
 ---
 
@@ -95,6 +95,12 @@ Beskrivning | Skriv en metod, <code>StringFormat</code> som tar emot en array av
 Uppgift 15 | Teckenbyte
 ----------|----------
 Beskrivning | Skriv en metod som kan läsa in flera textrader från användaren och byta ut varje förekomst av tecknet "O" till tecknet "Ö" resp. "o" till "ö". Metoden ska läsa in en rad i taget varvid metoden sedan ska presentera raden med de teckenbyten som har skett för att sedan läsa in nästa rad. Denna process ska upprepas tills dess att användaren anger "EXIT". Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br><br>Input: 	Mors lilla Olle i skogen gick.<br>Output: 	Mörs lilla Ölle i skögen gick.<br>Input: 	Om vädret är fint så kommer Ofelia på festen.<br>Output:   Öm vädret är fint så kömmer Öfelia på festen.<br>Input: EXIT
+
+---
+
+Uppgift 16 | Begynnelsebokstäver
+----------|----------
+Beskrivning | Skriv en metod som skriver ut alla begynnelsebokstäver i en mening. Med begynnelsebokstäver så avses det första bokstaven i resp. ord i en mening. Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br><br>Datorerna Synes Vänliga och Programmen Slutar Vårdslöst.<br>Output: D S V o P S V
 
 ---
 
