@@ -58,7 +58,7 @@ Beskrivning | Skriv ett program som läser in en sträng med valfri text. Progra
 
 Uppgift 9 | BMI kalkylator
 ----------|----------
-Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}<br>och den imperiska formeln är: <br><br>\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}
+Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>$\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}$<br>och den imperiska formeln är: <br><br>$\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}$
 
 ---
 
@@ -86,8 +86,7 @@ Beskrivning | Skriv en metod, <code>IsInteger</code> som tar emot en sträng och
 
 ---
 
-Uppgift 14 | IsInteger
+Uppgift 14 | StringFormat
 ----------|----------
-Beskrivning | Skriv en metod, <code>IsInteger</code> som tar emot en sträng och avgör om strängen representerar ett riktigt heltal. Metoden ska ignorera mellanslag men behöver kunna hantera <code>+</code>-tecken och <code>-</code>-tecken. <br><br>***TIPS!*** Metoden <code>char.IsDigit</code> kan nyttjas för att avgöra om ett tecken representerar en siffra eller ej.
-
+Beskrivning | Skriv en metod, <code>StringFormat</code> som tar emot en array av strängar och skriver ut samtliga strängar i arrayen enligt nedan format: <br><br>Om arrayen innehåller [apples, oranges] så får vi: <code>apples and oranges</code><br> Om arrayen istället innehåller flera strängar t.ex. [apples, oranges, bananas] så får vi istället: <code>apples, oranges and bananas</code><br><br>***TIPS!*** Nyttja metoden <code>string.Split</code>.
 ---
