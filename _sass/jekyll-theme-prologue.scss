@@ -156,38 +156,55 @@
 		border-top: solid 1px #41484c;
 	}
 
-  	code {
+	code {
 		padding: 2px 4px;
 		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 		font-size: 0.9rem;
-		color: #567482 !default;
-		background-color: #f3f6fa !default;
+		color: $code-text-color;
+		background-color: $code-bg-color;
 		border-radius: 0.3rem;
-		line-height: 1;
-  	}
+	}
 
-  	pre {
+	pre {
 		padding: 0.8rem;
 		margin-top: 0;
 		margin-bottom: 1rem;
 		font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-		color: #567482 !default;
+		color: $code-text-color;
 		word-wrap: normal;
-		background-color: #f3f6fa !default;
-		border: solid 1px #dce6f0 !default;
+		background-color: $code-bg-color;
+		border: solid 1px $border-color;
 		border-radius: 0.3rem;
 
 		> code {
 			padding: 0;
 			margin: 0;
 			font-size: 0.9rem;
-			color: #567482 !default;
+			color: $code-text-color;
 			word-break: normal;
 			white-space: pre;
 			background: transparent;
 			border: 0;
 		}
-  	}
+	}
+
+	pre code,
+	pre tt {
+		display: inline;
+		max-width: initial;
+		padding: 0;
+		margin: 0;
+		overflow: initial;
+		line-height: inherit;
+		word-wrap: normal;
+		background-color: transparent;
+		border: 0;
+
+		&:before,
+		&:after {
+			content: normal;
+		}
+	}
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
@@ -205,6 +222,21 @@
 
 	br.clear {
 		clear: both;
+	}
+
+	blockquote {
+		padding: 0 1rem;
+		margin-left: 0;
+		color: $blockquote-text-color;
+		border-left: 0.3rem solid $border-color;
+
+		> :first-child {
+			margin-top: 0;
+		}
+
+		> :last-child {
+			margin-bottom: 0;
+		}
 	}
 
 /* Sections/Article */
@@ -403,7 +435,8 @@
 		}
 
 		td {
-			padding: 0.5em 1em 0.5em 1em;
+			padding: 0.5rem 1rem;
+			border: 1px solid $table-border-color;
 		}
 
 		th {
