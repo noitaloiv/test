@@ -191,6 +191,36 @@ Beskrivning | I introduktionen till sektionen "Iteration/Arrayer" så beskrivs e
 
 ---
 
+Uppgift 20 | Element på udda positioner
+----------|----------
+Beskrivning | Skriv en metod som tar emot en array av heltal och returnerar samtliga element som förekommer på udda indexpositioner. Dvs. att givet exempelvis arrayen [3, 5, 10, 2, 6] så ska 5 och 2 returneras. Om arrayen inte har några udda positioner så ska <code>null</code> returneras.
+
+---
+
+Uppgift 21 | RotateArrayBy2
+----------|----------
+Beskrivning | Skriv en metod, <code>RotateArrayBy2</code>, som tar emot en array av heltal och roterar elementen i en array med 2 positioner åt vänster. Dvs. att givet arrayen [3, 5, 10, 2, 6] så skulle följande array returneras: [10, 2, 6, 3, 5]. ***OBS!*** Skriv din implementation __utan__ att deklarera en ny array.
+
+---
+
+Uppgift 22 | AlternateMerge
+----------|----------
+Beskrivning | Skriv en metod, <code>AlternateMerge</code>, som tar emot två arrayer av heltal och returnerar en array som innehåller samtliga element från resp. array. Elementen ska dock placeras i turordning där vi först tar elementet på position 0 i den första arrayen följt av elementet på position 0 i den andra arrayen osv. Dvs. att givet arrayen [3, 5, 10, 2, 6] och [8, 1, 4, 12, 7] så skulle följande array returneras: [3, 8, 5, 1, 10, 4, 2, 12, 6, 7].
+
+---
+
+Uppgift 23 | Guessing game
+----------|----------
+Beskrivning | Skriv ett program som tillåter en användare att gissa på ett "hemligt" nummer. Efter varje gissning så ska programmet skriva ut huruvida gissningen var lägre eller större än det hemliga numret. Denna process ska återupprepas tills dess att användaren gissar rätt eller anger "EXIT". Om användaren gissar rätt så ska antalet gissningar som krävdes för att komma fram till svaret skrivas ut.
+
+---
+
+Uppgift 24 | LongestWord
+----------|----------
+Beskrivning | Skriv en metod, <code>LongestWord</code>, som tar emot en mening och returnerar det längsta ordet i meningen. Om det förekommer två eller flera ord - vilka samtliga har samma längd och är längre än resterande ord i meningen - så ska det första ordet returneras. Dvs. att givet exempelvis meningen <code>"I love cats"</code> så ska <code>"love"</code> skickas tillbaka. <br><br>***TIPS!*** Nyttja den inbyggda metoden <code>Split</code> för att dela upp meningen på mellanslag.
+
+---
+
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
 </script>
