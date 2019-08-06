@@ -13,55 +13,78 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-	@import "libs/skel";
+@import "libs/skel";
 
-	@include skel-breakpoints((
-		wide: '(min-width: 961px) and (max-width: 1880px)',
-		normal: '(min-width: 961px) and (max-width: 1620px)',
-		narrow: '(min-width: 961px) and (max-width: 1320px)',
-		narrower: '(max-width: 960px)',
-		mobile: '(max-width: 736px)'
-	));
+@include skel-breakpoints((
+	wide: '(min-width: 961px) and (max-width: 1880px)',
+	normal: '(min-width: 961px) and (max-width: 1620px)',
+	narrow: '(min-width: 961px) and (max-width: 1320px)',
+	narrower: '(max-width: 960px)',
+	mobile: '(max-width: 736px)'
+));
 
-	@include skel-layout((
-		reset: 'full',
-		boxModel: 'border',
-		grid: ( gutters: (40px, 40px) ),
-		conditionals: true,
-		containers: 1400px,
-		breakpoints: (
-			wide: (
-				containers: 1200px,
-				grid: (
-					gutters: (40px, 40px)
-				),
+@include skel-layout((
+	reset: 'full',
+	boxModel: 'border',
+	grid: ( gutters: (40px, 40px) ),
+	conditionals: true,
+	containers: 1400px,
+	breakpoints: (
+		wide: (
+			containers: 1200px,
+			grid: (
+				gutters: (40px, 40px)
 			),
-			normal: (
-				containers: 960px,
-				grid: (
-					gutters: (40px, 40px)
-				),
+		),
+		normal: (
+			containers: 960px,
+			grid: (
+				gutters: (40px, 40px)
 			),
-			narrow: (
-				containers: 100%,
-				grid: (
-					gutters: (20px, 20px)
-				),
+		),
+		narrow: (
+			containers: 100%,
+			grid: (
+				gutters: (20px, 20px)
 			),
-			narrower: (
-				containers: 100%,
-				grid: (
-					gutters: (20px, 20px)
-				),
+		),
+		narrower: (
+			containers: 100%,
+			grid: (
+				gutters: (20px, 20px)
 			),
-			mobile: (
-				containers: (100%, true),
-			)
+		),
+		mobile: (
+			containers: (100%, true),
 		)
-	));
+	)
+));
 
 /* Basic */
+.main-content {
+	word-wrap: break-word;
+	
+	:first-child {
+		margin-top: 0;
+	}
 
+	@include large {
+		max-width: 64rem;
+		padding: 2rem 6rem;
+		margin: 0 auto;
+		font-size: 1.1rem;
+	}
+
+	@include medium {
+		padding: 2rem 4rem;
+		font-size: 1.1rem;
+	}
+
+	@include small {
+		padding: 2rem 1rem;
+		font-size: 1rem;
+	}
+	
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -159,91 +182,87 @@
 		border-top: solid 1px #41484c;
 	}
 
-	.main-content {
-  		word-wrap: break-word;
-		
-		code {
-			padding: 2px 4px;
-			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-			font-size: 10pt;
-			color: $code-text-color;
-			background-color: $code-bg-color;
-			border-radius: 0.3rem;
-		}
+	code {
+		padding: 2px 4px;
+		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		font-size: 10pt;
+		color: $code-text-color;
+		background-color: $code-bg-color;
+		border-radius: 0.3rem;
+	}
 
-		pre {
-			padding: 0.8rem;
-			margin-top: 0;
-			margin-bottom: 0;
-			font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-			color: $code-text-color;
-			word-wrap: normal;
-			background-color: $code-bg-color;
-			border: solid 1px $border-color;
-			border-radius: 0.3rem;
+	pre {
+		padding: 0.8rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		color: $code-text-color;
+		word-wrap: normal;
+		background-color: $code-bg-color;
+		border: solid 1px $border-color;
+		border-radius: 0.3rem;
 
-			> code {
-				padding: 0;
-				margin: 0;
-				font-size: 10pt;
-				color: $code-text-color;
-				word-break: normal;
-				white-space: pre;
-				background: transparent;
-				border: 0;
-			}
-		}
-		
-		.highlight {
-			margin-bottom: 1rem;
-
-			pre {
-				margin-bottom: 0;
-				word-break: normal;
-			}
-		}
-		
-		.highlight pre,
-		pre {
-			padding: 0.8rem;
-			overflow: scroll;
-			font-size: 0.9rem;
-			line-height: 1.45;
-			border-radius: 0.3rem;
-			-webkit-overflow-scrolling: touch;
-		}
-		
-		pre code,
-		pre tt {
-			display: inline;
-			max-width: initial;
+		> code {
 			padding: 0;
 			margin: 0;
-			overflow: initial;
-			line-height: inherit;
-			word-wrap: normal;
-			background-color: transparent;
+			font-size: 10pt;
+			color: $code-text-color;
+			word-break: normal;
+			white-space: pre;
+			background: transparent;
 			border: 0;
-
-			&:before,
-			&:after {
-				content: normal;
-			}
 		}
-		
-		blockquote {
-			padding: 0 1rem;
-			margin-left: 0;
-			color: $blockquote-text-color;
-			border-left: 0.3rem solid $border-color;
+	}
 
-			> :first-child {
-				margin-top: 0;
-			}
+	.highlight {
+		margin-bottom: 1rem;
 
-			> :last-child {
-				margin-bottom: 0;
-			}
+		pre {
+			margin-bottom: 0;
+			word-break: normal;
+		}
+	}
+
+	.highlight pre,
+	pre {
+		padding: 0.8rem;
+		overflow: scroll;
+		font-size: 0.9rem;
+		line-height: 1.45;
+		border-radius: 0.3rem;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	pre code,
+	pre tt {
+		display: inline;
+		max-width: initial;
+		padding: 0;
+		margin: 0;
+		overflow: initial;
+		line-height: inherit;
+		word-wrap: normal;
+		background-color: transparent;
+		border: 0;
+
+		&:before,
+		&:after {
+			content: normal;
+		}
+	}
+
+	blockquote {
+		padding: 0 1rem;
+		margin-left: 0;
+		color: $blockquote-text-color;
+		border-left: 0.3rem solid $border-color;
+
+		> :first-child {
+			margin-top: 0;
+		}
+
+		> :last-child {
+			margin-bottom: 0;
 		}
 	}
 
@@ -264,6 +283,15 @@
 	br.clear {
 		clear: both;
 	}
+	
+	hr {
+		height: 2px;
+		padding: 0;
+		margin: 1rem 0;
+		background-color: $hr-border-color;
+		border: 0;
+	}
+}
 
 /* Sections/Article */
 
