@@ -129,7 +129,6 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
@@ -157,26 +156,12 @@
 		border-top: solid 1px #41484c;
 	}
 
-	code > br {
-		display: block; /* makes it have a width */
-		content: ""; /* clears default height */
-		margin-top: -18px; /* change this to whatever height you want it */
-		}
-
-	pre {
-		> br {
-		display: block; /* makes it have a width */
-		content: ""; /* clears default height */
-		margin-top: -18px; /* change this to whatever height you want it */
-		}
-	}
-
   	code {
 		padding: 2px 4px;
 		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 		font-size: 0.9rem;
-		color: $code-text-color;
-		background-color: $code-bg-color;
+		color: #567482 !default;
+		background-color: #f3f6fa !default;
 		border-radius: 0.3rem;
 		line-height: 1;
   	}
@@ -186,17 +171,17 @@
 		margin-top: 0;
 		margin-bottom: 1rem;
 		font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-		color: $code-text-color;
+		color: #567482 !default;
 		word-wrap: normal;
-		background-color: $code-bg-color;
-		border: solid 1px $border-color;
+		background-color: #f3f6fa !default;
+		border: solid 1px #dce6f0 !default;
 		border-radius: 0.3rem;
 
 		> code {
 			padding: 0;
 			margin: 0;
 			font-size: 0.9rem;
-			color: $code-text-color;
+			color: #567482 !default;
 			word-break: normal;
 			white-space: pre;
 			background: transparent;
