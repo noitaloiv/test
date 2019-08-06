@@ -164,7 +164,7 @@
 		code {
 			padding: 2px 4px;
 			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-			font-size: 0.9rem;
+			font-size: 10pt;
 			color: $code-text-color;
 			background-color: $code-bg-color;
 			border-radius: 0.3rem;
@@ -184,7 +184,7 @@
 			> code {
 				padding: 0;
 				margin: 0;
-				font-size: 0.9rem;
+				font-size: 10pt;
 				color: $code-text-color;
 				word-break: normal;
 				white-space: pre;
