@@ -65,7 +65,7 @@
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -102,6 +102,7 @@
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
+		text-align: left;
 	}
 
 	h3 {
@@ -205,7 +206,7 @@
 		.highlight pre,
 		pre {
 			padding: 0.8rem;
-			overflow: auto;
+			overflow: scroll;
 			font-size: 0.9rem;
 			line-height: 1.45;
 			border-radius: 0.3rem;
