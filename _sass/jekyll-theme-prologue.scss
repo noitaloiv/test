@@ -1,10 +1,8 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import "variables";
-@import "rouge-github";
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-@import "libs/skel";
 
 /*
 	Prologue by HTML5 UP
@@ -12,65 +10,59 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-@charset "UTF-8";
+	@import "libs/skel";
 
-@include skel-breakpoints((
-	wide: '(min-width: 961px) and (max-width: 1880px)',
-	normal: '(min-width: 961px) and (max-width: 1620px)',
-	narrow: '(min-width: 961px) and (max-width: 1320px)',
-	narrower: '(max-width: 960px)',
-	mobile: '(max-width: 736px)'
-));
+	@include skel-breakpoints((
+		wide: '(min-width: 961px) and (max-width: 1880px)',
+		normal: '(min-width: 961px) and (max-width: 1620px)',
+		narrow: '(min-width: 961px) and (max-width: 1320px)',
+		narrower: '(max-width: 960px)',
+		mobile: '(max-width: 736px)'
+	));
 
-@include skel-layout((
-	reset: 'full',
-	boxModel: 'border',
-	grid: ( gutters: (40px, 40px) ),
-	conditionals: true,
-	containers: 1400px,
-	breakpoints: (
-		wide: (
-			containers: 1200px,
-			grid: (
-				gutters: (40px, 40px)
+	@include skel-layout((
+		reset: 'full',
+		boxModel: 'border',
+		grid: ( gutters: (40px, 40px) ),
+		conditionals: true,
+		containers: 1400px,
+		breakpoints: (
+			wide: (
+				containers: 1200px,
+				grid: (
+					gutters: (40px, 40px)
+				),
 			),
-		),
-		normal: (
-			containers: 960px,
-			grid: (
-				gutters: (40px, 40px)
+			normal: (
+				containers: 960px,
+				grid: (
+					gutters: (40px, 40px)
+				),
 			),
-		),
-		narrow: (
-			containers: 100%,
-			grid: (
-				gutters: (20px, 20px)
+			narrow: (
+				containers: 100%,
+				grid: (
+					gutters: (20px, 20px)
+				),
 			),
-		),
-		narrower: (
-			containers: 100%,
-			grid: (
-				gutters: (20px, 20px)
+			narrower: (
+				containers: 100%,
+				grid: (
+					gutters: (20px, 20px)
+				),
 			),
-		),
-		mobile: (
-			containers: (100%, true),
+			mobile: (
+				containers: (100%, true),
+			)
 		)
-	)
-));
+	));
 
 /* Basic */
-.main-content {
-	word-wrap: break-word;
-	
-	:first-child {
-		margin-top: 0;
-	}
-	
+
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 16pt;
+		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -107,7 +99,6 @@
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
-		text-align: left;
 	}
 
 	h3 {
@@ -137,6 +128,7 @@
 
 	a {
 		text-decoration: none;
+		color: inherit;
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
@@ -165,93 +157,39 @@
 	}
 
 	code {
-		padding: 2px 4px;
-		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-		font-size: 10pt;
-		color: $code-text-color;
-		background-color: $code-bg-color;
-		border-radius: 0.3rem;
+		background: rgba(0, 0, 0, 0.05);
+		border-color: rgba(0, 0, 0, 0.2);
+		border-radius: 4px;
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		padding: 0.25em 0.325em;
 	}
 
 	pre {
-		padding: 0.8rem;
-		margin-top: 0;
-		margin-bottom: 0;
-		font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-		color: $code-text-color;
-		word-wrap: normal;
-		background-color: $code-bg-color;
-		border: solid 1px $border-color;
-		border-radius: 0.3rem;
-
-		> code {
-			padding: 0;
-			margin: 0;
-			font-size: 10pt;
-			color: $code-text-color;
-			word-break: normal;
-			white-space: pre;
-			background: transparent;
-			border: 0;
-		}
-	}
-
-	.highlight {
-		margin-bottom: 1rem;
-
-		pre {
-			margin-bottom: 0;
-			word-break: normal;
-		}
-	}
-
-	.highlight pre,
-	pre {
-		padding: 0.8rem;
-		overflow: scroll;
-		font-size: 0.9rem;
-		line-height: 1.45;
-		border-radius: 0.3rem;
 		-webkit-overflow-scrolling: touch;
-	}
-
-	pre code,
-	pre tt {
-		display: inline;
-		max-width: initial;
-		padding: 0;
-		margin: 0;
-		overflow: initial;
-		line-height: inherit;
-		word-wrap: normal;
-		background-color: transparent;
-		border: 0;
-
-		&:before,
-		&:after {
-			content: normal;
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		tab-size: 4;
+		margin: 0 0 2em 0;
+		code {
+			display: block;
+			line-height: 1.5;
+			padding: 0.75em 1em;
+			overflow-x: auto;
 		}
 	}
 
 	blockquote {
-		padding: 0 1rem;
-		margin-left: 0;
-		color: $blockquote-text-color;
-		border-left: 0.3rem solid $border-color;
-
-		> :first-child {
-			margin-top: 0;
-		}
-
-		> :last-child {
-			margin-bottom: 0;
-		}
+		margin-left: 1em;
+		border-left: solid 0.5em #ddd;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
 	}
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
-	
+
 	dl {
 		dt {
 			font-weight: 300;
@@ -261,19 +199,10 @@
 			margin-left: 1em
 		}
 	}
-	
+
 	br.clear {
 		clear: both;
 	}
-	
-	hr {
-		height: 2px;
-		padding: 0;
-		margin: 1rem 0;
-		background-color: $hr-border-color;
-		border: 0;
-	}
-}
 
 /* Sections/Article */
 
@@ -356,44 +285,6 @@
 				margin: 0 auto;
 				width: auto;
 			}
-		}
-	}
-
-/* Table */
-
-	table {
-		width: 100%;
-		text-align: left;
-		overflow: auto;
-		-webkit-overflow-scrolling: touch;
-
-		tbody {
-			tr {
-				&:nth-child(2n+2) {
-					background: #f4f4f4;
-				}
-			}
-		}
-
-		td {
-			padding: 0.5rem 1rem;
-			border: 1px solid $table-border-color;
-		}
-
-		th {
-			text-align: left;
-			padding: 0.5em 1em 0.5em 1em;
-			color: #fff;
-			background: #222729 url('images/overlay.png');
-		}
-
-		thead {
-			background: #444;
-			color: #fff;
-		}
-
-		tfoot {
-			background: #eee;
 		}
 	}
 
@@ -491,6 +382,41 @@
 
 		::-moz-focus-inner {
 			border: 0;
+		}
+	}
+
+/* Table */
+
+	table {
+		width: 100%;
+		text-align: left;
+
+		tbody {
+			tr {
+				&:nth-child(2n+2) {
+					background: #f4f4f4;
+				}
+			}
+		}
+
+		td {
+			padding: 0.5em 1em 0.5em 1em;
+		}
+
+		th {
+			text-align: left;
+			padding: 0.5em 1em 0.5em 1em;
+			color: #fff;
+			background: #222729 url('images/overlay.png');
+		}
+
+		thead {
+			background: #444;
+			color: #fff;
+		}
+
+		tfoot {
+			background: #eee;
 		}
 	}
 
@@ -717,7 +643,7 @@
 	#main {
 		margin-left: 375px;
 		> section {
-			text-align: justify;
+			text-align: center;
 		}
 		> article {
 			text-align: left;
