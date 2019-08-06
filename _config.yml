@@ -35,7 +35,7 @@ subtitle: En guide till programmering
 #description: 
 #author: Your Incredible Name
 #email: your-email@example.com
-avatar: assets/images/avatar.jpg
+avatar: assets/images/favicon.png
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/test" # the subpath of your site, e.g. /blog
