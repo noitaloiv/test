@@ -221,6 +221,24 @@ Beskrivning | Skriv en metod, <code>LongestWord</code>, som tar emot en mening o
 
 ---
 
+Uppgift 25 | "Enkel" addition
+----------|----------
+Beskrivning | Skriv en metod, <code>SimpleAdd</code>, som tar emot ett heltal (n) och returnerar summan av alla heltal från 1 till och med n. Dvs. att om n är 12 så ska 78 returneras (1+2+3...11+12).
+
+---
+
+Uppgift 26 | ToggleString
+----------|----------
+Beskrivning | Skriv en metod, <code>ToggleString</code>, som tar emot en sträng och returnerar samma sträng efter att ha bytt ut alla gemener mot versaler och versal mot gemener. Dvs. att givet strängen "HelLo wORld" så ska "hELlO WorLD" returneras. Strängen måste vara längre än 1 tecken men mindre än 100 tecken, om detta krav inte uppfylls så ska en tom sträng returneras.
+
+---
+
+Uppgift 27 | "String slicing"
+----------|----------
+Beskrivning | Skriv en metod som tar emot en sträng samt ett heltal (<code>n</code>) och returnerar alla angränsande delsträngar (<code>substrings</code>) av längden <code>n</code> i den ordning som de anges. Dvs. att givet strängen <code>49142</code> och heltalet 3 så får vi följande delsträngar:<br><br><code>"491"</code><br><code>"914"</code><br><code>"142"</code><br><br>Om vi stället ber om delsträngar med 4 tecken så får vi:<br><br><code>"4914"</code><br><code>"9142"</code><br><br>Notera att längden på delsträngarna måste vara större än 1 och kan självfallet inte vara längre än själva strängen.<br><br>***TIPS!*** Nyttja de inbyggda sträng-metoderna <code>Concat</code> samt <code>Substring</code>.
+
+---
+
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
 </script>
