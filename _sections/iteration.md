@@ -27,9 +27,9 @@ for(int i = 0; i < arr.Length; i++){
 **OBS!** I ovan kodexempel så är det värt att lägga märke till följande aspekter:
 
 + Syntaxen för en <code>for-loop</code>. 
-  - Vi skapar först en <code>int</code> som representerar indexpositionen i arrayen och tilldelar den värdet 0 (för att starta på den första positionen i arrayen). 
-  - Vi säger därefter att loopen ska fortsätta köras __tills dess att__ <code>i</code> inte längre är mindre än 10 (<code>i < arr.Length</code>). 
-  - Därefter så exekveras koden i loopen så att vi under den första iterationen får <code>arr[0] == search</code>. Då detta inte stämmer så hoppar vi upp till <code>i++</code> som kommer att öka värdet på <code>i</code> så att vi under nästa iteration istället får <code>arr[1] == search</code> osv.
+  + Vi skapar först en <code>int</code> som representerar indexpositionen i arrayen och tilldelar den värdet 0 (för att starta på den första positionen i arrayen). 
+  + Vi säger därefter att loopen ska fortsätta köras __tills dess att__ <code>i</code> inte längre är mindre än 10 (<code>i < arr.Length</code>). 
+  + Därefter så exekveras koden i loopen så att vi under den första iterationen får <code>arr[0] == search</code>. Då detta inte stämmer så hoppar vi upp till <code>i++</code> som kommer att öka värdet på <code>i</code> så att vi under nästa iteration istället får <code>arr[1] == search</code> osv.
 + Egenskapen <code>Length</code> hos arrayer som tillåter oss att hämta längden hos en array. I ovan fall så skulle vi därför få 10.
 
 ## Uppgiftsförteckning ##
