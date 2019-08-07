@@ -103,6 +103,68 @@ void PrintNumbers(){
 
 {::options parse_block_html="false" /}
 
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 3</th>
+      <th>Strukturerad utskrift II</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+        Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster: <br><br>
+        <table class="examples">
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp">
+        *
+        **
+        ***
+        ****
+        *****
+        </pre>
+          </td>
+    </tr>
+          </tbody>
+        </table>
+<br><br>**TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
+  </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Let's see some code!</summary>
+  
+```cs
+void NestedPrint(){
+  for(int i = 1; i <= 5; i++)
+  {
+    for(int j = 1; j <= i; j++)
+    {  
+      Console.Write("*");
+    }
+    // Används för att "gå till nästa rad", dvs. en break-line.
+    Console.Write("\n"); // Går även att byta ut mot Console.WriteLine();
+  }
+}
+```
+</details>
+
+{::options parse_block_html="false" /}
+
+
 Uppgift 3 | Strukturerad utskrift II
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster:<br><br> <code>*</code> <br> <code>**</code> <br> <code>***</code> <br> <code>****</code> <br> <code>*****</code> <br><br> **TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
