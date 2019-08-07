@@ -124,7 +124,7 @@ void PrintNumbers(){
   <tbody>
     <tr>
       <td>
-        <pre lang="csharp">
+        <pre lang="csharp" class="code-example">
         *
         **
         ***
