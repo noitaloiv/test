@@ -32,12 +32,13 @@ for(int i = 0; i < arr.Length; i++){
   + Därefter så exekveras koden i loopen så att vi under den första iterationen får <code>arr[0] == search</code>. Då detta inte stämmer så hoppar vi upp till <code>i++</code> som kommer att öka värdet på <code>i</code> så att vi under nästa iteration istället får <code>arr[1] == search</code> osv.
 + Egenskapen <code>Length</code> hos arrayer som tillåter oss att hämta längden hos en array. I ovan fall så skulle vi därför få 10.
 
-## Uppgiftsförteckning ## 
-<br>
+## Uppgiftsförteckning ##
 
 Uppgift 1 | De första 100 positiva heltalen
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>PrintNumbers</code>, som skriver ut alla positiva heltal från 1 till och med 50.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -54,11 +55,11 @@ void PrintNumbers(){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 2 | Strukturerad utskrift
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>PrintNumbersTwo</code>, som skriver ut alla positiva heltal från 1 till och med 50. Metoden ska skriva ut heltalen i intervaller av 10. Dvs. att utskriften ska följa formatet nedan:<br><br>1, 2, 3, ..., 10<br>11, 12, 13, ..., 20<br> ... <br> 41, 42, 43, ..., 50
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -102,11 +103,11 @@ void PrintNumbers(){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 3 | Strukturerad utskrift II
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster:<br><br> <code>*</code> <br> <code>**</code> <br> <code>***</code> <br> <code>****</code> <br> <code>*****</code> <br><br> **TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -129,11 +130,11 @@ void NestedPrint(){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 4 | Strukturerad utskrift III
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br>&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br>&nbsp;&nbsp;&nbsp; <code>***</code> <br>&nbsp;&nbsp; <code>****</code> <br>&nbsp; <code>*****</code>
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -156,11 +157,11 @@ void NestedPrintTwo(){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 5 | Strukturerad utskrift IV
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br><br>Givet heltalet 7 som input:<br> 1 <br> 22 <br> 333 <br> 4444 <br> 55555 <br style="display: block; content: " "; margin-top: -18px;"> 666666 <br style="display: block; content: " "; margin-top: -18px;"> 7777777
+Beskrivning | Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br><br>Givet heltalet 7 som input:<br> 1 <br> 22 <br> 333 <br> 4444 <br> 55555 <br> 666666 <br> 7777777
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -182,11 +183,11 @@ void NestedPrintThree(int iterations){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 6 | Strukturerad utskrift V
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>NestedPrintFour</code>, som tar emot ett heltal som användaren anger och skriver ut följande mönster:<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br> &nbsp;&nbsp;&nbsp;&nbsp; <code>***</code> <br> &nbsp;&nbsp;&nbsp; <code>*****</code> <br>&nbsp;&nbsp; <code>*******</code> <br>&nbsp; <code>*********</code> <br><br> **Notera** att enbart udda antal <code>*</code> skrivs ut per rad. Antalet rader som skrivs ut bestäms av det heltal som tas emot som argument.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -208,11 +209,11 @@ void NestedPrintFour(int iterations){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 7 | Summan av alla heltal mellan 1-100
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>GaussianSum</code>, som skriver ut summan av alla positiva heltal från 1 till och med 100. <br>**OBS!** Resultatet av beräkningen är 5050, men detta ska beräknas i metoden. Du ska mao. inte hårdkoda resultatet och skriva ut det.
+Beskrivning | Skriv en metod, <code>GaussianSum</code>, som skriver ut summan av alla positiva heltal från 1 till och med 100. <br><br>**OBS!** Resultatet av beräkningen är 5050, men detta ska beräknas i metoden. Du ska mao. inte hårdkoda resultatet och skriva ut det.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -237,11 +238,11 @@ void GaussianSum(){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 8 | Beräkna medelvärdet
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>Average</code>, som beräknar medelvärdet av heltal som anges av användaren. Metoden ska fortsätta ta emot heltal tills dess att användaren anger <code>-1</code>. När detta sker så beräknas medelvärdet vilket metoden sedan skriver ut __och__ returnerar. <br><br>Ett körexempel av metoden skulle kunna efterlikna nedan interaktion:<br><br> Ange ett heltal: 50 <br><br> Ange ett heltal: 11 <br><br> Ange ett heltal: 116 <br><br> Ange ett heltal: -1 <br><br> Medelvärdet är: 59
+Beskrivning | Skriv en metod, <code>Average</code>, som beräknar medelvärdet av heltal som anges av användaren. Metoden ska fortsätta ta emot heltal tills dess att användaren anger <code>-1</code>. När detta sker så beräknas medelvärdet vilket metoden sedan skriver ut ***och*** returnerar. <br><br>Ett körexempel av metoden skulle kunna efterlikna nedan interaktion:<br><br> Ange ett heltal: 50 <br><br> Ange ett heltal: 11 <br><br> Ange ett heltal: 116 <br><br> Ange ett heltal: -1 <br><br> Medelvärdet är: 59
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -281,11 +282,11 @@ int Average()
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 9 | Fakultet (matematik)
 ----------|----------
 Beskrivning | Skriv en metod, <code>CalculateFactorial</code>, som tar emot ett heltal som argument och skriver ut fakulteten hos det talet. <br><br> **OBS!** För att beräkna fakulteten hos ett tal så beräknar man produkten hos alla heltal - från och med 1 - till och med heltalet i fråga. Dvs. att om vi exempelvis vill beräkna fakulteten för heltalet 5 så skulle det se ut enligt: !5 = 1 * 2 * 3 * 4 * 5 vilket ger oss 120. __Notera__ att heltalet i fråga måste vara större än 0, annars kan ingen beräkning ske.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -307,11 +308,11 @@ void CalculateFactorial(int input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 10 | Rekursiv metod (Fakultet II)
 ----------|-------------------------------
 Beskrivning | En rekursiv metod är en metod som anropar sig själv tills dess att ett s.k. "basfall" uppnås. Denna typ av metod är mer vanligt förekommande i funktionella språk, men det är fullt möjligt att nyttja dem även i <code>C#</code>. Fördelarna med denna typ av metoder är att de resulterar i mindre kod och oftast är mer resurseffektiva (dvs. snabbare). Nackdelarna är det kan vara svårt att förstå sig på processen samt att det är betydligt svårare att felsöka dem i jämförelse med vanlig iteration.<br><br>Ett exempel på rekursion skulle vara följande:<br> <code>string Rec(int n) {<br>// Kontrollera att heltalet är ett positivt tal.<br>&nbsp; if (n <= 0)<br>&nbsp;&nbsp; return n + " must be higher than -1";<br>&nbsp; else if (n > 9){<br>&nbsp;&nbsp; Console.Write(n);<br>&nbsp;&nbsp; return "Completed"; // När vi har nått 10 så vill vi avsluta<br>&nbsp; }<br>&nbsp; else<br>&nbsp;{<br>&nbsp;&nbsp; Console.Write(n + ", ");<br>&nbsp;&nbsp; return Rec(n + 1); // Rekursivt anrop. 1 + 1 -> 2 + 1 osv.<br>&nbsp; }<br>}</code> <br><br> Där metoden <code>Rec</code> räknar från det heltal som skrivs in till och med 10 och skriver ut följden i konsolen.<br><br> Uppgiften är att försöka lösa Uppgift 9 (Fakultet) på nytt fast genom att nyttja rekursion istället.<br><br>**OBS** att denna uppgift är svår och egentligen faller utanför kursens ramar (dvs. att innehållet är överkurs). Tanken med uppgiften är att introducera begreppet rekursion samt tillhandahålla möjligheten att testa på det.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -329,11 +330,11 @@ void CalculateFactorial(int input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 11 | Primtal?
 ----------|----------
 Beskrivning | Skriv en metod, <code>IsPrime</code>, som tar emot ett heltal och avgör om heltalet är ett primtal eller ej. <br><br> Ett primtal är ett heltal som är större än 1 och som enbart är jämnt delbart med 1 eller sig självt. <br><br> Exempelvis så är 2, 3 och 5 primtal medan 4 och 6 inte är det då de även är jämnt delbara med 2. <br><br> **TIPS!** Nyttja modulus och iteration för att kontrollera om det finns fler än två (<code>1 resp. talet självt</code>) faktorer. Tänk på att jämna tal, utöver <code>2</code>, inte kan vara primtal.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -358,11 +359,11 @@ bool IsPrime(int input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 12 | Alla primtal upp till...
 ----------|----------
 Beskrivning | Skriv en metod, <code>PrimeNumbers</code>, som tar emot ett heltal och skriver ut samtliga primtal från 1 upp till och med det heltalet. <br><br> **TIPS!** Nyttja din implementation från Uppgift 10 för att lösa uppgiften.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -386,11 +387,11 @@ void PrimeNumbers(int input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 13 | Fibonacci
 ----------|----------
 Beskrivning | Skriv en metod, <code>Fibonacci</code>, som tar emot ett heltal och skriver ut tal i Fibonnaci-sekvensen. Antalet tal som skrivs ut avgörs av det angivna heltalet. <br><br> Ett Fibonnaci-tal är summan av de två föregående talen i en sekvens av heltal. Exempelvis är de första 5 Fibonnaci-talen: 0 1 1 2 3. Vi kan i denna talföljd identifiera det tidigare nämnda mönstret givet <code>0+1 = 1</code>, <code>1+1 = 2</code>, <code>1+2 = 3</code> osv.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -428,11 +429,11 @@ void Fibb(int input)
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 14 | Multiplikationstabellen för X
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>CalculateMultTable</code>, som tar emot ett heltal som argument och returnerar en array av heltal. Metoden ska beräkna multiplikationstabellen (från 1 till och med 10) för heltalet och bygga upp en array innehållandes denna multiplikationstabell. <br><br>Givet exempelvis heltalet 3 så ska en array returneras som innehåller följande värden:<br>[3, 6, 9, 12, 15, 18, 21, 24, 27, 30].
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -453,11 +454,11 @@ int[] CalculateMultTable(int input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 15 | Utskrift av arrayer
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>PrettyPrint</code>, som tar emot en array av heltal som argument och inte returnerar någonting. Problemet med Uppgift 1 är att vi inte kan skriva ut innehållet i den array som skickas tillbaka i nuläget. Om vi exempelvis nyttjar <code>Console.WriteLine(CalculateMultTable(3));</code> så kommer vi enbart att skriva ut dess datatyp snarare än innehållet i arrayen. För att skriva ut innehållet så behöver man istället peka på vilket element man specifikt vill skriva ut och det är detta <code>PrettyPrint</code> är ämnad att utföra. <br><br>Metoden ska skriva ut en array enligt följande format: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50<br><br>**NOTERA** att det alltså inte ska förekomma ett kommatecken efter det sista värdet. Metoden ska även kunna skriva ut innehållet i en array av heltal oavsett dess storlek.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -477,11 +478,11 @@ void PrettyPrint(int[] input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 16 | Utskrift av arrayer (baklänges)
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>PrettyPrintReversed</code>, som tar emot en array av heltal som argument och skriver ut innehållet i arrayen baklänges. <br><br>Baklänges innefattar att om arrayen innehåller värdena [1, 3, 9] så ska utskriften vara [9, 3, 1]. <br> Metoden ska skriva ut en array enligt följande format: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50<br><br>**NOTERA** att det alltså inte ska förekomma ett kommatecken efter det sista värdet. Metoden ska även kunna skriva ut innehållet i en array av heltal oavsett dess storlek.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -501,11 +502,11 @@ void PrettyPrintReversed(int[] input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 17 | Största värdet i en array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>HighestNumber</code>, som tar emot en array av heltal som argument och returnerar det största värdet i arrayen.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -525,11 +526,11 @@ int HighestNumber(int[] input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 18 | Näst största värdet i en array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>SecondHighestNumber</code>, som tar emot en array av heltal som argument och returnerar det näst största värdet i arrayen. <br><br> **TIPS!** Reflektera kring hur implementationen i Uppgift 17 kan anpassas för att hämta det näst största värdet istället för det största.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -552,11 +553,11 @@ int SecondHighestNumber(int[] input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 19 | Medelvärdet i en array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>AverageNumber</code>, som tar emot en array av heltal som argument och returnerar medelvärdet av alla värden i arrayen.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -575,11 +576,11 @@ int AverageNumber(int[] input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 20 | Summering av arrayer
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>SumArrays</code>, som tar emot två arrayer av heltal som argument (<code>arrayA och arrayB</code>) och returnerar en array - <code>arrayC</code> - som innehåller summan av talen på resp. position. Dvs. att om värdet på position 0 i <code>arrayA</code> är 5 och värdet på position 0 i <code>arrayB</code> är 13 så ska position 0 i <code>arrayC</code> innehålla värdet 18 osv.<br><br> **OBS!** Metoden kan utgå från att arrayerna alltid är av samma längd.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -599,11 +600,11 @@ int[] SumArrays(int[] arrayA, int[] arrayB){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 21 | Count
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>Count</code>, som tar emot en array av heltal och ett heltal som argument och returnerar antalet gånger det heltalet förekommer i arrayen. <br><br> Dvs. att om arrayen innehåller elementen [6, 3, 3] och vi söker efter 3 så ska 2 returneras, om arrayen innehåller [6, 4, 1] så ska 0 returneras osv.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -623,11 +624,11 @@ int Count(int[] arr, int n){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 22 | PrintUniques
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>PrintUniques</code>, som tar emot en array av heltal som argument och skriver ut alla unika värden i arrayen. <br><br> Dvs. att om arrayen innehåller elementen [6, 3, 3] så ska 6 skrivas ut, om arrayen innehåller [6, 4, 1] så ska 6, 4 och 1 skrivas ut. Om arrayen __inte__ innehåller några unika värden så ska <code>"There are no unique values in the array."</code> skrivas ut. <br><br> **TIPS!** Nyttja din implementation av metoden <code>Count</code> från Uppgift 20.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -654,11 +655,11 @@ void PrintUniques(int[] arr)
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 23 | Sort array
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>SimpleSort</code>, som tar emot en array av heltal som argument och sorterar dem enligt storleksordning. <br><br> Om arrayen exempelvis innehåller elementen [6, 3, 1, 8, 4, 3] så ska metoden returnera en array som innehåller [1, 3, 3, 4, 6, 8].<br><br> **TIPS!** Nyttja nästlade loopar för att lösa uppgiften.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -686,11 +687,11 @@ void SimpleSort(int[] arr)
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 24 | Remove duplicates
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>RemoveDuplicates</code>, som tar emot en array av heltal som argument och tar bort alla dubbletter i arrayen. Metoden ska slutligen sortera värdena i storleksordning. Metoden ska nyttja en stödmetod, <code>IsDuplicate</code> som tar emot ett heltal och en array av heltal. <code>IsDuplicate</code> avgör sedan om heltalet i fråga förekommer flera gånger i arrayen.<br><br> Om arrayen exempelvis innehåller elementen [6, 3, 1, 8, 4, 3] så ska metoden returnera en array som innehåller [1, 3, 4, 6, 8].<br><br> **TIPS!** Börja med att implementera metoden <code>IsDuplicate</code>. Denna implementation kommer att påminnna om implementationen av <code>Count</code> (Uppgift 21). <br> För att skriva <code>RemoveDuplicates</code> så rekommenderas det att du nyttjar nästlade loopar och implementationen i Uppgift 23 för att lösa uppgiften. Tänk även på att arrayer är statiska vilket innefattar att du __måste__ skapa en ny array med korrekt antal indexpositioner efter borttagandet.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -720,5 +721,3 @@ int[] RemoveDuplicates(int[] arr)
 </details>
 
 {::options parse_block_html="false" /}
-
----
