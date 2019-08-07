@@ -250,14 +250,15 @@ p, ul, ol, dl, table {
 .examples {
 	margin-top: 0;
 	margin-bottom: 0;
-	white-space: normal;
+	white-space: pre-line;
 }
 
 .code-example {
 	text-align: left;
 	padding: 0;
-	margin: -2em;
+	margin: 0;
 	line-height: 0;
+	white-space: pre-line;
 }
 
 dl {
