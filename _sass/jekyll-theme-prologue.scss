@@ -132,8 +132,8 @@ em, i {
 
 a {
 	text-decoration: none;
-	color: inherit;
-	border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+	color: #2200CC;
+	border-bottom: dotted 1px rgba(0, 0, 0, 100);
 	@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 	outline: 0;
 
@@ -179,7 +179,6 @@ pre {
 	tab-size: 4;
 	background-color: $code-bg-color;
 	border: solid 1px $border-color;
-	margin: 0 0 2em 0;
 	border-radius: 0.3rem;
 	code {
 		text-align: left;
@@ -450,6 +449,7 @@ br.clear {
 	table {
 		width: 100%;
 		text-align: left;
+		margin-top: 1em;
 
 		tbody {
 			tr {
