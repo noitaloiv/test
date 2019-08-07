@@ -191,6 +191,26 @@ pre {
 	}
 }
 
+.highlight {
+	margin-bottom: 1rem;
+	text-align: left;
+
+	pre {
+		margin-bottom: 0;
+		word-break: normal;
+	}
+}
+
+.highlight pre,
+pre {
+	padding: 0.8rem;
+	overflow: scroll;
+	font-size: 0.9rem;
+	line-height: 1.45;
+	border-radius: 0.3rem;
+	-webkit-overflow-scrolling: touch;
+}
+
 pre code,
 pre tt {
 	display: inline;
