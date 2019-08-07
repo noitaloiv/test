@@ -71,6 +71,8 @@ Uppgift 1 | StringLength
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>StringLength</code>, som tar emot en sträng som argument och beräknar längden på strängen (antalet tecken). Då en <code>string</code> kan, som tidigare nämnt, tolkas som en array av bokstäver så kan man självfallet nyttja egenskapen <code>Length</code> precis som vi har gjort i tidigare uppgifter men detta är inte syftet sett till uppgiften. Metoden <code>StringLength</code> ska dock beräkna längden via iteration istället.<br><br>**TIPS!** Nyttja en <code>foreach</code>-loop för att iterera över strängen.
 
+---
+
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Let's see some code!</summary>
@@ -88,8 +90,6 @@ int StringLength (string input){
 </details>
 
 {::options parse_block_html="false" /}
-
----
 
 Uppgift 2 | Reverse string
 ----------|-------------------------------
