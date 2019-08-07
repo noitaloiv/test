@@ -101,6 +101,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h2 {
 	font-size: 2em;
 	letter-spacing: -1px;
+	text-align: left;
 }
 
 h3 {
@@ -180,6 +181,7 @@ pre {
 	margin: 0 0 2em 0;
 	border-radius: 0.3rem;
 	code {
+		text-align: left;
 		display: block;
 		line-height: 1.5;
 		padding: 0.75em 1em;
@@ -197,6 +199,7 @@ pre tt {
 	margin: 0;
 	overflow: initial;
 	line-height: inherit;
+	text-align: left;
 	word-wrap: normal;
 	background-color: transparent;
 	border: 0;
