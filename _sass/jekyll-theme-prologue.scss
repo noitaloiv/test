@@ -252,6 +252,10 @@ p, ul, ol, dl, table {
 	margin-bottom: 0;
 	margin-right: 50%;
 	width: 50%;
+	
+	td {
+		padding: 0;
+	}
 }
 
 .code-example {
