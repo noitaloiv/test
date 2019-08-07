@@ -48,8 +48,6 @@ Uppgift 7 | Hotellbokning
 ----------|----------
 Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka rum som är bokade samt vilka som är lediga. Skriv först ett program (eller en metod) som läser in "bokat" kontra "ledigt" i en array som består utav 15 platser. Varje plats i arrayen motsvarar ett rum på hotellet.<br><br>b. Utöka sedan programmet genom att lägga till möjligheten att genomföra bokningar. Vid en bokning så ska det första lediga rummet i rumslistan (arrayen) identifieras och sedan ändra värde till "bokat".<br><br>c. Utöka sedan programmet ytterligare genom att låta användaren ange om ett rum önskas bokas eller avbokas. Om rummet ska bokas kan implementationen i b) nyttjas,  om en avbokning ska ske så behöver vi dock kunna hantera detta. Vid en avbokning så ska rumsnummer anges och efter avbokning så ska värdet i arrayen ändras till "ledigt".
 
----
-
 <table>
   <thead>
     <tr>
@@ -84,8 +82,6 @@ Beskrivning | Inom en hotellverksamhet önskar man få överblick över vilka ru
     </tr>
   </tbody>
 </table>
-
----
 
 Uppgift 9 | BMI kalkylator
 ----------|----------
