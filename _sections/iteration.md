@@ -114,7 +114,7 @@ void PrintNumbers(){
     <tr>
       <td>Beskrivning</td>
       <td>
-        Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster: <br><br>
+        Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster: <br>
         <table class="examples">
   <thead>
     <tr>
@@ -135,7 +135,7 @@ void PrintNumbers(){
     </tr>
           </tbody>
         </table>
-<br><br>**TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
+**TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
   </td>
     </tr>
   </tbody>
