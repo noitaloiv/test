@@ -7,11 +7,12 @@ order: 3
 Gällande variabler så behöver vi först och främst förstå att det finns olika typer av data. Vi har exempelvis <code>int</code> för numeriska värden och <code>string</code> för text.
 
 ## Uppgiftsförteckning ##
-<br>
 
 Uppgift 1 | Datatyper
 ----------|-------------------------------
 Beskrivning | Deklarera en datatyp som hanterar värden av typen: <br><br> <sub>-Sant/falskt</sub> <br> <sub>-Heltal</sub><br><sub>-Flyttal</sub><br><sub>-Tecken</sub><br><sub>-Datum</sub><sub>-Decimaltal</sub><br><sub>-Text</sub>
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -30,11 +31,11 @@ string s;
 </details>
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 2 | Att deklarera gentemot att instansiera
 ----------|-----------------------------------
 Beskrivning | Deklarera en variabel av resp. datatyp (<code>int</code>, <code>string</code>, <code>char</code>, <code>bool</code>) och instansiera sedan resp. variabel genom att tilldela dem ett värde.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -57,11 +58,11 @@ b = true;
 </details>
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 3 | Hello, Name!
 ----------|-------------------------------
 Beskrivning | Skriv ett program som visar ditt namn och en fullständig adress (såsom du skulle se den på ett brev). Programmet behöver inte läsa in input från användaren.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -75,11 +76,11 @@ Console.WriteLine("Your full adress is: Kalasgatan 123, 113 55 Uppsala");
 </details>
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 4 | Modifiering av datatyper - Konvertering
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in en siffra från en användare och sedan konverterar värdet till ett heltal. <br><br> TIPS! Tänk på att ALLT som läses in med <code>Console.ReadLine()</code> är av datatypen <code>string</code>. För att ändra detta till ett heltal så behöver man konvertera värdet. Detta kan ske på olika sätt, men försök dig på följande: <code>Convert.ToInt32()</code> samt <code>int.TryParse()</code>. Om du är intresserad av att läsa mer kring hur dessa metoder särskiljer sig så kan du kika på följande länk: [Parse vs ConvertToInt32 vs TryParse](http://www.dotnetstudy.com/int-parse-vs-convert-toint32-vs-int-tryparse?id=32)
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -99,11 +100,11 @@ Console.WriteLine(y);
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 5 | Konvertering med olika datatyper
 ----------|-------------------------------
 Beskrivning | I uppgift 4 täcks hur man konverterar från en <code>string</code> till en <code>int</code> men det finns såklart flera olika metoder beroende på datatyp. Testa på att konvertera enligt nedan: <br><br> Från <code>int</code> till <code>string</code> <br> Från <code>float</code> till <code>int</code> <br> Från <code>double</code> till <code>string</code> <br> Från <code>float</code> till <code>string</code>.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -131,11 +132,11 @@ string sss = f.ToString();
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 6 | Olika typer av konvertering
 ----------|-------------------------------
 Beskrivning | Man kan även konvertera på olika sätt. Det finns exempelvis s.k. explicit konvertering och implicit konvertering samt konvertering utan att anropa <code>Convert-klassen</code> (dvs. exempelvis <code>Convert.ToInt32</code>). <br> Explicit konvertering är det har nyttjats i tidigare uppgifter. Dvs. exempelvis genom metoder såsom <code>Convert.ToInt32</code> eller <code>int.TryParse</code>. Vi säger helt enkelt tydligt att vi vill genomföra konvertering. <br> Implicit konvertering tillåter oss att exempelvis gå från en <code>int</code> till en <code>double</code> utan att ange det då båda datatyper är av numerisk karaktär. <br> Det är även möjligt att genomföra explicit konvertering utan att ange en metod för konverteringen. Detta uppnås genom att placera datatypen som variabeln ska konverteras till - inom parenteser - framför variabeln. Testa på dessa olika typer av konvertering och ifall du är intresserad av att läsa mer om det så kan följande länk nyttjas: [Olika typer av konvertering C#](https://code-maze.com/csharp-basics-type-conversion/)
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -160,11 +161,11 @@ double d = (double)x;
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 7 | Summera två heltal
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in två heltal från användaren, summerar heltalen och skriver ut summan.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -181,11 +182,11 @@ Console.WriteLine(sum);
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 8 | Division av heltal
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in två heltal och sedan beräknar samt skriver ut kvoten. Utöka sedan programmet så att det även läser in två decimaltal och sedan beräknar samt skriver ut kvoten för divisionen mellan dessa tal.<br><br> Notera skillnaden som uppstår mellan de två beräkningarna då det är viktigt att vara medveten om denna diskrepans vid exempelvis beräkningar av procent.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -211,11 +212,11 @@ double korrektKvot = (double)x / (double)y; // Ger 3.33 om x är 10 och y är 3.
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 9 | Grundläggande matematik
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in två heltal från användaren och som sedan skriver ut differansen mellan talen (subtraktion), produkten mellan talen (multiplikation) och kvoten mellan talen (division).
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -238,11 +239,11 @@ Console.WriteLine(div);
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 10 | Byta plats på värden
 ----------|-------------------------------
 Beskrivning | Skriv ett program som byter värdet hos två variabler av datatypen heltal och skriver ut variablernas nya värden. Exempel på interaktion med programmet: <br><br> Innan byte: <br> Input 1: 3 <br> Input 2: 11 <br><br> Efter byte: <br> Input 1: 11 <br> Input 2: 3
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -262,11 +263,11 @@ Console.WriteLine("Second input contains: " + second);
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 11 | Korrekt beräkning
 ----------|-------------------------------
 Beskrivning | Skriv ett program som tar emot tre heltal (x, y & z) och sedan utför beräkningar enligt följande: (x + y) * z resp. x * y + y * z. Programmet ska sedan skriva ut resultatet för resp. beräkning. Exempel på interaktion med programmet: <br><br> x: 3 <br> y: 11 <br> z: 2 <br><br> Uträkning 1: 28 <br> Uträkning 2: 55 
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -286,11 +287,11 @@ Console.WriteLine("Second calc: " + sum2);
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 12 | Beräkna hastighet
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in avstånd och tid som input och sedan räknar ut hastighet i km/h. <br><br> **TIPS:** Använd datatypen float. Formeln som nyttjas för att beräkna hastighet (givet tid och sträcka) är <code> v = s / t </code> där <code>s</code> är sträckan och <code>t</code> är antalet timmar.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -307,11 +308,11 @@ float speed = distance / time;
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 13 | Beräkna hastighet
 --|--
 Beskrivning | Skriv ett program som läser in ett förnamn och ett efternamn. Konkatenera namnen genom att sätta ihop efternamnet med förnamnet. Tänkt på att det utskrivna måste vara läsbart för datoranvändaren. Se nedan. <br><br> Input för förnamn: Anon <br> Input för efternamn: Nym <br> Utskrift: Nym, Anon. <br><br> **TIPS:** För att kontatenera ("sätta ihop") strängar så kan man nyttja operatorn för addition (+) mellan de strängar man vill konkatenera.
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -328,11 +329,11 @@ Console.WriteLine(lName + ", " + fName + ".");
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 14 | Modulus
 --|--
 Beskrivning | Skriv ett program som läser in ett heltal och dividerar det med 2. Programmet ska sedan skriva ut "resten" (det som blev över efter divisionen). <br> Exempel på interaktion med programmet: <br> Ange ett heltal: 5 <br> Resten efter division är: 1 <br><br> **TIPS:** Operatorn för Modulus är <code>%</code>. Anledningen till varför vi får 1 i ovan exempel beror på att 2 går i 5 två gånger (2+2=4) vilket lämnar oss med "resten" som är en 1:a. 
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -347,5 +348,3 @@ Console.WriteLine("Resten efter division är: " + d);
 </details>
 
 {::options parse_block_html="false" /}
-
----
