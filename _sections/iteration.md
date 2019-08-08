@@ -750,9 +750,9 @@ void SimpleSort(int[] arr)
 
 {::options parse_block_html="false" /}
 
-Uppgift 24 | Remove duplicates
+Uppgift 24 | IsDuplicate
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>RemoveDuplicates</code>, som tar emot en array av heltal som argument och tar bort alla dubbletter i arrayen. Metoden ska slutligen sortera värdena i storleksordning. Metoden ska nyttja en stödmetod, <code>IsDuplicate</code> som tar emot ett heltal och en array av heltal. <code>IsDuplicate</code> avgör sedan om heltalet i fråga förekommer flera gånger i arrayen.<br><br> Om arrayen exempelvis innehåller elementen [6, 3, 1, 8, 4, 3] så ska metoden returnera en array som innehåller [1, 3, 4, 6, 8].<br><br> **TIPS!** Börja med att implementera metoden <code>IsDuplicate</code>. Denna implementation kommer att påminnna om implementationen av <code>Count</code> (Uppgift 21). <br> För att skriva <code>RemoveDuplicates</code> så rekommenderas det att du nyttjar nästlade loopar och implementationen i Uppgift 23 för att lösa uppgiften. Tänk även på att arrayer är statiska vilket innefattar att du __måste__ skapa en ny array med korrekt antal indexpositioner efter borttagandet.
+Beskrivning | Skriv en metod, <code>IsDuplicate</code>, som tar emot en array av heltal som argument samt ett heltal och avgör om heltalet förekommer fler än en gång i arrayen. <br><br> **TIPS!** Denna implementation kommer att påminnna om implementationen av <code>Count</code> (Uppgift 21).
 
 ---
 
@@ -761,24 +761,19 @@ Beskrivning | Skriv en metod, <code>RemoveDuplicates</code>, som tar emot en arr
 <details><summary markdown="span">Let's see some code!</summary>
   
 ```cs
-int[] RemoveDuplicates(int[] arr)
+bool RemoveDuplicates(int[] arr, int n)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if(!IsDuplicate(arr, arr[i]))
-        {
+        if (arr[i] == n)
             count++;
-        for(int j = i; j < arr.Length; j++)
-        {
-            if(arr[i] > arr[j])
-            {
-              temp = arr[j];
-              arr[j] = arr[i];
-              arr[i] = temp;
-            }
-        }
     }
+
+    if (count > 1)
+        return true;
+
+    return false;
 }
 ```
 </details>
