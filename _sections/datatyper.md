@@ -10,13 +10,13 @@ Gällande variabler så behöver vi först och främst förstå att det finns ol
 
 Uppgift 1 | Datatyper
 ----------|-------------------------------
-Beskrivning | Deklarera en datatyp som hanterar värden av typen: <br><br> <sub>-Sant/falskt</sub> <br> <sub>-Heltal</sub><br><sub>-Flyttal</sub><br><sub>-Tecken</sub><br><sub>-Datum</sub><sub>-Decimaltal</sub><br><sub>-Text</sub>
+Beskrivning | Deklarera en datatyp som hanterar värden av typen: <br> <sub>-Sant/falskt</sub> <br> <sub>-Heltal</sub><br><sub>-Flyttal</sub><br><sub>-Tecken</sub><br><sub>-Datum</sub><sub>-Decimaltal</sub><br><sub>-Text</sub>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
 
 ```cs
 bool b;
@@ -31,7 +31,7 @@ string s;
 </details>
 {::options parse_block_html="false" /}
 
-Uppgift 2 | Att deklarera gentemot att instansiera
+Uppgift 2 | Att deklarera vs. att instansiera
 ----------|-----------------------------------
 Beskrivning | Deklarera en variabel av resp. datatyp (<code>int</code>, <code>string</code>, <code>char</code>, <code>bool</code>) och instansiera sedan resp. variabel genom att tilldela dem ett värde.
 
@@ -39,7 +39,7 @@ Beskrivning | Deklarera en variabel av resp. datatyp (<code>int</code>, <code>st
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 // Deklarering av variablerna. Vi skapar dem och ger dem ett namn men inget värde.
@@ -66,7 +66,7 @@ Beskrivning | Skriv ett program som visar ditt namn och en fullständig adress (
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 Console.WriteLine("Hello, Anton!");
@@ -84,7 +84,7 @@ Beskrivning | Skriv ett program som läser in en siffra från en användare och 
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
    
 ```cs
 string input = Console.ReadLine();
@@ -108,7 +108,7 @@ Beskrivning | I uppgift 4 täcks hur man konverterar från en <code>string</code
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
    
 ```cs
 // Från int till string
@@ -134,13 +134,13 @@ string sss = f.ToString();
 
 Uppgift 6 | Olika typer av konvertering
 ----------|-------------------------------
-Beskrivning | Man kan även konvertera på olika sätt. Det finns exempelvis s.k. explicit konvertering och implicit konvertering samt konvertering utan att anropa <code>Convert-klassen</code> (dvs. exempelvis <code>Convert.ToInt32</code>). <br> Explicit konvertering är det har nyttjats i tidigare uppgifter. Dvs. exempelvis genom metoder såsom <code>Convert.ToInt32</code> eller <code>int.TryParse</code>. Vi säger helt enkelt tydligt att vi vill genomföra konvertering. <br> Implicit konvertering tillåter oss att exempelvis gå från en <code>int</code> till en <code>double</code> utan att ange det då båda datatyper är av numerisk karaktär. <br> Det är även möjligt att genomföra explicit konvertering utan att ange en metod för konverteringen. Detta uppnås genom att placera datatypen som variabeln ska konverteras till - inom parenteser - framför variabeln. Testa på dessa olika typer av konvertering och ifall du är intresserad av att läsa mer om det så kan följande länk nyttjas: [Olika typer av konvertering C#](https://code-maze.com/csharp-basics-type-conversion/)
+Beskrivning | Man kan även konvertera på olika sätt. Det finns exempelvis s.k. explicit konvertering och implicit konvertering samt konvertering utan att anropa <code>Convert-klassen</code> (dvs. exempelvis <code>Convert.ToInt32</code>). <br><br> Explicit konvertering är det har nyttjats i tidigare uppgifter. Dvs. exempelvis genom metoder såsom <code>Convert.ToInt32</code> eller <code>int.TryParse</code>. Vi säger helt enkelt tydligt att vi vill genomföra konvertering. <br> Implicit konvertering tillåter oss att exempelvis gå från en <code>int</code> till en <code>double</code> utan att ange det då båda datatyper är av numerisk karaktär. <br><br> Det är även möjligt att genomföra explicit konvertering utan att ange en metod för konverteringen. Detta uppnås genom att placera datatypen som variabeln ska konverteras till - inom parenteser - framför variabeln. Testa på dessa olika typer av konvertering och ifall du är intresserad av att läsa mer om det så kan följande länk nyttjas: [Olika typer av konvertering C#](https://code-maze.com/csharp-basics-type-conversion/)
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
    
 ```cs
 // Explicit
@@ -169,7 +169,7 @@ Beskrivning | Skriv ett program som läser in två heltal från användaren, sum
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
  
 ```cs
 int.TryParse(Console.ReadLine(), out int first);
@@ -190,7 +190,7 @@ Beskrivning | Skriv ett program som läser in två heltal och sedan beräknar sa
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
    
 ```cs
 // Division med int
@@ -214,13 +214,13 @@ double korrektKvot = (double)x / (double)y; // Ger 3.33 om x är 10 och y är 3.
 
 Uppgift 9 | Grundläggande matematik
 ----------|-------------------------------
-Beskrivning | Skriv ett program som läser in två heltal från användaren och som sedan skriver ut differansen mellan talen (subtraktion), produkten mellan talen (multiplikation) och kvoten mellan talen (division).
+Beskrivning | Skriv ett program som läser in två heltal från användaren och som sedan skriver ut differensen mellan talen (subtraktion), produkten mellan talen (multiplikation) och kvoten mellan talen (division).
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
 
 ```cs
 int.TryParse(Console.ReadLine(), out int first);
@@ -239,15 +239,50 @@ Console.WriteLine(div);
 
 {::options parse_block_html="false" /}
 
-Uppgift 10 | Byta plats på värden
-----------|-------------------------------
-Beskrivning | Skriv ett program som byter värdet hos två variabler av datatypen heltal och skriver ut variablernas nya värden. Exempel på interaktion med programmet: <br><br> Innan byte: <br> Input 1: 3 <br> Input 2: 11 <br><br> Efter byte: <br> Input 1: 11 <br> Input 2: 3
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 10</th>
+      <th>Byta plats på värden</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+        Skriv ett program som byter värdet hos två variabler av datatypen heltal och skriver ut variablernas nya värden. Exempel på interaktion med programmet: <br>
+        <table class="examples">
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp" class="code-example">
+// Innan byte:
+First input contains: 3
+Second input contains: 11 
+
+// Efter byte:
+First input contains: 11
+Second input contains: 3
+        </pre>
+      </td>
+     </tr>
+  </tbody>
+  </table>
+  </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int.TryParse(Console.ReadLine(), out int first);
@@ -263,15 +298,50 @@ Console.WriteLine("Second input contains: " + second);
 
 {::options parse_block_html="false" /}
 
-Uppgift 11 | Korrekt beräkning
-----------|-------------------------------
-Beskrivning | Skriv ett program som tar emot tre heltal (x, y & z) och sedan utför beräkningar enligt följande: (x + y) * z resp. x * y + y * z. Programmet ska sedan skriva ut resultatet för resp. beräkning. Exempel på interaktion med programmet: <br><br> x: 3 <br> y: 11 <br> z: 2 <br><br> Uträkning 1: 28 <br> Uträkning 2: 55 
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 11</th>
+      <th>Korrekt beräkning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv ett program som tar emot tre heltal (x, y & z) och sedan utför beräkningar enligt följande: (x + y) * z resp. x * y + y * z. Programmet ska sedan skriva ut resultatet för resp. beräkning. Exempel på interaktion med programmet: <br>
+        <table class="examples">
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp" class="code-example">
+// Input
+// x = 3 
+// y = 11 
+// z = 2 
+
+First calculation: 28
+Second calculation: 55 
+        </pre>
+      </td>
+     </tr>
+  </tbody>
+  </table>
+  </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
    
 ```cs
 int.TryParse(Console.ReadLine(), out int x);
@@ -279,8 +349,8 @@ int.TryParse(Console.ReadLine(), out int y);
 int.TryParse(Console.ReadLine(), out int z);
 int sum1 = (x+y) * z;
 int sum2 = x * y + y * z;
-Console.WriteLine("First calc: " + sum1);
-Console.WriteLine("Second calc: " + sum2);
+Console.WriteLine("First calculation: " + sum1);
+Console.WriteLine("Second calculation: " + sum2);
 ```
 
 </details>
@@ -289,13 +359,13 @@ Console.WriteLine("Second calc: " + sum2);
 
 Uppgift 12 | Beräkna hastighet
 ----------|-------------------------------
-Beskrivning | Skriv ett program som läser in avstånd och tid som input och sedan räknar ut hastighet i km/h. <br><br> **TIPS:** Använd datatypen float. Formeln som nyttjas för att beräkna hastighet (givet tid och sträcka) är <code> v = s / t </code> där <code>s</code> är sträckan och <code>t</code> är antalet timmar.
+Beskrivning | Skriv ett program som läser in avstånd och tid som input och sedan räknar ut hastighet i km/h. <br><br> **TIPS!** Använd datatypen float. Formeln som nyttjas för att beräkna hastighet (given tid och avstånd) är <code> v = s / t </code> där <code>s</code> är avstånd och <code>t</code> är antalet timmar.
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 float.TryParse(Console.ReadLine(), out float distance);
@@ -308,36 +378,97 @@ float speed = distance / time;
 
 {::options parse_block_html="false" /}
 
-Uppgift 13 | Beräkna hastighet
---|--
-Beskrivning | Skriv ett program som läser in ett förnamn och ett efternamn. Konkatenera namnen genom att sätta ihop efternamnet med förnamnet. Tänkt på att det utskrivna måste vara läsbart för datoranvändaren. Se nedan. <br><br> Input för förnamn: Anon <br> Input för efternamn: Nym <br> Utskrift: Nym, Anon. <br><br> **TIPS:** För att kontatenera ("sätta ihop") strängar så kan man nyttja operatorn för addition (+) mellan de strängar man vill konkatenera.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 13</th>
+      <th>Strängkonkatenering</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv ett program som läser in ett förnamn och ett efternamn. Konkatenera namnen genom att sätta ihop efternamnet med förnamnet. Tänk på att det utskrivna måste vara läsbart för datoranvändaren. <br><br> **TIPS!** För att konkatenera ("sätta ihop") strängar så kan man nyttja operatorn för addition (+) mellan de strängar man vill konkatenera. Exempel på interaktion med programmet: <br>
+        <table class="examples">
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp" class="code-example">
+// Input för förnamn: Anon
+// Input för efternamn: Nym 
+Name: Nym, Anon. 
+        </pre>
+      </td>
+     </tr>
+  </tbody>
+  </table>
+  </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 string fName = Console.ReadLine();
 string lName = Console.ReadLine();
 
-Console.WriteLine(lName + ", " + fName + ".");
+Console.WriteLine("Name: " + lName + ", " + fName + ".");
 ```
 
 </details>
 
 {::options parse_block_html="false" /}
 
-Uppgift 14 | Modulus
---|--
-Beskrivning | Skriv ett program som läser in ett heltal och dividerar det med 2. Programmet ska sedan skriva ut "resten" (det som blev över efter divisionen). <br> Exempel på interaktion med programmet: <br> Ange ett heltal: 5 <br> Resten efter division är: 1 <br><br> **TIPS:** Operatorn för Modulus är <code>%</code>. Anledningen till varför vi får 1 i ovan exempel beror på att 2 går i 5 två gånger (2+2=4) vilket lämnar oss med "resten" som är en 1:a. 
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 14</th>
+      <th>Modulus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv ett program som läser in ett heltal och dividerar det med 2. Programmet ska sedan skriva ut "resten" (det som blev över efter divisionen). **TIPS:** Operatorn för Modulus är <code>%</code>. Anledningen till varför vi får 1 i ovan exempel beror på att 2 går i 5 två gånger (2+2=4) vilket lämnar oss med "resten" som är en 1:a. Exempel på interaktion med programmet: <br>
+        <table class="examples">
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp" class="code-example">
+Ange ett heltal: 5 
+Resten efter division är: 1 
+        </pre>
+      </td>
+     </tr>
+  </tbody>
+  </table>
+  </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 Console.Write("Ange ett heltal: ");
