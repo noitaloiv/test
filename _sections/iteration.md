@@ -218,7 +218,6 @@ Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<
             <tr>
               <td>
                 <pre lang="csharp" class="code-example">
-// OBS! Du behöver inte lägga till mellanslag mellan symbolerna!
     *
    * * 
   * * *
