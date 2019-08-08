@@ -4,7 +4,7 @@ icon: fa-th
 order: 2
 ---
 
-För att lösa uppgifterna som du ser på denna sida så behöver du först skapa en konsol-applikation i Visual Studio för språket C#. Var uppmärksam när du skapar detta projekt så att du väljer **C#** och inte **Visual Basic** (som är ett annat programmeringsspåk). När du gör detta så kommer du att bemötas av koden som du ser nedan:
+För att lösa uppgifterna som du ser på denna sida så behöver du först skapa en konsol-applikation i Visual Studio för språket C#. Var uppmärksam när du skapar detta projekt så att du väljer **C#** och inte **Visual Basic** (som är ett annat programmeringsspråk). När du gör detta så kommer du att bemötas av koden som du ser nedan:
 ```cs
 using System;
 
@@ -29,7 +29,7 @@ Det är inom *metoden* <code>Main</code> som du kommer att skriva din kod, till 
 För nästan varje uppgift på denna sida så förväntas det att du nyttjar dessa verktyg för att lösa uppgiften så lägg dem på minnet!
 
 ### Metod/funktion ###
-Då det snabbt kan bli jobbigt att skapa en ny konsolapplikation för varje uppgift så rekommenderar vi till en början att ni arbetar enbart i <code>Main</code>-metoden och att ni separerar varje uppgift mha. kommentarer. Dvs. exempelvis enligt nedan:
+Då det snabbt kan bli jobbigt att skapa en ny konsolapplikation för varje uppgift så rekommenderar vi till en början att ni arbetar enbart i <code>Main</code>-metoden och att ni separerar varje uppgift med hjälp av kommentarer. Dvs. exempelvis enligt nedan:
 ```cs
 public static void Main(string[] args)
 {
@@ -42,7 +42,7 @@ public static void Main(string[] args)
 ```
 Där "..." så klart representerar den kod du skriver för att lösa uppgiften.
 
-Det finns dock ett annat, tydligare sätt att separarera uppgifterna och detta är mha. egendefinierade metoder (detta täcks ytterligare udner Metod-sektionen). Detta innefattar att du, istället för att placera all kod i <code>Main</code>-metoden, skapar en ny metod för resp. uppgiften som du sedan __anropar__ från <code>Main</code>-metoden. Exempel:
+Det finns dock ett annat, tydligare sätt att separera uppgifterna och detta är med hjälp av egendefinierade metoder (detta behandlas ytterligare under Metod-sektionen). Detta innefattar att du, istället för att placera all kod i <code>Main</code>-metoden, skapar en ny metod för resp. uppgiften som du sedan ___anropar___ från <code>Main</code>-metoden. Exempel:
 ```cs
 public static void Main(string[] args)
 {
