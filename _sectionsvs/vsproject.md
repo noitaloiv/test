@@ -1,5 +1,5 @@
 ---
-title: Projektmappen och relevanta filer
+title: Mappar och filer
 icon: fa-th
 order: 2
 ---
