@@ -13,7 +13,7 @@ x = arr[9]; // x = 20;
 x = arr[10]; // IndexOutOfRangeException då vi pekar på en position som inte existerar.
 ```
 
-Iteration är ett koncept som tillåter oss att återupprepa ett stycke kod tills dess att vi når ett angivet resultat. En vanlig tillämpning av detta är nyttjandet av loopar såsom <code>for-loopar</code>, <code>while-loopar</code> och <code>foreach-loopar</code>. Föreställ dig exempelvis att vi vill söka efter ett angivet heltal i en array av heltal. Utan iteration så skulle vi behöva manuellt gå igenom varje element i arrayen och kontrollera dess värde mha. <code>if-satser</code>. Genom att istället tillämpa iteration så kan vi säga åt vårt program att gå igenom hela arrayen åt oss och vi behöver bara skriva en <code>if-sats</code> istället för 10 (om arrayen från föregående kodexempel skulle nyttjas). Dvs. i stil med:
+Iteration är ett koncept som tillåter oss att återupprepa ett stycke kod tills dess att vi når ett angivet resultat. En vanlig tillämpning av detta är nyttjandet av loopar såsom <code>for-loopar</code>, <code>while-loopar</code> och <code>foreach-loopar</code>. Föreställ dig exempelvis att vi vill söka efter ett angivet heltal i en array av heltal. Utan iteration så skulle vi behöva manuellt gå igenom varje element i arrayen och kontrollera dess värde med hjälp av <code>if-satser</code>. Genom att istället tillämpa iteration så kan vi säga åt vårt program att gå igenom hela arrayen åt oss och vi behöver bara skriva en <code>if-sats</code> istället för 10 (om arrayen från föregående kodexempel skulle nyttjas). Dvs. i stil med:
 ```cs
 int search = 12; // Elementet vi letar efter i arrayen.
 int[] arr = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
@@ -42,7 +42,7 @@ Beskrivning | Skriv en metod, <code>PrintNumbers</code>, som skriver ut alla pos
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void PrintNumbers(){
@@ -55,18 +55,50 @@ void PrintNumbers(){
 
 {::options parse_block_html="false" /}
 
-Uppgift 2 | Strukturerad utskrift
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>PrintNumbersTwo</code>, som skriver ut alla positiva heltal från 1 till och med 50. Metoden ska skriva ut heltalen i intervaller av 10. Dvs. att utskriften ska följa formatet nedan:<br><br>1, 2, 3, ..., 10<br>11, 12, 13, ..., 20<br> ... <br> 41, 42, 43, ..., 50
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 2</th>
+      <th>Strukturerad utskrift</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>PrintNumbersTwo</code>, som skriver ut alla positiva heltal från 1 till och med 50. Metoden ska skriva ut heltalen i intervaller av 10. Exempel på interaktion med metoden: <br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+1, 2, 3, ..., 10    // ... = 4-9
+11, 12, 13, ..., 20 // osv.
+...
+41, 42, 43, ..., 50
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
-void PrintNumbers(){
+void PrintNumbersTwo(){
   for (int i = 1; i <= 50; i++)
   {
       if(i == 10)
@@ -134,8 +166,7 @@ void PrintNumbers(){
           </td>
     </tr>
           </tbody>
-        </table>
-        
+        </table>       
 <strong>TIPS!</strong> För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras <em>för varje</em> iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
   </td>
     </tr>
@@ -146,7 +177,7 @@ void PrintNumbers(){
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void NestedPrint(){
@@ -165,43 +196,47 @@ void NestedPrint(){
 
 {::options parse_block_html="false" /}
 
-
-Uppgift 3 | Strukturerad utskrift II
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrint</code>, som skriver ut följande mönster:<br><br> <code>*</code> <br> <code>**</code> <br> <code>***</code> <br> <code>****</code> <br> <code>*****</code> <br><br> **TIPS!** För att lösa denna uppgift så rekommenderas det att du nyttjar nästlade loopar, dvs. en loop inuti en annan. Ha i åtanke att all kod i den inre loopen kommer att köras __för varje__ iteration i den yttre loopen. Nyttja gärna debugging i Visual Studio för att felsöka om något blir tokigt eller helt enkelt för att följa med i koden.
-
----
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 4</th>
+      <th>Strukturerad utskrift III</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+// OBS! Du behöver inte lägga till mellanslag mellan symbolerna!
+    *
+   * * 
+  * * *
+ * * * *
+* * * * *
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
-  
-```cs
-void NestedPrint(){
-  for(int i = 1; i <= 5; i++)
-  {
-    for(int j = 1; j <= i; j++)
-    {  
-      Console.Write("*");
-    }
-    // Används för att "gå till nästa rad", dvs. en break-line.
-    Console.Write("\n"); // Går även att byta ut mot Console.WriteLine();
-  }
-}
-```
-</details>
-
-{::options parse_block_html="false" /}
-
-Uppgift 4 | Strukturerad utskrift III
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br>&nbsp;&nbsp;&nbsp;&nbsp; <code>**</code> <br>&nbsp;&nbsp;&nbsp; <code>***</code> <br>&nbsp;&nbsp; <code>****</code> <br>&nbsp; <code>*****</code>
-
----
-
-{::options parse_block_html="true" /}
-
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void NestedPrintTwo(){
@@ -220,15 +255,56 @@ void NestedPrintTwo(){
 
 {::options parse_block_html="false" /}
 
-Uppgift 5 | Strukturerad utskrift IV
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br><br>Givet heltalet 7 som input:<br> 1 <br> 22 <br> 333 <br> 4444 <br> 55555 <br> 666666 <br> 7777777
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 5</th>
+      <th>Strukturerad utskrift IV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>NestedPrintThree</code>, som tar emot ett heltal som användaren anger. Metoden ska sedan iterera så pass många gånger som heltalet representerar och, för varje iteration, skriva ut enligt följande mönster:<br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+// Givet heltalet 7 som input:
+1
+22
+333
+4444
+55555
+666666
+7777777
+
+// Givet heltalet 3 som input:
+1
+22
+333
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void NestedPrintThree(int iterations){
@@ -246,15 +322,55 @@ void NestedPrintThree(int iterations){
 
 {::options parse_block_html="false" /}
 
-Uppgift 6 | Strukturerad utskrift V
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>NestedPrintFour</code>, som tar emot ett heltal som användaren anger och skriver ut följande mönster:<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>*</code> <br> &nbsp;&nbsp;&nbsp;&nbsp; <code>***</code> <br> &nbsp;&nbsp;&nbsp; <code>*****</code> <br>&nbsp;&nbsp; <code>*******</code> <br>&nbsp; <code>*********</code> <br><br> **Notera** att enbart udda antal <code>*</code> skrivs ut per rad. Antalet rader som skrivs ut bestäms av det heltal som tas emot som argument.
+
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 6</th>
+      <th>Strukturerad utskrift V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>NestedPrintFour</code>, som tar emot ett heltal som användaren anger och skriver ut följande mönster:<br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+// Givet heltalet 2 som input:
+   *
+ * * *
+ 
+// Givet heltalet 5 som input:
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+**Notera** att enbart udda antal <code>*</code> skrivs ut per rad. Antalet rader som skrivs ut bestäms av det heltal som tas emot som argument.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void NestedPrintFour(int iterations){
@@ -280,7 +396,7 @@ Beskrivning | Skriv en metod, <code>GaussianSum</code>, som skriver ut summan av
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void GaussianSum(){
@@ -301,15 +417,48 @@ void GaussianSum(){
 
 {::options parse_block_html="false" /}
 
-Uppgift 8 | Beräkna medelvärdet
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>Average</code>, som beräknar medelvärdet av heltal som anges av användaren. Metoden ska fortsätta ta emot heltal tills dess att användaren anger <code>-1</code>. När detta sker så beräknas medelvärdet vilket metoden sedan skriver ut ***och*** returnerar. <br><br>Ett körexempel av metoden skulle kunna efterlikna nedan interaktion:<br><br> Ange ett heltal: 50 <br><br> Ange ett heltal: 11 <br><br> Ange ett heltal: 116 <br><br> Ange ett heltal: -1 <br><br> Medelvärdet är: 59
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 8</th>
+      <th>Beräkna medelvärdet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>Average</code>, som beräknar medelvärdet av heltal som anges av användaren. Metoden ska fortsätta ta emot heltal tills dess att användaren anger <code>-1</code>. När detta sker så beräknas medelvärdet vilket metoden sedan skriver ut <strong>och</strong> returnerar. Exempel på interaktion med metoden: <br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+Ange ett heltal: 50
+Ange ett heltal: 11
+Ange ett heltal: 116
+Ange ett heltal: -1
+Medelvärdet är: 59
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int Average()
@@ -353,7 +502,7 @@ Beskrivning | Skriv en metod, <code>CalculateFactorial</code>, som tar emot ett 
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void CalculateFactorial(int input){
@@ -371,15 +520,58 @@ void CalculateFactorial(int input){
 
 {::options parse_block_html="false" /}
 
-Uppgift 10 | Rekursiv metod (Fakultet II)
-----------|-------------------------------
-Beskrivning | En rekursiv metod är en metod som anropar sig själv tills dess att ett s.k. "basfall" uppnås. Denna typ av metod är mer vanligt förekommande i funktionella språk, men det är fullt möjligt att nyttja dem även i <code>C#</code>. Fördelarna med denna typ av metoder är att de resulterar i mindre kod och oftast är mer resurseffektiva (dvs. snabbare). Nackdelarna är det kan vara svårt att förstå sig på processen samt att det är betydligt svårare att felsöka dem i jämförelse med vanlig iteration.<br><br>Ett exempel på rekursion skulle vara följande:<br> <code>string Rec(int n) {<br>// Kontrollera att heltalet är ett positivt tal.<br>&nbsp; if (n <= 0)<br>&nbsp;&nbsp; return n + " must be higher than -1";<br>&nbsp; else if (n > 9){<br>&nbsp;&nbsp; Console.Write(n);<br>&nbsp;&nbsp; return "Completed"; // När vi har nått 10 så vill vi avsluta<br>&nbsp; }<br>&nbsp; else<br>&nbsp;{<br>&nbsp;&nbsp; Console.Write(n + ", ");<br>&nbsp;&nbsp; return Rec(n + 1); // Rekursivt anrop. 1 + 1 -> 2 + 1 osv.<br>&nbsp; }<br>}</code> <br><br> Där metoden <code>Rec</code> räknar från det heltal som skrivs in till och med 10 och skriver ut följden i konsolen.<br><br> Uppgiften är att försöka lösa Uppgift 9 (Fakultet) på nytt fast genom att nyttja rekursion istället.<br><br>**OBS** att denna uppgift är svår och egentligen faller utanför kursens ramar (dvs. att innehållet är överkurs). Tanken med uppgiften är att introducera begreppet rekursion samt tillhandahålla möjligheten att testa på det.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 10</th>
+      <th>Rekursiv metod (Fakultet II)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+En rekursiv metod är en metod som anropar sig själv tills dess att ett s.k. "basfall" uppnås. Denna typ av metod är mer vanligt förekommande i funktionella språk, men det är fullt möjligt att nyttja dem även i <code>C#</code>. Fördelarna med denna typ av metoder är att de resulterar i mindre kod och oftast är mer resurseffektiva (dvs. snabbare). Nackdelarna är det kan vara svårt att förstå sig på processen samt att det är betydligt svårare att felsöka dem i jämförelse med vanlig iteration. Ett exempel på rekursion skulle vara följande: <br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+string Rec(int n) {
+  if (n <= 0)   // Kontrollera att heltalet är ett positivt tal.
+      return n + " must be higher than -1";
+  else if (n > 9)
+  {
+      Console.Write(n);
+      return "Completed"; // När vi har nått 10 så vill vi avsluta
+  }
+  else
+  {
+      Console.Write(n + ", ");
+      return Rec(n + 1); // Rekursivt anrop. 1 + 1 -> 2 + 1 osv.
+  }
+}
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+Där metoden <code>Rec</code> räknar från det heltal som skrivs in till och med 10 och skriver ut följden i konsolen.<br><br> Uppgiften är att försöka lösa Uppgift 9 (Fakultet) på nytt fast genom att nyttja rekursion istället.<br><br><strong>OBS!</strong> Denna uppgift är svår och faller egentligen något utanför kursens ramar (dvs. att innehållet är överkurs). Tanken med uppgiften är att introducera begreppet rekursion samt tillhandahålla möjligheten att testa på det.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void CalculateFactorial(int input){
@@ -401,7 +593,7 @@ Beskrivning | Skriv en metod, <code>IsPrime</code>, som tar emot ett heltal och 
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 bool IsPrime(int input){
@@ -430,7 +622,7 @@ Beskrivning | Skriv en metod, <code>PrimeNumbers</code>, som tar emot ett heltal
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void PrimeNumbers(int input){
@@ -452,13 +644,13 @@ void PrimeNumbers(int input){
 
 Uppgift 13 | Fibonacci
 ----------|----------
-Beskrivning | Skriv en metod, <code>Fibonacci</code>, som tar emot ett heltal och skriver ut tal i Fibonnaci-sekvensen. Antalet tal som skrivs ut avgörs av det angivna heltalet. <br><br> Ett Fibonnaci-tal är summan av de två föregående talen i en sekvens av heltal. Exempelvis är de första 5 Fibonnaci-talen: 0 1 1 2 3. Vi kan i denna talföljd identifiera det tidigare nämnda mönstret givet <code>0+1 = 1</code>, <code>1+1 = 2</code>, <code>1+2 = 3</code> osv.
+Beskrivning | Skriv en metod, <code>Fibonacci</code>, som tar emot ett heltal och skriver ut tal i Fibonnaci-sekvensen. Antalet tal som skrivs ut avgörs av det angivna heltalet. <br><br> Ett Fibonnaci-tal är summan av de två föregående talen i en sekvens av heltal. Exempelvis är de första 5 Fibonnaci-talen: 0 1 1 2 3. Vi kan i denna talföljd identifiera det tidigare nämnda mönstret givet <code>0 + 1 = 1</code>, <code>1 + 1 = 2</code>, <code>1 + 2 = 3</code> osv.
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void Fibonacci(int input)
@@ -492,15 +684,45 @@ void Fibb(int input)
 
 {::options parse_block_html="false" /}
 
-Uppgift 14 | Multiplikationstabellen för X
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>CalculateMultTable</code>, som tar emot ett heltal som argument och returnerar en array av heltal. Metoden ska beräkna multiplikationstabellen (från 1 till och med 10) för heltalet och bygga upp en array innehållandes denna multiplikationstabell. <br><br>Givet exempelvis heltalet 3 så ska en array returneras som innehåller följande värden:<br>[3, 6, 9, 12, 15, 18, 21, 24, 27, 30].
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 14</th>
+      <th>Multiplikationstabellen för X</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>CalculateMultTable</code>, som tar emot ett heltal som argument och returnerar en array av heltal. Metoden ska beräkna multiplikationstabellen (från 1 till och med 10) för heltalet och bygga upp en array innehållandes denna multiplikationstabell. Ett exempel på interaktion med metoden är: <br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+int[] arr = CalculateMultTable(3);
+// arr innehåller: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30].
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int[] CalculateMultTable(int input){
@@ -525,7 +747,7 @@ Beskrivning | Skriv en metod, <code>PrettyPrint</code>, som tar emot en array av
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void PrettyPrint(int[] input){  
@@ -549,7 +771,7 @@ Beskrivning | Skriv en metod, <code>PrettyPrintReversed</code>, som tar emot en 
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void PrettyPrintReversed(int[] input){  
@@ -573,7 +795,7 @@ Beskrivning | Skriv en metod, <code>HighestNumber</code>, som tar emot en array 
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int HighestNumber(int[] input){
@@ -597,7 +819,7 @@ Beskrivning | Skriv en metod, <code>SecondHighestNumber</code>, som tar emot en 
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int SecondHighestNumber(int[] input){
@@ -624,7 +846,7 @@ Beskrivning | Skriv en metod, <code>AverageNumber</code>, som tar emot en array 
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int AverageNumber(int[] input){
@@ -639,15 +861,46 @@ int AverageNumber(int[] input){
 
 {::options parse_block_html="false" /}
 
-Uppgift 20 | Summering av arrayer
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>SumArrays</code>, som tar emot två arrayer av heltal som argument (<code>arrayA och arrayB</code>) och returnerar en array - <code>arrayC</code> - som innehåller summan av talen på resp. position. Dvs. att om värdet på position 0 i <code>arrayA</code> är 5 och värdet på position 0 i <code>arrayB</code> är 13 så ska position 0 i <code>arrayC</code> innehålla värdet 18 osv.<br><br> **OBS!** Metoden kan utgå från att arrayerna alltid är av samma längd.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 20</th>
+      <th>Summering av arrayer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>SumArrays</code>, som tar emot två arrayer av heltal som argument (<code>arrayA och arrayB</code>) och returnerar en array - <code>arrayC</code> - som innehåller summan av talen på resp. position.  Ett exempel på interaktion med metoden är: <br> 
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+int[] arrC = SumArrays(new int[] {5, 3, 4}, new int[] {13, 1, 10});
+// arrC innehåller: [18, 4, 14]
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<strong>OBS!</strong> Metoden kan utgå från att arrayerna alltid är av samma längd.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int[] SumArrays(int[] arrayA, int[] arrayB){
@@ -663,15 +916,49 @@ int[] SumArrays(int[] arrayA, int[] arrayB){
 
 {::options parse_block_html="false" /}
 
-Uppgift 21 | Count
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>Count</code>, som tar emot en array av heltal och ett heltal som argument och returnerar antalet gånger det heltalet förekommer i arrayen. <br><br> Dvs. att om arrayen innehåller elementen [6, 3, 3] och vi söker efter 3 så ska 2 returneras, om arrayen innehåller [6, 4, 1] så ska 0 returneras osv.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 21</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>Count</code>, som tar emot en array av heltal och ett heltal som argument och returnerar antalet gånger det heltalet förekommer i arrayen. Ett exempel på interaktion med metoden är: <br> 
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+int c = Count(new int[] {6, 3, 3}, 3);
+// c = 2;
+
+c = Count(new int[] {6, 4, 1}, 2);
+// c = 0;
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<strong>OBS!</strong> Metoden kan utgå från att arrayerna alltid är av samma längd.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int Count(int[] arr, int n){
@@ -687,15 +974,53 @@ int Count(int[] arr, int n){
 
 {::options parse_block_html="false" /}
 
-Uppgift 22 | PrintUniques
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>PrintUniques</code>, som tar emot en array av heltal som argument och skriver ut alla unika värden i arrayen. <br><br> Dvs. att om arrayen innehåller elementen [6, 3, 3] så ska 6 skrivas ut, om arrayen innehåller [6, 4, 1] så ska 6, 4 och 1 skrivas ut. Om arrayen __inte__ innehåller några unika värden så ska <code>"There are no unique values in the array."</code> skrivas ut. <br><br> **TIPS!** Nyttja din implementation av metoden <code>Count</code> från Uppgift 20.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 22</th>
+      <th>PrintUniques</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>PrintUniques</code>, som tar emot en array av heltal som argument och skriver ut alla unika värden i arrayen. Om arrayen <i>inte</i> innehåller några unika värden så ska <code>"There are no unique values in the array."</code> skrivas ut. Ett exempel på interaktion med metoden är: <br> 
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+PrintUniques(new int[] {6, 3, 3});
+// Utskrift
+6
+
+PrintUniques(new int[] {6, 4, 1});
+// Utskrift
+6
+4
+1
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<strong>TIPS!</strong> Nyttja din implementation av metoden <code>Count</code> från Uppgift 20.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void PrintUniques(int[] arr)
@@ -718,15 +1043,46 @@ void PrintUniques(int[] arr)
 
 {::options parse_block_html="false" /}
 
-Uppgift 23 | Sort array
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>SimpleSort</code>, som tar emot en array av heltal som argument och sorterar dem enligt storleksordning. <br><br> Om arrayen exempelvis innehåller elementen [6, 3, 1, 8, 4, 3] så ska metoden returnera en array som innehåller [1, 3, 3, 4, 6, 8].<br><br> **TIPS!** Nyttja nästlade loopar för att lösa uppgiften.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 23</th>
+      <th>Sort array</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>SimpleSort</code>, som tar emot en array av heltal som argument och sorterar dem enligt storleksordning. Ett exempel på interaktion med metoden är: <br> 
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+int[] arr = SimpleSort(new int[] {6, 3, 1, 8, 4, 3});
+// arr innehåller: [1, 3, 3, 4, 6, 8]
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<strong>TIPS!</strong> Nyttja nästlade loopar för att lösa uppgiften.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void SimpleSort(int[] arr)
@@ -750,15 +1106,49 @@ void SimpleSort(int[] arr)
 
 {::options parse_block_html="false" /}
 
-Uppgift 24 | IsDuplicate
-----------|-------------------------------
-Beskrivning | Skriv en metod, <code>IsDuplicate</code>, som tar emot en array av heltal som argument samt ett heltal och avgör om heltalet förekommer fler än en gång i arrayen. <br><br> **TIPS!** Denna implementation kommer att påminnna om implementationen av <code>Count</code> (Uppgift 21).
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 24</th>
+      <th>IsDuplicate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod, <code>IsDuplicate</code>, som tar emot en array av heltal som argument samt ett heltal och avgör om heltalet förekommer fler än en gång i arrayen. Ett exempel på interaktion med metoden är: <br> 
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="code-example">
+bool dupe = IsDuplicate(new int[] {6, 3, 1, 8, 4, 3}, 3);
+// dupe = true
+
+dupe = IsDuplicate(new int[] {6, 3, 1, 8, 4, 3}, 1);
+// dupe = false
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<strong>TIPS!</strong> Denna implementation kommer att påminnna om implementationen av <code>Count</code> (Uppgift 21).
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 bool RemoveDuplicates(int[] arr, int n)
