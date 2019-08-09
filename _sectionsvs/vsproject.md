@@ -11,7 +11,7 @@ Windows eller genom Visual Studio (om du har projektet öppet där).
 
 För att navigera via "File Explorer" så öppnar du File Explorer (WIN + E alt. mapp-ikonen i navigationsbaren).  Du möts då av "Den här datorn" ("This PC") och där hittar du direkt hårddisk K, U och X under "Network locations" (se nedan bild).
 
-<img src="{{ '/Images/image2.png' | relative_url }}" alt="Hårddisk U: i laborationsmiljön" class="centered"/>
+<img src="{{ '/Images/image2.png' | relative_url }}" alt="Hårddisk U: i laborationsmiljön" class="image centered"/>
 
 Därefter dubbelklickar du på ikonen och hittar där mappen "Visual Studio" . Den mappen innehåller i sin tur mappen "Projects" och det är i denna du hittar samtliga av dina projekt.
 
