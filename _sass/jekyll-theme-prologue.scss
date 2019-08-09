@@ -361,6 +361,10 @@ br.clear {
 			display: block;
 			margin: 0 auto;
 			width: auto;
+			height: auto;
+			max-width: 100%;
+			/* For IE8 */
+			width: auto\9;
 		}
 	}
 
