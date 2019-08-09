@@ -32,7 +32,7 @@ Tyvärr så finns det en grad av sanning i ovan påståenden vilket innefattar a
 
 För att "följa med" i koden så uppnår man detta genom att placera en s.k. "breakpoint" i vänsterspalten (den röda pricken i nedan bild).
 
-<img src="{{ '/Images/image12.png' | relative_url }}" alt="En "Breakpoint" i Visual Studio" class="image centered"/>
+<img src="{{ '/Images/image12.png' | relative_url }}" alt="En 'Breakpoint' i Visual Studio" class="image centered"/>
 
 Notera att en breakpoint enbart kan placeras på samma rad där det förekommer kod. För att ta bort en breakpoint så räcker det med att du klickar på den igen. För att ta bort alla breakpoints i hela projektet samtidigt kan du, istället för att manuellt klicka på resp. breakpoint, navigera till Debug-fliken -> "Delete All Breakpoints". Alternativt så kan du nyttja kortkommandot CTRL + SHIFT + F9.
 
