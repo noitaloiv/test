@@ -6,7 +6,7 @@ order: 1
 
 Det första steget blir ju såklart att starta en instans av programmet. Förutsatt att du sitter i en utav laborationssalarna så uppnås detta enklast genom att klicka på Windows-tangenten (till höger om vänster CTRL-tangent) och därefter söka efter Visual Studio genom att börja skriva "v-i-s-u…" osv. Visual Studio 20XX kommer då att dyka upp i högerkolumnen och du behöver då enbart klicka på ikonen för att skapa en instans av programmet. Det kommer mao. efterlikna Figur 1.
 
-![Visual Studio i laborationssal](/test/Images/image11.png)
+<img src="{{ '/test/Images/image11.png' | relative_url }}" alt="Visual Studio i laborationssal" />
 
 *OBS!* Det är Visual Studio du vill öppna (_Visual Studio 2017_ i ovan bild), inte någon utav de
 andra applikationerna. Notera att vi numera har Visual Studio 2013 installerat i
@@ -17,7 +17,7 @@ behöver även välja ett tema. Detta har ingen som helst inverkan på din kod o
 ändras i efterhand. Därefter kan det ta ett par minuter innan programmet startar och du ser
 Visual Studios "startsida".
 
-# <a name="projects"></a>Att skapa projekt i Visual Studio # ([Hoppa till innehållsförteckningen](#content))
+# Att skapa projekt i Visual Studio #
 När du väl har startat Visual Studio (VS) så behöver du välja ett projekt. I VS så kan man
 däremot skapa flera olika typer av projekt såsom konsol-applikationer, Windows
 Forms-applikationer och Webbaserade tjänster. För resp. projekttyp så autogenereras viss kod
