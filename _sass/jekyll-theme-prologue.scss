@@ -359,12 +359,8 @@ br.clear {
 
 		&.centered {
 			display: block;
-			margin: 0 0 2em 0;
-
-			img {
-				margin: 0 auto;
-				width: auto;
-			}
+			margin: 0 auto;
+			width: auto;
 		}
 	}
 
