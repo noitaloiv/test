@@ -15,6 +15,7 @@
 @charset "UTF-8";
 
 @include skel-breakpoints((
+	big: '(min-width: 1440px) and (max-width: 2600px)',
 	wide: '(min-width: 961px) and (max-width: 1880px)',
 	normal: '(min-width: 961px) and (max-width: 1620px)',
 	narrow: '(min-width: 961px) and (max-width: 1320px)',
@@ -29,6 +30,11 @@
 	conditionals: true,
 	containers: 1400px,
 	breakpoints: (
+		big: (
+			containers: 1400px,
+			grid: (
+				gutters: (40px, 40px)
+			),
 		wide: (
 			containers: 1200px,
 			grid: (
@@ -788,6 +794,36 @@ br.clear {
 				background-color: #e8edec;
 			}
 		}
+	}
+
+/* Big */
+
+	@include breakpoint(big) {
+
+		/* Basic */
+
+			body, input, textarea, select {
+				font-size: 19pt;
+			}
+
+		/* Header */
+
+			#header {
+				width: 400px;
+			}
+
+		/* Footer */
+
+			#footer {
+				margin-left: 400px;
+			}
+
+		/* Main */
+
+			#main {
+				margin-left: 400px;
+			}
+
 	}
 
 /* Wide */
