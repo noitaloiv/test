@@ -3,7 +3,35 @@ title: Selektion
 icon: fa-th
 order: 4
 ---
-Gällande konceptet selektion så behöver vi först och främst reflektera kring olika vägar som ett program kan ta. Föreställ dig exempelvis att du nyttjar en hemsida som kräver inloggning för att lämna kommentarer. Hemsidan behöver då först kontrollera __OM__ (<code>if</code>) du är inloggad innan den tillåter dig att publicera en kommentar. Om du inte är det så ska hemsidan istället informera dig om att inloggning krävs. Detta representerar alltså ett fall där vi gör en sak __OM__ ett kriterium är uppfyllt, __ANNARS__ (<code>else</code>) så gör vi något annat. Detta är vad som kallas för selektion.
+I förhållande till konceptet selektion så behöver vi reflektera kring olika "vägar" som ett program kan ta. Ett program behöver nämligen kunna utföra olika saker beroende på vilka beslut en användare tar, precis som i vårt vardagliga liv! Vi kan exempelvis välja att ta bussen till jobbet __ELLER__ ta cykeln. __OM__ vi tar bussen så kostar det en viss summa, men vi anländer ev. snabbare. __OM__ vi ___istället___ tar cykeln så kostar det inget, men det kan ev. ta lite längre tid och vara omständigare (t.ex. vid regn). Det finns självfallet även möjligheten att gå till jobbet om exempelvis ___både___ bussen är inställd och cykeln har fått punktering. Detta är mao. vad vi blir tvunga att välja __OM__ de andra alternativen inte är tillgängliga.
+
+Föreställ dig exempelvis att du nyttjar en hemsida som kräver inloggning för att lämna kommentarer. För att skapa ett konto så krävs det att man är äldre än 12 år gammal och att man anger ett användarnamn samt lösenord. Ett exempel på en simplistisk lösning för detta problem skulle kunna tänkas vara:  
+
+```csharp
+string usr = "";
+string pass = "";
+int age = 0;
+
+Console.WriteLine("Ange ditt användarnamn: ");
+usr = Console.ReadLine();
+Console.WriteLine("Ange ditt lösenord: ");
+pass = Console.ReadLine();
+Console.WriteLine("Ange din ålder: ");
+int.TryParse(Console.ReadLine(), out age);
+
+if(age < 12)
+    Console.WriteLine("Du måste vara minst 12 år för att skapa ett användarkonto!");
+else if(age == 0) // Om konverteringen inte lyckades, t.ex. om "Tjugofem" anges istället för "25".
+    Console.WriteLine("Du måste ange din ålder!");
+else if(usr == "" || pass == "")
+    Console.WriteLine("Du måste ange ett användarnamn och ett lösenord!");
+else
+    Console.WriteLine("Ditt konto har skapats!");
+```
+
+Detta representerar alltså ett fall där vi gör en sak __OM__ (<code>if</code>) ett - eller flera - kriterium är uppfyllt/uppfyllda, __I ANNAT FALL__ (<code>else if</code>) så kontrollerar vi annat fall. Om vi i slutändan inte kan välja någon av dessa vägar så når vi vårt sista alternativ där vi helt enkelt säger att vi  __ANNARS__ eller __I ALLA ANDRA FALL__ (<code>else</code>) väljer det alternativet. Detta är vad som kallas för selektion.
+
+**NOTERA** att vi inte ___måste___ nyttja if/else parvis. Vi kan mao. ha en <code>if</code>-sats utan en medföljande <code>else</code>-sats. Vi säger då att vi utför detta __OM__ kravet är uppfyllt, om det inte är det så gör vi ingenting. 
 
 ## Uppgiftsförteckning ##
 
