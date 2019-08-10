@@ -23,7 +23,7 @@ if(age < 12)
     Console.WriteLine("Du måste vara minst 12 år för att skapa ett användarkonto!");
 else if(age == 0) // Om konverteringen inte lyckades, t.ex. om "Tjugofem" anges istället för "25".
     Console.WriteLine("Du måste ange din ålder!");
-else if(usr == "" || pass == "")
+else if(usr == "" || pass == "") // '||' representerar den logiska operatorn OR
     Console.WriteLine("Du måste ange ett användarnamn och ett lösenord!");
 else
     Console.WriteLine("Ditt konto har skapats!");
