@@ -15,8 +15,9 @@
 @charset "UTF-8";
 
 @include skel-breakpoints((
-	big: '(min-width: 1440px) and (max-width: 2600px)',
-	wide: '(min-width: 961px) and (max-width: 1880px)',
+	xlarge: '(min-width: 1601px) and (max-width: 2160px)',
+	big: '(min-width: 1401px) and (max-width: 1600px)',
+	wide: '(min-width: 961px) and (max-width: 1400px)',
 	normal: '(min-width: 961px) and (max-width: 1620px)',
 	narrow: '(min-width: 961px) and (max-width: 1320px)',
 	narrower: '(max-width: 960px)',
@@ -30,8 +31,14 @@
 	conditionals: true,
 	containers: 1400px,
 	breakpoints: (
+		xlarge: (
+			containers: 1950px,
+			grid: (
+				gutters: (40px, 40px)
+			),
+		),
 		big: (
-			containers: 1400px,
+			containers: 1600px,
 			grid: (
 				gutters: (40px, 40px)
 			),
@@ -795,6 +802,36 @@ br.clear {
 				background-color: #e8edec;
 			}
 		}
+	}
+
+/* XLarge */
+
+	@include breakpoint(xlarge) {
+
+		/* Basic */
+
+			body, input, textarea, select {
+				font-size: 19pt;
+			}
+
+		/* Header */
+
+			#header {
+				width: 500px;
+			}
+
+		/* Footer */
+
+			#footer {
+				margin-left: 500px;
+			}
+
+		/* Main */
+
+			#main {
+				margin-left: 500px;
+			}
+
 	}
 
 /* Big */
