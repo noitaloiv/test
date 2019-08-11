@@ -540,7 +540,7 @@ En rekursiv metod är en metod som anropar sig själv tills dess att ett s.k. "b
           <tbody>
             <tr>
               <td>
-                <pre lang="csharp" class="code-example">
+                <pre lang="csharp" class="highlight">
 string Rec(int n) {
   if (n <= 0)   // Kontrollera att heltalet är ett positivt tal.
       return n + " must be higher than -1";
