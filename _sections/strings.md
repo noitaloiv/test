@@ -75,7 +75,7 @@ Beskrivning | Skriv en metod, <code>StringLength</code>, som tar emot en sträng
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int StringLength (string input){
@@ -95,9 +95,11 @@ Uppgift 2 | Reverse string
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>StringReversed</code>, som tar emot en sträng som argument och skriver ut strängen i bakvänd ordning. Dvs. givet strängen <code>"Hello world!"</code> så ska <code>"!dlrow olleH"</code> skrivas ut.
 
+---
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void StringReversed (string input){
@@ -111,15 +113,15 @@ void StringReversed (string input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 3 | RemoveSpaces
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>RemoveSpaces</code>, som tar emot en sträng som argument och skriver ut den efter att alla mellanslag har tagits bort från strängen. Om inga mellanslag förekommer i strängen så ska "No spaces in string." skrivas ut istället. <br><br>**TIPS!** Nyttja den inbyggda metoden <code>Split</code>.
 
+---
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void RemoveSpaces (string input){
@@ -161,15 +163,15 @@ void RemoveSpaces (string input){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 4 | RemoveSpecificChar
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>RemoveSpecificChar</code>, som tar emot ett tecken samt en sträng som argument och returnerar strängen efter att alla tecken som matchar argumentet har tagits bort.
 
+---
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 string RemoveSpecificChar (string input, char c){
@@ -188,15 +190,15 @@ string RemoveSpecificChar (string input, char c){
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 5 | Sammanställning av sträng
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>GetStringContent</code>, som tar emot en sträng som argument och skriver ut alla bokstäver, siffror och specialtecken som förekommer i strängen. Dvs. givet meningen "Hello world! 123" så ska följande skrivas ut: <br><br>Bokstäver: 10 <br> Siffror: 3 <br> Specialtecken: 1. <br><br>Notera att mellanslag inte tillhör någon kategori och därför inte ska tillgodoräknas. **TIPS!** Det finns en inbyggd metod för datatypen <code>char</code> som kan avgöra om ett tecken är en siffra samt en annan som kan avgöra om ett tecken är en bokstav. 
 
+---
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 void GetStringContent(string input)
@@ -226,15 +228,15 @@ void GetStringContent(string input)
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 6 | Manuell Substring
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>SubString</code>, som tar emot en sträng samt ett heltal som argument och returnerar en delsträng från och med det angivna heltalet där heltalet representerar en indexposition. <br><br> Skriv sedan en annan metod, <code>SubString</code> som tar emot en sträng samt två heltal som argument och returnerar en delsträng mellan indexpositionen som det första heltalet avser och indexpositionen som det andra heltalet avser. <br><br> **OBS!** Metoderna har samma namn men inte samma metodsignatur (två argument gentemot tre). Vi kommer att behandla detta ytterligare i senare kurser, men notera gärna detta. <br> Denna uppgift är tänkt att öka förståelsen för hur <code>Substring</code> fungerar genom att skriva en egen implementation av metoden. Uppgiften ska därför inte lösas mha. den inbyggda metoden <code>Substring</code>.
 
+---
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 string SubString(string input, int start)
@@ -273,15 +275,15 @@ string SubString(string input, int start, int stop)
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 7 | Manuell IndexOf
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>IndexOfChar</code>, som tar emot en sträng, ett tecken samt ett heltal - som avser startposition för sökningen - och skrickar tillbaka indexpositionen som tecknet förekommer på i strängen. Om tecknet inte förekommer i strängen så ska -1 returneras. <br><br> **OBS!** Denna uppgift är tänkt att öka förståelsen för hur <code>IndexOf</code> fungerar genom att skriva en egen implementation av metoden. Uppgiften ska därför inte lösas mha. den inbyggda metoden <code>IndexOf</code>.
 
+---
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 int IndexOfChar(string input, char c, int pos)
@@ -299,15 +301,15 @@ int IndexOfChar(string input, char c, int pos)
 
 {::options parse_block_html="false" /}
 
----
-
 Uppgift 8 | IsStringInString
 ----------|-------------------------------
 Beskrivning | Skriv en metod, <code>IsStringInString</code>, som tar emot två strängar som argument och avgör om den andra strängen förekommer i den första strängen. **TIPS!** Nyttja den inbyggda metoden <code>Substring</code> eller din implementation från Uppgift 6 för att jämföra den andra strängen mot den första strängen. Nyttja den inbyggda metoden <code>IndexOf</code> eller din implementation från Uppgift 7 för att hämta positionen i den första strängen där delsträngen (den andra strängen) börjar.
 
+---
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
 bool IsStringInString(string input, string substring)
@@ -340,5 +342,3 @@ bool IsStringInString(string input, string substring)
 </details>
 
 {::options parse_block_html="false" /}
-
----
