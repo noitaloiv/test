@@ -15,9 +15,9 @@
 @charset "UTF-8";
 
 @include skel-breakpoints((
-	xlarge: '(min-width: 2201px) and (max-width: 2560px)',
-	big: '(min-width: 1921px) and (max-width: 2200px)',
-	wide: '(min-width: 1621px) and (max-width: 1920px)',
+	xlarge: '(min-width: 2561px) and (max-width: 3400px)',
+	big: '(min-width: 1921px) and (max-width: 2560px)',
+	wide: '(min-width: 1680px) and (max-width: 1920px)',
 	normal: '(min-width: 961px) and (max-width: 1620px)',
 	narrow: '(min-width: 961px) and (max-width: 1320px)',
 	narrower: '(max-width: 960px)',
