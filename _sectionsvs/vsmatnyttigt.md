@@ -21,7 +21,7 @@ permanent.
 
 Som du även ser i bilden ovan så har du möjligheten att ändra namn på filer här. Fördelen med att ändra namnet i denna meny är att du samtidigt erbjuds möjligheten att ändra referenserna i projektet för denna fil till det nya namnet. Detta blir mer aktuellt under framtida programmeringskurser.
 
-<h3>Debugging" och felsökning</h3>
+<h3>"Debugging" och felsökning</h3>
 > _90% of coding is debugging. The other 10% is writing bugs._
 > - Bram Cohen
 
