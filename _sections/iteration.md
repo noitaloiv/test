@@ -217,7 +217,8 @@ Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<
           <tbody>
             <tr>
               <td>
-                <pre lang="csharp" class="code-example">
+                <pre lang="csharp" class="highlight">
+// OBS! Du behöver inte inkl. mellanslag mellan symbolerna!
     *
    * * 
   * * *
@@ -232,6 +233,8 @@ Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<
     </tr>
   </tbody>
 </table>
+
+---
 
 {::options parse_block_html="true" /}
 
@@ -343,10 +346,11 @@ Skriv en metod, <code>NestedPrintFour</code>, som tar emot ett heltal som använ
           <tbody>
             <tr>
               <td>
-                <pre lang="csharp" class="code-example">
+                <pre lang="csharp" class="highlight">
+// OBS! Du behöver inte inkl. mellanslag mellan symbolerna!
 // Givet heltalet 2 som input:
-   *
- * * *
+        *
+      * * *
  
 // Givet heltalet 5 som input:
         *
@@ -359,7 +363,7 @@ Skriv en metod, <code>NestedPrintFour</code>, som tar emot ett heltal som använ
             </tr>
           </tbody>
         </table>
-**Notera** att enbart udda antal <code>*</code> skrivs ut per rad. Antalet rader som skrivs ut bestäms av det heltal som tas emot som argument.
+<strong>Notera</strong> att enbart udda antal <code>*</code> skrivs ut per rad. Antalet rader som skrivs ut bestäms av det heltal som tas emot som argument.
       </td>
     </tr>
   </tbody>
