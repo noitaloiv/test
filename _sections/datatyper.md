@@ -3,35 +3,56 @@ title: Datatyper
 icon: fa-th
 order: 3
 ---
+Gällande grundläggande datatyper så behöver vi först och främst förstå att det finns olika typer av data. Vi har exempelvis datatypen <code>int</code> som kan nyttjas för att lagra numeriska värden, datatypen <code>string</code> för att lagra text och <code>char</code> för att lagra individuella bokstäver och tecken.
 
-Gällande variabler så behöver vi först och främst förstå att det finns olika typer av data. Vi har exempelvis <code>int</code> för numeriska värden och <code>string</code> för text.
+I denna sektion så kommer du att arbeta med dessa grundläggande datatyper, hur man interagerar med konsolen (input/output) samt konvertering av datatyper. För att göra detta så behöver man dock ha viss koll på de olika koncepten. Således följer en kortfattad beskrivning av resp. koncept nedan.
+
+Datatyper:
+```cs
+// Grundläggande datatyper
+bool b; // Hanterar värden av typen true eller false
+int x; // Hanterar numeriska värden, t.ex. 123
+char c; // Hanterar tecken, t.ex. '1' eller 'A'
+DateTime date; // Hanterar datum och tid, t.ex. DateTime.Today
+
+// Notera att det även finns en annan datatyp - decimal - för decimaltal.
+double dd; // Hanterar decimaltal, t.ex. 12.3
+string s; // Ord och meningar, t.ex. "Hello world"
+```
+
+Input/output:
+```cs
+// Input
+// Läser det som användaren skriver in i konsolen.
+// OBS! Alltid av typen string.
+string input = Console.ReadLine();
+
+// Output
+// Skriver ut det som skrivs inom parenteserna i konsolen.
+Console.WriteLine("Hello");
+
+// .Write skriver ut innehållet på samma rad medan WriteLine bryter raden.
+Console.Write("Hel");
+Console.Write("lo");
+```
+
+Konvertering:
+```cs
+string input = Console.ReadLine();
+
+// Fungerar enbart om input KAN konverteras till ett heltal.
+// T.ex. kan "hej" inte konverteras till ett heltal.
+int x = Convert.ToInt32(input);
+
+// Fungerar alltid utan felmeddelande.
+// Ger en felkod, 0, om konvertering misslyckas.
+int y; 
+int.TryParse(input, out y);
+```
 
 ## Uppgiftsförteckning ##
 
-Uppgift 1 | Datatyper
-----------|-------------------------------
-Beskrivning | Deklarera en datatyp som hanterar värden av typen: <br> <sub>-Sant/falskt</sub> <br> <sub>-Heltal</sub><br><sub>-Flyttal</sub><br><sub>-Tecken</sub><br><sub>-Datum</sub><sub>-Decimaltal</sub><br><sub>-Text</sub>
-
----
-
-{::options parse_block_html="true" /}
-
-<details><summary markdown="span">Lösningsförslag</summary>
-
-```cs
-bool b;
-int x;
-float f;
-char c;
-DateTime d;
-double do; // Notera att det även finns en datatyp - decimal - men att man generellt nyttjar double vid decimaltal.
-string s;
-```
-
-</details>
-{::options parse_block_html="false" /}
-
-Uppgift 2 | Att deklarera vs. att instansiera
+Uppgift 1 | Att deklarera vs. att instansiera
 ----------|-----------------------------------
 Beskrivning | Deklarera en variabel av resp. datatyp (<code>int</code>, <code>string</code>, <code>char</code>, <code>bool</code>) och instansiera sedan resp. variabel genom att tilldela dem ett värde.
 
@@ -58,9 +79,9 @@ b = true;
 </details>
 {::options parse_block_html="false" /}
 
-Uppgift 3 | Hello, Name!
+Uppgift 2 | Hello, Name!
 ----------|-------------------------------
-Beskrivning | Skriv ett program som visar ditt namn och en fullständig adress (såsom du skulle se den på ett brev). Programmet behöver inte läsa in input från användaren.
+Beskrivning | Skriv ett program som visar ditt namn och en fullständig adress (såsom du skulle se den på ett brev). Programmet ___ska___ läsa in input från användaren.
 
 ---
 
@@ -69,14 +90,19 @@ Beskrivning | Skriv ett program som visar ditt namn och en fullständig adress (
 <details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
-Console.WriteLine("Hello, Anton!");
-Console.WriteLine("Your full adress is: Kalasgatan 123, 113 55 Uppsala");
+Console.WriteLine("Enter your name: ");
+string name = Console.ReadLine();
+Console.WriteLine("Enter your address: ");
+string address = Console.ReadLine();
+
+Console.WriteLine("Hello, " + name + "!");
+Console.WriteLine("Your full adress is: " + address);
 ```
 
 </details>
 {::options parse_block_html="false" /}
 
-Uppgift 4 | Modifiering av datatyper - Konvertering
+Uppgift 3 | Modifiering av datatyper - Konvertering
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in en siffra från en användare och sedan konverterar värdet till ett heltal. <br><br> TIPS! Tänk på att ALLT som läses in med <code>Console.ReadLine()</code> är av datatypen <code>string</code>. För att ändra detta till ett heltal så behöver man konvertera värdet. Detta kan ske på olika sätt, men försök dig på följande: <code>Convert.ToInt32()</code> samt <code>int.TryParse()</code>. Om du är intresserad av att läsa mer kring hur dessa metoder särskiljer sig så kan du kika på följande länk: [Parse vs ConvertToInt32 vs TryParse](http://www.dotnetstudy.com/int-parse-vs-convert-toint32-vs-int-tryparse?id=32)
 
@@ -100,7 +126,7 @@ Console.WriteLine(y);
 
 {::options parse_block_html="false" /}
 
-Uppgift 5 | Konvertering med olika datatyper
+Uppgift 4 | Konvertering med olika datatyper
 ----------|-------------------------------
 Beskrivning | I uppgift 4 täcks hur man konverterar från en <code>string</code> till en <code>int</code> men det finns såklart flera olika metoder beroende på datatyp. Testa på att konvertera enligt nedan: <br><br> Från <code>int</code> till <code>string</code> <br> Från <code>float</code> till <code>int</code> <br> Från <code>double</code> till <code>string</code> <br> Från <code>float</code> till <code>string</code>.
 
@@ -132,7 +158,7 @@ string sss = f.ToString();
 
 {::options parse_block_html="false" /}
 
-Uppgift 6 | Olika typer av konvertering
+Uppgift 5 | Olika typer av konvertering
 ----------|-------------------------------
 Beskrivning | Man kan även konvertera på olika sätt. Det finns exempelvis s.k. explicit konvertering och implicit konvertering samt konvertering utan att anropa <code>Convert-klassen</code> (dvs. exempelvis <code>Convert.ToInt32</code>). <br><br> Explicit konvertering är det har nyttjats i tidigare uppgifter. Dvs. exempelvis genom metoder såsom <code>Convert.ToInt32</code> eller <code>int.TryParse</code>. Vi säger helt enkelt tydligt att vi vill genomföra konvertering. <br> Implicit konvertering tillåter oss att exempelvis gå från en <code>int</code> till en <code>double</code> utan att ange det då båda datatyper är av numerisk karaktär. <br><br> Det är även möjligt att genomföra explicit konvertering utan att ange en metod för konverteringen. Detta uppnås genom att placera datatypen som variabeln ska konverteras till - inom parenteser - framför variabeln. Testa på dessa olika typer av konvertering och ifall du är intresserad av att läsa mer om det så kan följande länk nyttjas: [Olika typer av konvertering C#](https://code-maze.com/csharp-basics-type-conversion/)
 
@@ -161,7 +187,7 @@ double d = (double)x;
 
 {::options parse_block_html="false" /}
 
-Uppgift 7 | Summera två heltal
+Uppgift 6 | Summera två heltal
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in två heltal från användaren, summerar heltalen och skriver ut summan.
 
@@ -182,7 +208,7 @@ Console.WriteLine(sum);
 
 {::options parse_block_html="false" /}
 
-Uppgift 8 | Division av heltal
+Uppgift 7 | Division av heltal
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in två heltal och sedan beräknar samt skriver ut kvoten. Utöka sedan programmet så att det även läser in två decimaltal och sedan beräknar samt skriver ut kvoten för divisionen mellan dessa tal.<br><br> Notera skillnaden som uppstår mellan de två beräkningarna då det är viktigt att vara medveten om denna diskrepans vid exempelvis beräkningar av procent.
 
@@ -212,7 +238,7 @@ double korrektKvot = (double)x / (double)y; // Ger 3.33 om x är 10 och y är 3.
 
 {::options parse_block_html="false" /}
 
-Uppgift 9 | Grundläggande matematik
+Uppgift 8 | Grundläggande matematik
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in två heltal från användaren och som sedan skriver ut differensen mellan talen (subtraktion), produkten mellan talen (multiplikation) och kvoten mellan talen (division).
 
@@ -242,7 +268,7 @@ Console.WriteLine(div);
 <table>
   <thead>
     <tr>
-      <th>Uppgift 10</th>
+      <th>Uppgift 9</th>
       <th>Byta plats på värden</th>
     </tr>
   </thead>
@@ -301,7 +327,7 @@ Console.WriteLine("Second input contains: " + second);
 <table>
   <thead>
     <tr>
-      <th>Uppgift 11</th>
+      <th>Uppgift 10</th>
       <th>Korrekt beräkning</th>
     </tr>
   </thead>
@@ -357,7 +383,7 @@ Console.WriteLine("Second calculation: " + sum2);
 
 {::options parse_block_html="false" /}
 
-Uppgift 12 | Beräkna hastighet
+Uppgift 11 | Beräkna hastighet
 ----------|-------------------------------
 Beskrivning | Skriv ett program som läser in avstånd och tid som input och sedan räknar ut hastighet i km/h. <br><br> **TIPS!** Använd datatypen float. Formeln som nyttjas för att beräkna hastighet (given tid och avstånd) är <code> v = s / t </code> där <code>s</code> är avstånd och <code>t</code> är antalet timmar.
 
@@ -381,7 +407,7 @@ float speed = distance / time;
 <table>
   <thead>
     <tr>
-      <th>Uppgift 13</th>
+      <th>Uppgift 12</th>
       <th>Strängkonkatenering</th>
     </tr>
   </thead>
@@ -433,7 +459,7 @@ Console.WriteLine("Name: " + lName + ", " + fName + ".");
 <table>
   <thead>
     <tr>
-      <th>Uppgift 14</th>
+      <th>Uppgift 13</th>
       <th>Modulus</th>
     </tr>
   </thead>
