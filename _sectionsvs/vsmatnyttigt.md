@@ -25,6 +25,7 @@ Som du även ser i bilden ovan så har du möjligheten att ändra namn på filer
 > _90% of coding is debugging. The other 10% is writing bugs._
 > - Bram Cohen
 
+
 > _If debugging is the process of removing bugs, then programming must be the process of putting them in._
 > - Edsger W. Dijkstra
 
