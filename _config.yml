@@ -30,8 +30,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: IM-UU Portal
-subtitle: En guide till grundläggande programmering
+title: IM-UU - Programmeringsportalen
+subtitle: En guide till programmering
 #description: 
 #author: Your Incredible Name
 #email: your-email@example.com
