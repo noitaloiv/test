@@ -59,30 +59,30 @@ Beskrivning | Skriv en metod, <code>PowerOf</code>, som tar emot två heltal (<c
     <tr>
       <td>Beskrivning</td>
       <td>
-        Skriv en metod, <code>FizzBuzz</code>, som tar emot 3 heltal. <code>n</code> som representerar antalet iterationer, <code>x</code> som representerar det första delbara talet och <code>y</code> som representerar det andra delbara talet. Metoden fungerar på så sätt att den skriver ut alla tal mellan 1 till och med <code>n</code>. Om ett tal dock är <em>jämnt delbart</em> med <code>x</code> så ska "Fizz" skrivas ut framför talet. Om talet är <em>jämnt delbart</em> med <code>y</code> så ska “Buzz“ skrivas ut framför talet och om talet är <em>jämnt delbart med <code>x</code> och <code>y</code></em> så ska “FizzBuzz“ skrivas ut framför talet. <strong>OBS!</strong> Varje tal ska enbart skrivas ut en gång. Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br>
+Skriv en metod, <code>FizzBuzz</code>, som tar emot 3 heltal. <code>n</code> som representerar antalet iterationer, <code>x</code> som representerar det första delbara talet och <code>y</code> som representerar det andra delbara talet. Metoden fungerar på så sätt att den skriver ut alla tal mellan 1 till och med <code>n</code>. Om ett tal dock är <em>jämnt delbart</em> med <code>x</code> så ska "Fizz" skrivas ut framför talet. Om talet är <em>jämnt delbart</em> med <code>y</code> så ska “Buzz“ skrivas ut framför talet och om talet är <em>jämnt delbart med <code>x</code> och <code>y</code></em> så ska “FizzBuzz“ skrivas ut framför talet. <strong>OBS!</strong> Varje tal ska enbart skrivas ut en gång. Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br>
         <table class="examples">
-  <thead>
-    <tr>
-      <th>Körexempel</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <pre lang="csharp" class="code-example">
-        //x = 2, y = 4
-        1
-        Fizz 2
-        3
-        FizzBuzz 4
-        5
-        Fizz 6
-        </pre>
-          </td>
-    </tr>
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="highlight">
+//Om x = 2 och y = 4
+1
+Fizz 2
+3
+FizzBuzz 4
+5
+Fizz 6
+                </pre>
+              </td>
+            </tr>
           </tbody>
         </table>
-  </td>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -111,9 +111,47 @@ Uppgift 17 | AlternateMerge (Medel)
 ----------|----------
 Beskrivning | Skriv en metod, <code>AlternateMerge</code>, som tar emot två arrayer av heltal och returnerar en array som innehåller samtliga element från resp. array. Elementen ska dock placeras i turordning där vi först tar elementet på position 0 i den första arrayen följt av elementet på position 0 i den andra arrayen osv. Dvs. att givet arrayen [3, 5, 10, 2, 6] och [8, 1, 4, 12, 7] så skulle följande array returneras: [3, 8, 5, 1, 10, 4, 2, 12, 6, 7].
 
-Uppgift 18 | Beräkning av heltal (Medel)
-----------|----------
-Beskrivning | Skriv en metod som läser in ett godtyckligt antal positiva eller negativa tal från användaren. Metoden ska sedan räkna ut antalet positiva resp. negativa tal. För att avsluta inmatningen så ska användaren ange "e". Metoden ska då avslutningsvis skriva ut antalet positiva och negativa tal. Exempel på interaktion med metoden:<br><br><code>1</code><br><code>-4</code><br><code>-1</code><br><code>0</code><br><code>6</code><br><code>12</code><br><code>e</code><br><code>Antal positiva tal: 3</code><br><code>Antal negativa tal: -2</code><br><br>**NOTERA** att "0" inte ska tillgodoräknas som ett positivt eller negativt tal. **TIPS!** Nyttja en while-loop för att läsa in heltal från användaren.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 18</th>
+      <th>Beräkning av heltal (Medel)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod som läser in ett godtyckligt antal positiva eller negativa tal från användaren. Metoden ska sedan räkna ut antalet positiva resp. negativa tal. För att avsluta inmatningen så ska användaren ange "e". Metoden ska då avslutningsvis skriva ut antalet positiva och negativa tal. Exempel på interaktion med metoden:<br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="highlight">
+1
+-4
+-1
+0
+6
+12
+e
+Antal positiva tal: 3
+Antal negativa tal: -2
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <strong>NOTERA</strong> att "0" inte ska tillgodoräknas som ett positivt eller negativt tal. <strong>TIPS!</strong> Nyttja en <code>while</code>-loop för att läsa in heltal från användaren.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Uppgift 19 | Beräkning av SGD (Medel)
 ----------|----------
@@ -140,7 +178,7 @@ Skriv en metod som kan läsa in flera textrader från användaren och byta ut va
   <tbody>
     <tr>
       <td>
-        <pre lang="csharp">
+        <pre lang="csharp" class="highlight">
 Input: Mors lilla Olle i skogen gick.
 Output: Mörs lilla Ölle i skögen gick.
 Input: Om vädret är fint så kommer Ofelia på festen.
@@ -160,9 +198,46 @@ Uppgift 21 | RotateArrayBy2 (Medel/Svår)
 ----------|----------
 Beskrivning | Skriv en metod, <code>RotateArrayBy2</code>, som tar emot en array av heltal och roterar elementen i en array med 2 positioner åt vänster. Dvs. att givet arrayen [3, 5, 10, 2, 6] så skulle följande array returneras: [10, 2, 6, 3, 5]. **OBS!** Skriv din implementation ___utan___ att deklarera en ny array.
 
-Uppgift 22 | "String slicing" (Medel/Svår)
-----------|----------
-Beskrivning | Skriv en metod som tar emot en sträng samt ett heltal (<code>n</code>) och returnerar alla angränsande delsträngar (<code>substrings</code>) av längden <code>n</code> i den ordning som de anges. Dvs. att givet strängen <code>49142</code> och heltalet 3 så får vi följande delsträngar:<br><br><code>"491"</code><br><code>"914"</code><br><code>"142"</code><br><br>Om vi stället ber om delsträngar med 4 tecken så får vi:<br><br><code>"4914"</code><br><code>"9142"</code><br><br>Notera att längden på delsträngarna måste vara större än 1 och kan självfallet inte vara längre än själva strängen.<br><br>***TIPS!*** Nyttja de inbyggda sträng-metoderna <code>Concat</code> samt <code>Substring</code>.
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 22</th>
+      <th>"String slicing" (Medel/Svår)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod som tar emot en sträng samt ett heltal (<code>n</code>) och returnerar alla angränsande delsträngar (<code>substrings</code>) av längden <code>n</code> i den ordning som de anges. Exempel på interaktion med metoden:<br>
+        <table class="examples">
+          <thead>
+            <tr>
+              <th>Körexempel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <pre lang="csharp" class="highlight">
+// Givet strängen "49142" och heltalet 3 så får vi följande delsträngar:
+"491"
+"914"
+"142"
+
+// Givet strängen "49142" och heltalet 3 så får vi följande delsträngar:
+"4914"
+"9142"
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <i>Notera</i> att längden på delsträngarna måste vara större än 1 och att de självfallet inte kan vara längre än själva strängen. <strong>TIPS!</strong> Nyttja de inbyggda sträng-metoderna <code>Concat</code> samt <code>Substring</code>.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Uppgift 23 | Decimal to binary (Medel/Svår)
 ----------|----------
@@ -183,7 +258,7 @@ Beskrivning | Ett persontågsföretag vill ha ett program (en metod i detta fall
     <tr>
       <td>Beskrivning</td>
       <td>
-        Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet “å” genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet (“å”). Exempelvis kan interaktion med programmet se ut enligt följande:<br><br>
+        Skriv ett program som läser in en sträng med valfri text. Programmet ska därefter markera alla förekomster av tecknet “å” genom att skriva ut texten igen och på raden under skriva ett <code>*</code> för varje förekomst av tecknet (“å”). Exempelvis kan interaktion med programmet se ut enligt följande:<br>
         <table>
   <thead>
     <tr>
@@ -193,7 +268,7 @@ Beskrivning | Ett persontågsföretag vill ha ett program (en metod i detta fall
   <tbody>
     <tr>
       <td>
-        <pre lang="csharp">
+        <pre lang="csharp" class="highlight">
         Svenska äpplen och fem året runt-äpplen
                                * 
         </pre>
@@ -201,7 +276,7 @@ Beskrivning | Ett persontågsföretag vill ha ett program (en metod i detta fall
     </tr>
           </tbody>
         </table>
-<br><br>b. Utöka programmet så att det även markerar “ä”. Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för “å” och “ä” skriver tecknet <code>*</code> för “å” och tecknet <code>%</code> för “ä”.
+b. Utöka programmet så att det även markerar “ä”. Skriv även här ut tecknet <code>*</code>.<br><br>c. Utöka programmet ytterligare så att det istället för att skriva <code>*</code> för “å” och “ä” skriver tecknet <code>*</code> för “å” och tecknet <code>%</code> för “ä”.
   </td>
     </tr>
   </tbody>
@@ -215,9 +290,42 @@ Uppgift 27 | IsInteger (Medel/Svår)
 ----------|----------
 Beskrivning | Skriv en metod, <code>IsInteger</code> som tar emot en sträng och avgör om strängen representerar ett riktigt heltal. Metoden ska ignorera mellanslag men behöver kunna hantera <code>+</code>-tecken och <code>-</code>-tecken. <br><br>**TIPS!** Metoden <code>char.IsDigit</code> kan nyttjas för att avgöra om ett tecken representerar en siffra eller ej.
 
-Uppgift 28 | Begynnelsebokstäver (Medel/Svår)
-----------|----------
-Beskrivning | Skriv en metod som skriver ut alla begynnelsebokstäver i en mening. Med begynnelsebokstäver så avses det första bokstaven i resp. ord i en mening. Exempel på interaktion med metoden kan tänkas se ut enligt följande:<br><br>Datorerna Synes Vänliga och Programmen Slutar Vårdslöst.<br>Output: D S V o P S V
+<table>
+  <thead>
+    <tr>
+      <th>Uppgift 28</th>
+      <th>Begynnelsebokstäver (Medel/Svår)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskrivning</td>
+      <td>
+Skriv en metod som skriver ut alla begynnelsebokstäver i en mening. Med begynnelsebokstäver så avses det första bokstaven i resp. ord i en mening. Exempel på interaktion med metoden:<br>
+        <table>
+  <thead>
+    <tr>
+      <th>Körexempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre lang="csharp" class="highlight">
+// Input
+Datorerna Synes Vänliga och Programmen Slutar Vårdslöst.
+
+// Output
+D S V o P S V
+        </pre>
+          </td>
+    </tr>
+          </tbody>
+        </table>
+  </td>
+    </tr>
+  </tbody>
+</table>
 
 Uppgift 29 | En bättre sökalgoritm (Svår)
 ----------|----------
