@@ -619,7 +619,7 @@ bool IsPrime(int input){
 
 Uppgift 12 | Alla primtal upp till...
 ----------|----------
-Beskrivning | Skriv en metod, <code>PrimeNumbers</code>, som tar emot ett heltal och skriver ut samtliga primtal från 1 upp till och med det heltalet. <br><br> **TIPS!** Nyttja din implementation från Uppgift 10 för att lösa uppgiften.
+Beskrivning | Skriv en metod, <code>PrimeNumbers</code>, som tar emot ett heltal och skriver ut samtliga primtal från 1 upp till och med det heltalet. <br><br> **TIPS!** Nyttja din implementation från Uppgift 11 för att lösa uppgiften.
 
 ---
 
@@ -1013,7 +1013,7 @@ PrintUniques(new int[] {6, 4, 1});
             </tr>
           </tbody>
         </table>
-<strong>TIPS!</strong> Nyttja din implementation av metoden <code>Count</code> från Uppgift 20.
+<strong>TIPS!</strong> Nyttja din implementation av metoden <code>Count</code> från Uppgift 21.
       </td>
     </tr>
   </tbody>
