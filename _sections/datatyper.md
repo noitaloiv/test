@@ -128,7 +128,7 @@ Console.WriteLine(y);
 
 Uppgift 4 | Konvertering med olika datatyper
 ----------|-------------------------------
-Beskrivning | I uppgift 4 täcks hur man konverterar från en <code>string</code> till en <code>int</code> men det finns såklart flera olika metoder beroende på datatyp. Testa på att konvertera enligt nedan: <br><br> Från <code>int</code> till <code>string</code> <br> Från <code>float</code> till <code>int</code> <br> Från <code>double</code> till <code>string</code> <br> Från <code>float</code> till <code>string</code>.
+Beskrivning | I Uppgift 3 så behandlas hur man konverterar från en <code>string</code> till en <code>int</code> men det finns såklart flera olika metoder beroende på vilka datatyper som nyttjas. Testa på att konvertera enligt nedan: <br> Från <code>int</code> till <code>string</code> <br> Från <code>double</code> till <code>int</code> <br> Från <code>double</code> till <code>string</code>
 
 ---
 
@@ -189,7 +189,7 @@ double d = (double)x;
 
 Uppgift 6 | Summera två heltal
 ----------|-------------------------------
-Beskrivning | Skriv ett program som läser in två heltal från användaren, summerar heltalen och skriver ut summan.
+Beskrivning | Skriv ett program som läser in två heltal från en användare. Programmet ska sedan summera heltalen och skriva ut den resulterande summan. <br>**OBS!** Programmet ska inte krascha pga. felaktig inmatning (t.ex. om användaren anger en bokstav istället för en ett heltal).
 
 ---
 
@@ -210,7 +210,7 @@ Console.WriteLine(sum);
 
 Uppgift 7 | Division av heltal
 ----------|-------------------------------
-Beskrivning | Skriv ett program som läser in två heltal och sedan beräknar samt skriver ut kvoten. Utöka sedan programmet så att det även läser in två decimaltal och sedan beräknar samt skriver ut kvoten för divisionen mellan dessa tal.<br><br> Notera skillnaden som uppstår mellan de två beräkningarna då det är viktigt att vara medveten om denna diskrepans vid exempelvis beräkningar av procent.
+Beskrivning | Skriv ett program som läser in två heltal och sedan beräknar samt skriver ut kvoten. Utöka sedan programmet så att det även läser in två decimaltal och sedan beräknar samt skriver ut kvoten för divisionen mellan dessa tal.<br><br> **Notera** skillnaden som uppstår mellan de två beräkningarna då det är viktigt att vara medveten om denna diskrepans vid exempelvis beräkningar av procent.
 
 ---
 
@@ -415,7 +415,7 @@ float speed = distance / time;
     <tr>
       <td>Beskrivning</td>
       <td>
-Skriv ett program som läser in ett förnamn och ett efternamn. Konkatenera namnen genom att sätta ihop efternamnet med förnamnet. Tänk på att det utskrivna måste vara läsbart för datoranvändaren. <br><br> **TIPS!** För att konkatenera ("sätta ihop") strängar så kan man nyttja operatorn för addition (+) mellan de strängar man vill konkatenera. Exempel på interaktion med programmet: <br>
+Skriv ett program som läser in ett förnamn och ett efternamn. Konkatenera namnen genom att sätta ihop efternamnet med förnamnet. Tänk på att det utskrivna måste vara läsbart för datoranvändaren. <br><br> <strong>TIPS!</strong> För att konkatenera ("sätta ihop") strängar så kan man nyttja operatorn för addition (+) mellan de strängar man vill konkatenera. Exempel på interaktion med programmet: <br>
         <table class="examples">
   <thead>
     <tr>
