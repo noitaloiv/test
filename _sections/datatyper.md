@@ -189,7 +189,7 @@ double d = (double)x;
 
 Uppgift 6 | Summera två heltal
 ----------|-------------------------------
-Beskrivning | Skriv ett program som läser in två heltal från en användare. Programmet ska sedan summera heltalen och skriva ut den resulterande summan. <br>**OBS!** Programmet ska inte krascha pga. felaktig inmatning (t.ex. om användaren anger en bokstav istället för en ett heltal).
+Beskrivning | Skriv ett program som läser in två heltal från en användare. Programmet ska sedan summera heltalen och skriva ut den resulterande summan. <br><br>**OBS!** Programmet ska inte krascha pga. felaktig inmatning (t.ex. om användaren anger en bokstav istället för en ett heltal).
 
 ---
 
