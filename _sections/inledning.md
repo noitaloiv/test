@@ -46,7 +46,7 @@ public class Program
 ```
 Där "..." representerar den kod du skriver för att lösa uppgiften.
 
-Ett annat alternativ, något du förväntas nyttja senare oavsett fallet, är att strukturera ditt program med hjälp av metoder. Tanken här är att du skapar en ny, egendefinierad metod för resp. uppgift som du sedan _anropar_ från <code>Main</code>-metoden. Mer information kring just metoder finner du under sektionen "Metoder" [Hoppa hit!](https://noitaloiv.github.io/test/#metoder). För att nyttja metoder så skriver man först en ny metod _utanför_ <code>Main</code>-metoden som i nedan exempel:
+Ett annat alternativ, något du förväntas nyttja senare oavsett fallet, är att strukturera ditt program med hjälp av metoder. Tanken här är att du skapar en ny, egendefinierad metod för resp. uppgift som du sedan _anropar_ från <code>Main</code>-metoden. Mer information kring just metoder finner du under sektionen "Metoder" ([Hoppa hit!](https://noitaloiv.github.io/test/#metoder)). För att nyttja metoder så skriver man först en ny metod _utanför_ <code>Main</code>-metoden som i nedan exempel:
 ```cs
 public class Program
 {
