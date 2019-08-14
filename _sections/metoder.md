@@ -18,7 +18,7 @@ int Addition(int num1, int num2){
   return sum;
 }
 ```
-**OBS!** Om metoden har en returtyp så __måste__ metoden också skicka tillbaka något. Om metoden inte ska skicka tillbaka något, t.ex. om den enbart förväntas skriva ut information till konsolen så nyttjas returtypen <code>void</code>.
+**OBS!** Om metoden har en returtyp så __måste__ metoden också skicka tillbaka något. Om metoden inte ska skicka tillbaka något, t.ex. om den enbart förväntas skriva ut information till konsolen så nyttjas returtypen <code>void</code>. När vi arbetar med konsolapplikationer så __måste__ du även lägga till nyckelordet <code>static</code> framför din returtyp för att <code>Main</code>-metoden ska kunna "hitta" metoden. Vad <code>static</code> innefattar behandlas ytterligare under kursen "Objektorienterad programmering I".
 ## Uppgiftsförteckning ##
 
 Uppgift 1 | Metodsyntax
