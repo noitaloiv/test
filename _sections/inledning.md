@@ -8,11 +8,11 @@ För att lösa uppgifterna som du ser på denna sida så behöver du först skap
 ```cs
 using System;
 
-namespace PracticeAssignments // This name depends on what you have named your project as
+namespace PracticeAssignments // Namnet beror på vad du har döpt ditt projekt till.
 {
-  public class Program
+  class Program
   {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
       // Write to console
       Console.WriteLine("Hello World!");
