@@ -28,32 +28,74 @@ Det är inom *metoden* <code>Main</code> som du kommer att skriva din kod, till 
 
 För nästan varje uppgift på denna sida så förväntas det att du nyttjar dessa verktyg för att lösa uppgiften så lägg dem på minnet!
 
-### Metod/funktion ###
-Då det snabbt kan bli jobbigt att skapa en ny konsolapplikation för varje uppgift så rekommenderar vi till en början att ni arbetar enbart i <code>Main</code>-metoden och att ni separerar varje uppgift med hjälp av kommentarer. Dvs. exempelvis enligt nedan:
+### Föreslagen struktur ###
+Då det snabbt kan bli omständigt att skapa en ny konsolapplikation för resp. uppgift så rekommenderar vi till en början att du, till en början, enbart arbetar i <code>Main</code>-metoden och separerar varje uppgift med hjälp av kommentarer. Dvs. exempelvis enligt nedan:
 ```cs
-public static void Main(string[] args)
+public class Program
 {
-  // Uppgift 1 - Datatyper
-  bool b = ...
-  
-  // Uppgift 2 - Att deklarera gentemot att instansiera
-  ...
+  static void Main(string[] args)
+  {
+      // Uppgift 1 - Att deklarera vs. att instansiera
+      int x;
+      ...
+      // Uppgift 2 - Hello, Name!
+      Console.WriteLine("Enter your name: ");
+      ...
+  }
 }
 ```
-Där "..." så klart representerar den kod du skriver för att lösa uppgiften.
+Där "..." representerar den kod du skriver för att lösa uppgiften.
 
-Det finns dock ett annat, tydligare sätt att separera uppgifterna och detta är med hjälp av egendefinierade metoder (detta behandlas ytterligare under Metod-sektionen). Detta innefattar att du, istället för att placera all kod i <code>Main</code>-metoden, skapar en ny metod för resp. uppgiften som du sedan ___anropar___ från <code>Main</code>-metoden. Exempel:
+Ett annat alternativ, något du förväntas nyttja senare oavsett fallet, är att strukturera ditt program med hjälp av metoder. Tanken här är att du skapar en ny, egendefinierad metod för resp. uppgift som du sedan _anropar_ från <code>Main</code>-metoden. Mer information kring just metoder finner du under sektionen "Metoder" [Hoppa hit!](https://noitaloiv.github.io/test/#metoder). För att nyttja metoder så skriver man först en ny metod _utanför_ <code>Main</code>-metoden som i nedan exempel:
 ```cs
-public static void Main(string[] args)
+public class Program
 {
-  // Uppgift 1 - Datatyper
-  Uppgift1();
-  
-  // Uppgift 2 - Att deklarera gentemot att instansiera
-  Uppgift2();
-}
+  static void Main(string[] args)
+  {
 
-void Uppgift1(){
-  ...
+  }
+  // HÄR, efter den avslutande '}'
+  // "static void" är något du måste lägga till framför metodnamnet, annars kan vi inte anropa metoden från Main
+  // Hur en s.k. "metodsignatur" ser ut beskrivs ytterligare under sektionen "Metoder".
+  static void Uppgift1()
+  {
+      int x;
+      ...
+  }
+  
+  static void Uppgift2()
+  {
+      Console.WriteLine("Enter your name: ");
+      ...
+  }
+}
+```
+
+När du sedan är klar med din implementation, eller om du vill testa den, så behöver du _anropa_ den metod som du har skrivit från <code>Main</code>-metoden. Exempel på hur man gör detta ser vi nedan:
+```cs
+public class Program
+{
+  static void Main(string[] args)
+  {
+      // Metodanrop för att köra Uppgift1
+      Uppgift1();
+      
+      // Metodanrop för att köra Uppgift2
+      Uppgift2();
+      
+      // Osv.
+  }
+
+  static void Uppgift1()
+  {
+      int x;
+      ...
+  }
+  
+  static void Uppgift2()
+  {
+      Console.WriteLine("Enter your name: ");
+      ...
+  }
 }
 ```
