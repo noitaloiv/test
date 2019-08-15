@@ -23,9 +23,9 @@ Nämnvärt är att metodens- och parametrarnas namn _bör_ vara beskrivande för
 Utöver själva metodsignaturen så behöver en metod även en s.k. returtyp. Det är denna som säger åt programmet vad, om något, metoden ska skicka tillbaka. I fallet av metoden <code>Addition</code> så kan vi exempelvis tänka oss att det är rimligt att metoden skickar tillbaka summan som ett heltal. Dvs. enligt följande:
 ```cs
 int Addition(int num1, int num2){
-  int sum;
-  // Code goes here.
-  return sum;
+    int sum;
+    sum = num1 + num2;
+    return sum;
 }
 ```
 När metoden då sedan anropas så vet vi att ett heltal kommer att skickas tillbaka samt att vi **måste** skicka in 2 st. heltal. Exempelvis enligt:
