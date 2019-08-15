@@ -4,13 +4,23 @@ icon: fa-th
 order: 3
 ---
 
-Gällande metoder så behandlades konceptet kortfattat i inledningen, men innan vi går vidare så behöver vi först titta på syntaxen för dessa samt bilda oss en uppfattning av hur de nyttjas och varför. Vi börjar med en metodsignatur, vad är det och hur ser den ut?<br><br> En metodsignatur består utav namnet på metoden och ev. parametrar som metoden tar emot. En parameter för metoden <code>Addition</code> skulle exempelvis kunna tänkas vara 2 st. heltal som ska summeras. Dvs. något i stil med:
+Konceptet "Metod" behandlades kortfattat i inledningen där det beskrivs som ett alternativt sätt att strukturera kod. Varför detta är nödvändigt kan säkerligen ifrågasättas i början när man lär sig att programmera men i samband med att man bygger större och större program så märker man ganska snart att det utan hjälp av metoder snabbt blir överväldigande att dels hålla koll på vart all funktionalitet är placerad men även en påtaglig redundans av kod (dvs. ett identiskt kodstycke som förekommer på flera ställen). Om vi exempelvis föreställer oss att vi, vid olika tillfällen i ett program, vill kunna nyttja en viss funktion såsom t.ex. att lägga till en kontakt i en kontaktlista så känns det rimligt att bryta ut detta som en metod vilken vi sedan kan anropa vid behov. Detta gör det betydligt enklare att överblicka programmet såväl som att felsöka det. Det är således viktigt att man följer vissa riktlinjer när det kommer till metoder och det leder oss in på s.k. metodsignaturer: 
+
+<h3> Metodsignatur </h3>
+
+Så, en metodsignatur. Vad är det egentligen och hur ser en signatur ut?
+
+En metodsignatur består utav namnet på metoden och ev. parametrar som metoden tar emot. En parameter för exempelvis metoden <code>Addition</code> skulle kunna tänkas vara 2 st. heltal som ska summeras. Dvs. något i stil med:
 ```cs
 Addition(int num1, int num2){
   // Code goes here.
 }
 ```
-Nämnvärt är att metodens- och parametrarnas namn ska vara beskrivande. Exempelvis blir det snabbt väldigt svårt att avgöra vad en omfattande metod förväntas genomföra om dess namn är X och tar emot 14 parametrar döpta enligt x1, x2 osv.<br><br>Utöver själva metodsignaturen så behöver man även en s.k. returtyp. Det är denna som säger åt programmet vad det är, om något, som metoden ska skicka tillbaka. I fallet av metoden <code>Addition</code> så kan vi exempelvis tänka oss att det är rimligt att metoden skickar tillbaka summan som ett heltal. Dvs. enligt följande:
+Nämnvärt är att metodens- och parametrarnas namn _bör_ vara beskrivande för vad metoden förväntas utföra. Exempelvis blir det snabbt väldigt svårt att avgöra vad en omfattande metod förväntas genomföra om dess namn är X och tar emot 14 parametrar döpta enligt x1, x2 osv.
+
+<h3> Returtyp </h3>
+
+Utöver själva metodsignaturen så behöver en metod även en s.k. returtyp. Det är denna som säger åt programmet vad, om något, metoden ska skicka tillbaka. I fallet av metoden <code>Addition</code> så kan vi exempelvis tänka oss att det är rimligt att metoden skickar tillbaka summan som ett heltal. Dvs. enligt följande:
 ```cs
 int Addition(int num1, int num2){
   int sum;
@@ -18,7 +28,44 @@ int Addition(int num1, int num2){
   return sum;
 }
 ```
-**OBS!** Om metoden har en returtyp så __måste__ metoden också skicka tillbaka något. Om metoden inte ska skicka tillbaka något, t.ex. om den enbart förväntas skriva ut information till konsolen så nyttjas returtypen <code>void</code>. När vi arbetar med konsolapplikationer så __måste__ du även lägga till nyckelordet <code>static</code> framför din returtyp för att <code>Main</code>-metoden ska kunna "hitta" metoden. Vad <code>static</code> innefattar behandlas ytterligare under kursen "Objektorienterad programmering I".
+När metoden då sedan anropas så vet vi att ett heltal kommer att skickas tillbaka samt att vi **måste** skicka in 2 st. heltal. Exempelvis enligt:
+```cs
+public class Program
+{
+  static void Main(string[] args)
+  {
+      int sum = Addition(10, 15); // sum = 25
+      sum = Addition(12, -5); // sum = 7
+      sum = Addition(10); // Error - Metoden förväntar sig 2 heltal
+  }
+  
+  static int Addition(int num1, int num2)
+  {
+      int sum;
+      sum = num1 + num2;
+      return sum;
+  }
+}
+```
+**OBS!** Om metoden har en returtyp så _måste_ metoden också skicka tillbaka något. Om metoden inte ska skicka tillbaka något, t.ex. om den enbart förväntas skriva ut information till konsolen så nyttjas returtypen <code>void</code>. Detta är lämpligt om resultatet från metoden inte behöver nyttjas senare i programmet, t.ex. om vi vill skriva ut resultatet på en gång.
+```cs
+public class Program
+{
+  static void Main(string[] args)
+  {
+      Addition(10, 15); // "Sum: 25" i konsolen
+      Addition(12, -5); // "Sum: 7" i konsolen
+      Addition(10); // Error - Metoden förväntar sig 2 heltal
+  }
+  
+  static void Addition(int num1, int num2)
+  {
+      Console.WriteLine("Sum: " + (num1 + num2));
+  }
+}
+```
+När vi arbetar med konsolapplikationer så _måste_ du även lägga till nyckelordet <code>static</code> framför din returtyp för att <code>Main</code>-metoden ska kunna "hitta" metoden. Vad <code>static</code> innefattar behandlas ytterligare under kursen "Objektorienterad programmering I".
+
 ## Uppgiftsförteckning ##
 
 Uppgift 1 | Metodsyntax
