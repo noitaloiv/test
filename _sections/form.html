@@ -1,0 +1,18 @@
+---
+title: Feedback
+icon: fa-envelope
+order: 9
+---
+
+<form method="post" action="https://formspree.io/{{ site.email }}">
+  <div class="row">
+    <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Din studentmail" /></div>
+    <div class="6u$ 12u$(mobile)"><input type="text" name="subject" placeholder="Ämne" /></div>
+    <div class="12u$">
+      <textarea name="message" placeholder="Skriv feedback här..."></textarea>
+    </div>
+    <div class="12u$">
+      <input type="submit" value="Skicka" />
+    </div>
+  </div>
+</form>
