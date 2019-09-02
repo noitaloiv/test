@@ -1,3 +1,18 @@
+# IM Programmeringshubb - Byggt med Jekyll Theme (Prologue)
+
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
+
+![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
+
+This is a simplistic website built for the purpose of individual study when it comes to the fundamentals of programming. It is structured in a somewhat linear way where you can read about and work with each programming concept (which are structured in their respective sections) until you're confident enough to move onto the next concept and so forth. There's also a section where you are given assignments - each with it's own level of difficulty ranging from Easy to Hard. 
+
+The site itself is built upon the Jekyll Theme Prologue (by Chris Bobbe) which has then been modified to suit the purposes of this hubb. Prologue is a simple, single page responsive site template from [HTML5 UP](https://html5up.net/prologue), now available as a blog-aware Jekyll theme from [Chris Bobbe](https://chrisbobbe.github.io). It features a clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
+
+# Credits
+
+Original README from Prologue and Chris Bobbe:
+
+```
 # Prologue - Jekyll Theme
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
@@ -90,7 +105,6 @@ Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant 
 
 Original README from HTML5 UP:
 
-```
 Prologue by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
